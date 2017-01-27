@@ -1,0 +1,7 @@
+# vsim -c fulladder_bench.v -lib __work -voptargs="+acc" -wlf dump.wlf -do "log -howmany -rec /* ; run -all" 
+# Start time: 00:37:25 on Jan 27,2017
+# ** Error: (vsim-19) Failed to access library 'fulladder_bench' at "fulladder_bench".
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# End time: 00:37:25 on Jan 27,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0

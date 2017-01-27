@@ -3,9 +3,9 @@ module mux2_1(
 	output Out );
 	wire NotS, OutA, OutB; 
 	
-	not1 n1(S,NotS);
- 	nand2 na1(InA, NotS, OutA);
-	nand2 na2(S, InB, OutB);
-	nand2 na3(OutA, OutB, Out);	
+	not1 n1(.in1(S),.out(NotS));
+ 	nand2 na1(.in1(InA),.in2(NotS),.out(OutA));
+	nand2 na2(.in1(S),.in2(InB),.out(OutB));
+	nand2 na3(.in1(OutA),.in2(OutB),.out(Out));	
 endmodule
  
