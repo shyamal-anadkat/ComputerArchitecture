@@ -7,28 +7,99 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/u/s/h/shyamal/private/552/hw1_2
-vfulladder_1
-Z1 !s110 1485499040
+Z0 d/afs/cs.wisc.edu/u/s/h/shyamal/private/552/hw1_2
+T_opt
+!s110 1485542738
+VMJR41[@mTIFP^[o5:M>3U1
+04 16 4 work fulladder1_bench fast 0
+=1-f8bc12940bfa-588b9552-67b8b-68ce
+o-quiet -auto_acc_if_foreign -work __work +acc
+n@_opt
+OE;O;10.4c;61
+vclkrst
+Z1 !s110 1485542737
 !i10b 1
-!s100 HW3A2^LiWE=]o[^[k4iAN0
-IjAQfSJQ311OL;FWSH^z8i3
+!s100 d1=HFa9@5T7JH2L8mb3gE1
+I76^B^z0K=`bfSS`caA`Ik3
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1485499026
-8fulladder_1.v
-Ffulladder_1.v
-L0 1
+w1485540713
+8clkrst.v
+Fclkrst.v
+L0 12
 Z3 OE;L;10.4c;61
 r1
 !s85 0
 31
-Z4 !s108 1485499039.000000
-Z5 !s107 xor3.v|xor2.v|not1.v|nor3.v|nor2.v|nand3.v|nand2.v|fulladder_bench.v|fulladder_1.v|
-Z6 !s90 +define+RANDSEED=3|-work|__work|fulladder_1.v|fulladder_bench.v|nand2.v|nand3.v|nor2.v|nor3.v|not1.v|xor2.v|xor3.v|
+Z4 !s108 1485542737.000000
+Z5 !s107 xor3.v|xor2.v|ripple4.v|not1.v|nor3.v|nor2.v|nand3.v|nand2.v|fulladder_bench.v|fulladder_1.v|fulladder1_bench.v|fulladder16.v|clkrst.v|
+Z6 !s90 +define+RANDSEED=3|-work|__work|clkrst.v|fulladder16.v|fulladder1_bench.v|fulladder_1.v|fulladder_bench.v|nand2.v|nand3.v|nor2.v|nor3.v|not1.v|ripple4.v|xor2.v|xor3.v|
 !i113 0
 Z7 o-work __work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 Z8 !s92 +define+RANDSEED=3 -work __work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vfulladder16
+R1
+!i10b 1
+!s100 bJnWmbGzA3[Fg9j>l9hWZ3
+I<TD61^o=787AL>^ifV6LM1
+R2
+R0
+w1485540987
+8fulladder16.v
+Ffulladder16.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 0
+R7
+R8
+vfulladder1_bench
+R1
+!i10b 1
+!s100 Tojk5U>D1FzT7YT`_`I3K0
+IKzVfV@9Ph:nY9=EZc`RKd3
+R2
+R0
+w1485542732
+8fulladder1_bench.v
+Ffulladder1_bench.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 0
+R7
+R8
+vfulladder_1
+R1
+!i10b 1
+!s100 d?OGAWLMgh@>:;0IX?EYM1
+Iidmm3dzGVhS;nEoeHTJ`V1
+R2
+R0
+w1485538541
+8fulladder_1.v
+Ffulladder_1.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 0
+R7
+R8
 vfulladder_bench
 R1
 !i10b 1
@@ -144,6 +215,27 @@ R0
 R9
 8not1.v
 Fnot1.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 0
+R7
+R8
+vripple4
+R1
+!i10b 1
+!s100 C^b?BNP:e54k>CdGW?d`:2
+I:7WfAm_mMf:X^FS;:LBmT3
+R2
+R0
+w1485541226
+8ripple4.v
+Fripple4.v
 L0 1
 R3
 r1
