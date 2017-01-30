@@ -7,17 +7,17 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/afs/cs.wisc.edu/u/s/h/shyamal/private/552/hw1_2
+Z0 d/u/s/h/shyamal/private/552/hw1_2
 T_opt
-!s110 1485542738
-VMJR41[@mTIFP^[o5:M>3U1
-04 16 4 work fulladder1_bench fast 0
-=1-f8bc12940bfa-588b9552-67b8b-68ce
+!s110 1485748614
+VOQUURYZ2BGihoAI3QNL=V0
+04 15 4 work fulladder_bench fast 0
+=1-f8bc127a0d9f-588eb986-2dc03-36e7
 o-quiet -auto_acc_if_foreign -work __work +acc
 n@_opt
 OE;O;10.4c;61
 vclkrst
-Z1 !s110 1485542737
+Z1 !s110 1485748613
 !i10b 1
 !s100 d1=HFa9@5T7JH2L8mb3gE1
 I76^B^z0K=`bfSS`caA`Ik3
@@ -31,7 +31,7 @@ Z3 OE;L;10.4c;61
 r1
 !s85 0
 31
-Z4 !s108 1485542737.000000
+Z4 !s108 1485748612.000000
 Z5 !s107 xor3.v|xor2.v|ripple4.v|not1.v|nor3.v|nor2.v|nand3.v|nand2.v|fulladder_bench.v|fulladder_1.v|fulladder1_bench.v|fulladder16.v|clkrst.v|
 Z6 !s90 +define+RANDSEED=3|-work|__work|clkrst.v|fulladder16.v|fulladder1_bench.v|fulladder_1.v|fulladder_bench.v|nand2.v|nand3.v|nor2.v|nor3.v|not1.v|ripple4.v|xor2.v|xor3.v|
 !i113 0
@@ -103,11 +103,11 @@ R8
 vfulladder_bench
 R1
 !i10b 1
-!s100 Zc:[Qha]0JkLcFML40l190
-IdCiSok4m_?9fdRUVzU0YQ0
+!s100 edh74I:Tn2Hl;]Hg`C_Hj3
+I;;Al@nmMMfnGX[MUUoO8T2
 R2
 R0
-w1361292979
+w1485647164
 8fulladder_bench.v
 Ffulladder_bench.v
 L0 1

@@ -41,7 +41,7 @@ module seqdec_85_bench;
 
    always@(negedge Clk)
      begin
-	if ((Out === 1'b0) && (seqp1 === 8'h85))
+	if ((Out !== 1'b1) && (seqp1 === 8'h85))
 	  $display("ERRORCHECK :: Out not going to 1 as expected");
 	if ((Out === 1'b1) && (seqp1 !== 8'h85))
 	  $display("ERRORCHECK :: Out going to 1 unnexpected");

@@ -1,5 +1,5 @@
 # vsim -c quadmux4_1_bench -lib __work -voptargs="+acc" -wlf dump.wlf -do "log -howmany -rec /* ; run -all" 
-# Start time: 09:09:33 on Jan 27,2017
+# Start time: 22:52:27 on Jan 28,2017
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.4c linux Jul 19 2015
@@ -28,5 +28,5 @@
 #  run -all
 # ** Note: $finish    : quadmux4_1_bench.v(47)
 #    Time: 3200 ns  Iteration: 0  Instance: /quadmux4_1_bench
-# End time: 09:09:35 on Jan 27,2017, Elapsed time: 0:00:02
+# End time: 22:52:27 on Jan 28,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

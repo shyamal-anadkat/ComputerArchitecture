@@ -1,6 +1,3 @@
-# vsim -c fulladder1_bench -lib __work -voptargs="+acc" -wlf dump.wlf -do "log -howmany -rec /* ; run -all" 
-# Start time: 12:45:38 on Jan 27,2017
-# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.4c linux Jul 19 2015
 # //
@@ -16,47 +13,5 @@
 # //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
 # //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
 # //
-# Loading work.fulladder1_bench(fast)
-# Loading work.clkrst(fast)
-# Loading work.fulladder_1(fast)
-# Loading work.xor2(fast)
-# Loading work.nand2(fast)
-# log -howmany -rec /* 
-# 36
-#  run -all
-# A : 0, B: 1, Cin: 1,  Sum: 0, Cout: 1
-# A : 1, B: 1, Cin: 1,  Sum: 1, Cout: 1
-# A : 1, B: 0, Cin: 1,  Sum: 0, Cout: 1
-# A : 1, B: 0, Cin: 1,  Sum: 0, Cout: 1
-# A : 1, B: 0, Cin: 1,  Sum: 0, Cout: 1
-# A : 0, B: 1, Cin: 0,  Sum: 1, Cout: 0
-# A : 1, B: 1, Cin: 0,  Sum: 0, Cout: 1
-# A : 1, B: 0, Cin: 0,  Sum: 1, Cout: 0
-# A : 0, B: 1, Cin: 0,  Sum: 1, Cout: 0
-# A : 1, B: 1, Cin: 1,  Sum: 1, Cout: 1
-# A : 1, B: 0, Cin: 0,  Sum: 1, Cout: 0
-# A : 0, B: 0, Cin: 1,  Sum: 1, Cout: 0
-# A : 0, B: 1, Cin: 1,  Sum: 0, Cout: 1
-# A : 1, B: 1, Cin: 1,  Sum: 1, Cout: 1
-# A : 0, B: 0, Cin: 1,  Sum: 1, Cout: 0
-# A : 1, B: 1, Cin: 0,  Sum: 0, Cout: 1
-# A : 0, B: 0, Cin: 0,  Sum: 0, Cout: 0
-# A : 0, B: 1, Cin: 0,  Sum: 1, Cout: 0
-# A : 0, B: 1, Cin: 1,  Sum: 0, Cout: 1
-# A : 0, B: 0, Cin: 0,  Sum: 0, Cout: 0
-# A : 0, B: 0, Cin: 1,  Sum: 1, Cout: 0
-# A : 1, B: 1, Cin: 1,  Sum: 1, Cout: 1
-# A : 1, B: 0, Cin: 0,  Sum: 1, Cout: 0
-# A : 1, B: 1, Cin: 1,  Sum: 1, Cout: 1
-# A : 0, B: 0, Cin: 1,  Sum: 1, Cout: 0
-# A : 1, B: 0, Cin: 1,  Sum: 0, Cout: 1
-# A : 1, B: 0, Cin: 1,  Sum: 0, Cout: 1
-# A : 1, B: 1, Cin: 0,  Sum: 0, Cout: 1
-# A : 1, B: 1, Cin: 0,  Sum: 0, Cout: 1
-# A : 0, B: 0, Cin: 0,  Sum: 0, Cout: 0
-# A : 1, B: 1, Cin: 0,  Sum: 0, Cout: 1
-# A : 0, B: 1, Cin: 1,  Sum: 0, Cout: 1
-# ** Note: $finish    : fulladder1_bench.v(23)
-#    Time: 3200 ns  Iteration: 0  Instance: /fulladder1_bench
-# End time: 12:45:41 on Jan 27,2017, Elapsed time: 0:00:03
-# Errors: 0, Warnings: 0
+# dump.wlf opened as dataset "dataset"
+add wave -position end dataset:/fulladder_bench/*

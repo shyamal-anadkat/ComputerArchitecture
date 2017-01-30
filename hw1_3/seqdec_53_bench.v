@@ -20,7 +20,7 @@ module seqdec_53_bench;
 	  begin
 	     InA = 1'b0;
 	     k = 0;
-	     sequenc = 128'h0028_850A_972E_4284_5353_28A0_8597_4253;    // Sequence detection is for 85, 97, 42, 53, 28
+	     sequenc = 128'h0028_850A_972E_4284_5353_28A0_5397_5353;    // Sequence detection is for 85, 97, 42, 53, 28
 	     seq = 8'h00;
 	     seqp1 = 8'h00;
    
@@ -41,7 +41,7 @@ module seqdec_53_bench;
 
    always@(negedge Clk)
      begin
-	if ((Out === 1'b0) && (seqp1 === 8'h53))
+	if ((Out !== 1'b1) && (seqp1 === 8'h53))
 	  $display("ERRORCHECK :: Out not going to 1 as expected");
 	if ((Out === 1'b1) && (seqp1 !== 8'h53))
 	  $display("ERRORCHECK :: Out going to 1 unnexpected");

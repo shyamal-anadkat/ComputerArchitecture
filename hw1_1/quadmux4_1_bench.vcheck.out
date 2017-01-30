@@ -1,0 +1,14 @@
+Line 35: Bad keyword initial
+Line 37: begin without always/case
+Line 54: Bad keyword posedge
+Line 54: Always without case(x)
+Line 65: Bad keyword negedge
+Line 74: Bad keyword if
+Line 74: Bad keyword !==
+Line 76: Bad keyword if
+Line 76: Bad keyword !==
+Line 78: Bad keyword if
+Line 78: Bad keyword !==
+Line 80: Bad keyword if
+Line 80: Bad keyword !==
+End of file /u/s/h/shyamal/private/552/hw1_1/quadmux4_1_bench.v. Hash = 2628153

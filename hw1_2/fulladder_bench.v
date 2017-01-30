@@ -30,7 +30,7 @@ module fulladder_bench;
    always@(negedge Clk)
      begin
 	Sumcalc = A+B;
-	$display("A : %x, B%x, Sum %x", A, B, SUM);
+	$display("A : %x, B%x, Sum %x, Carry %x, Sumcalc %x", A, B, SUM, CO, Sumcalc);
 	
 	if (Sumcalc[15:0] !== SUM) $display ("ERRORCHECK Sum error");
 	if (Sumcalc[16] !== CO) $display ("ERRORCHECK CO error");
