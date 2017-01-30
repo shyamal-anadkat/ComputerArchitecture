@@ -9,15 +9,15 @@ z2
 cModel Technology
 Z0 d/u/s/h/shyamal/private/552/hw1_2
 T_opt
-!s110 1485748614
-VOQUURYZ2BGihoAI3QNL=V0
+!s110 1485812657
+V=M3iWH?[o5`Z;aIz@Z]7L3
 04 15 4 work fulladder_bench fast 0
-=1-f8bc127a0d9f-588eb986-2dc03-36e7
+=1-f8bc12940831-588fb3b0-79739-2bfe
 o-quiet -auto_acc_if_foreign -work __work +acc
 n@_opt
 OE;O;10.4c;61
 vclkrst
-Z1 !s110 1485748613
+Z1 !s110 1485812655
 !i10b 1
 !s100 d1=HFa9@5T7JH2L8mb3gE1
 I76^B^z0K=`bfSS`caA`Ik3
@@ -31,7 +31,7 @@ Z3 OE;L;10.4c;61
 r1
 !s85 0
 31
-Z4 !s108 1485748612.000000
+Z4 !s108 1485812654.000000
 Z5 !s107 xor3.v|xor2.v|ripple4.v|not1.v|nor3.v|nor2.v|nand3.v|nand2.v|fulladder_bench.v|fulladder_1.v|fulladder1_bench.v|fulladder16.v|clkrst.v|
 Z6 !s90 +define+RANDSEED=3|-work|__work|clkrst.v|fulladder16.v|fulladder1_bench.v|fulladder_1.v|fulladder_bench.v|nand2.v|nand3.v|nor2.v|nor3.v|not1.v|ripple4.v|xor2.v|xor3.v|
 !i113 0

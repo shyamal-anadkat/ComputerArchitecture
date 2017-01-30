@@ -3,10 +3,10 @@ module seqdec_53(InA, Clk, Reset, Out);
 	input InA, Clk, Reset; 
 	output Out;
 
-	wire [4:0]  	state;
-	reg [4:0] 	next_state; 
+	wire [3:0]  	state;
+	reg [3:0] 	next_state; 
 	
-	dff curr_state[4:0] (
+	dff curr_state[3:0] (
 			.q 	(state),
 			.d	(next_state),
 			.clk	(Clk),
@@ -40,7 +40,6 @@ module seqdec_53(InA, Clk, Reset, Out);
 	        end
 		5'h8: begin 
 	   		next_state = InA ? 5'h0 : 5'h1;
-			//assign Out = 1;
 	        end
 		default: begin
 			next_state = 5'h0;

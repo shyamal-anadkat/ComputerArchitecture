@@ -1,6 +1,3 @@
-# vsim -c quadmux4_1_bench -lib __work -voptargs="+acc" -wlf dump.wlf -do "log -howmany -rec /* ; run -all" 
-# Start time: 22:52:27 on Jan 28,2017
-# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.4c linux Jul 19 2015
 # //
@@ -16,17 +13,5 @@
 # //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
 # //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
 # //
-# Loading work.quadmux4_1_bench(fast)
-# Loading work.clkrst(fast)
-# Loading work.quadmux4_1(fast)
-# Loading work.mux4_1(fast)
-# Loading work.mux2_1(fast)
-# Loading work.not1(fast)
-# Loading work.nand2(fast)
-# log -howmany -rec /* 
-# 267
-#  run -all
-# ** Note: $finish    : quadmux4_1_bench.v(47)
-#    Time: 3200 ns  Iteration: 0  Instance: /quadmux4_1_bench
-# End time: 22:52:27 on Jan 28,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+# dump.wlf opened as dataset "dataset"
+add wave -position end dataset:/quadmux4_1_bench/*
