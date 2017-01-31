@@ -1,0 +1,29 @@
+# vsim -c seqdec_53_bench -lib __work -voptargs="+acc" -wlf dump.wlf -do "log -howmany -rec /* ; run -all" 
+# Start time: 15:21:35 on Jan 31,2017
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim
+# //  Version 10.4c linux Jul 19 2015
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading work.seqdec_53_bench(fast)
+# Loading work.seqdec_53(fast)
+# Loading work.clkrst(fast)
+# Loading work.dff(fast)
+# log -howmany -rec /* 
+# 39
+#  run -all
+# ** Note: $finish    : seqdec_53_bench.v(36)
+#    Time: 13 us  Iteration: 1  Instance: /seqdec_53_bench
+# End time: 15:21:37 on Jan 31,2017, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

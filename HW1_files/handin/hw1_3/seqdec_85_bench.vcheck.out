@@ -1,0 +1,15 @@
+Line 7: Bad keyword integer
+Line 17: Bad keyword posedge
+Line 19: Bad keyword if
+Line 29: Bad keyword else
+Line 36: Bad keyword if
+Line 17: Always without case(x)
+Line 42: Bad keyword negedge
+Line 44: Bad keyword if
+Line 44: Bad keyword !==
+Line 44: Bad keyword ===
+Line 46: Bad keyword if
+Line 46: Bad keyword ===
+Line 46: Bad keyword !==
+Line 42: Always without case(x)
+End of file /u/s/h/shyamal/private/552/hw1_3/seqdec_85_bench.v. Hash = -1082452349

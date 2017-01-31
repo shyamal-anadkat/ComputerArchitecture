@@ -1,0 +1,64 @@
+# vsim -c fulladder_bench -lib __work -voptargs="+acc" -wlf dump.wlf -do "log -howmany -rec /* ; run -all" 
+# Start time: 15:11:43 on Jan 31,2017
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim
+# //  Version 10.4c linux Jul 19 2015
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading work.fulladder_bench(fast)
+# Loading work.clkrst(fast)
+# Loading work.fulladder16(fast)
+# Loading work.fulladder4(fast)
+# Loading work.fulladder1(fast)
+# Loading work.xor2(fast)
+# Loading work.nand2(fast)
+# log -howmany -rec /* 
+# 419
+#  run -all
+# A : 03524, B05e81, Sum 93a5, Carry 0, Sumcalc 093a5
+# A : 0d609, B05663, Sum 2c6c, Carry 1, Sumcalc 12c6c
+# A : 07b0d, B0998d, Sum 149a, Carry 1, Sumcalc 1149a
+# A : 08465, B05212, Sum d677, Carry 0, Sumcalc 0d677
+# A : 0e301, B0cd0d, Sum b00e, Carry 1, Sumcalc 1b00e
+# A : 0f176, B0cd3d, Sum beb3, Carry 1, Sumcalc 1beb3
+# A : 057ed, B0f78c, Sum 4f79, Carry 1, Sumcalc 14f79
+# A : 0e9f9, B024c6, Sum 0ebf, Carry 1, Sumcalc 10ebf
+# A : 084c5, B0d2aa, Sum 576f, Carry 1, Sumcalc 1576f
+# A : 0f7e5, B07277, Sum 6a5c, Carry 1, Sumcalc 16a5c
+# A : 0d612, B0db8f, Sum b1a1, Carry 1, Sumcalc 1b1a1
+# A : 069f2, B096ce, Sum 00c0, Carry 1, Sumcalc 100c0
+# A : 07ae8, B04ec5, Sum c9ad, Carry 0, Sumcalc 0c9ad
+# A : 0495c, B028bd, Sum 7219, Carry 0, Sumcalc 07219
+# A : 0582d, B02665, Sum 7e92, Carry 0, Sumcalc 07e92
+# A : 06263, B0870a, Sum e96d, Carry 0, Sumcalc 0e96d
+# A : 02280, B02120, Sum 43a0, Carry 0, Sumcalc 043a0
+# A : 045aa, B0cc9d, Sum 1247, Carry 1, Sumcalc 11247
+# A : 03e96, B0b813, Sum f6a9, Carry 0, Sumcalc 0f6a9
+# A : 0380d, B0d653, Sum 0e60, Carry 1, Sumcalc 10e60
+# A : 0dd6b, B02ad5, Sum 0840, Carry 1, Sumcalc 10840
+# A : 04a02, B03eae, Sum 88b0, Carry 0, Sumcalc 088b0
+# A : 0e91d, B072cf, Sum 5bec, Carry 1, Sumcalc 15bec
+# A : 04923, B0650a, Sum ae2d, Carry 0, Sumcalc 0ae2d
+# A : 00aca, B04c3c, Sum 5706, Carry 0, Sumcalc 05706
+# A : 0bdf2, B0618a, Sum 1f7c, Carry 1, Sumcalc 11f7c
+# A : 0b341, B034d8, Sum e819, Carry 0, Sumcalc 0e819
+# A : 0f378, B01289, Sum 0601, Carry 1, Sumcalc 10601
+# A : 00deb, B065b6, Sum 73a1, Carry 0, Sumcalc 073a1
+# A : 0f9c6, B013ae, Sum 0d74, Carry 1, Sumcalc 10d74
+# A : 002bc, B0dd2a, Sum dfe6, Carry 0, Sumcalc 0dfe6
+# A : 09a0b, B0be71, Sum 587c, Carry 1, Sumcalc 1587c
+# ** Note: $finish    : fulladder_bench.v(21)
+#    Time: 3200 ns  Iteration: 0  Instance: /fulladder_bench
+# End time: 15:11:45 on Jan 31,2017, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

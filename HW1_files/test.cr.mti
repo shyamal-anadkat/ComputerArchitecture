@@ -1,0 +1,6 @@
+/afs/cs.wisc.edu/u/s/h/shyamal/private/552/test1.vhd {0 {vcom -work work -2002 -explicit -vopt -stats=none /afs/cs.wisc.edu/u/s/h/shyamal/private/552/test1.vhd
+QuestaSim vcom 10.4c Compiler 2015.07 Jul 19 2015
+-- Loading package STANDARD
+** Error (suppressible): /afs/cs.wisc.edu/u/s/h/shyamal/private/552/test1.vhd(2): (vcom-1491) Empty source files.
+
+} {} {}}
