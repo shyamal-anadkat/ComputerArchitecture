@@ -9,15 +9,15 @@ z2
 cModel Technology
 Z0 d/u/s/h/shyamal/private/552/hw1_1
 T_opt
-!s110 1485812194
-V1<l23gU@g55chbLfNeW5n1
+!s110 1485875229
+V@fB7:Ad6FiegoWz5C0V?U0
 04 16 4 work quadmux4_1_bench fast 0
-=1-f8bc12940831-588fb1e1-19e0a-2a4b
+=1-f8bc12932458-5890a81d-c73ed-597b
 o-quiet -auto_acc_if_foreign -work __work +acc
 n@_opt
 OE;O;10.4c;61
 vclkrst
-Z1 !s110 1485812188
+Z1 !s110 1485875227
 !i10b 1
 !s100 d1=HFa9@5T7JH2L8mb3gE1
 I76^B^z0K=`bfSS`caA`Ik3
@@ -31,7 +31,7 @@ Z3 OE;L;10.4c;61
 r1
 !s85 0
 31
-Z4 !s108 1485812187.000000
+Z4 !s108 1485875227.000000
 Z5 !s107 quadmux4_1.v|quadmux4_1_bench.v|not1.v|nor3.v|nor2.v|nand3.v|nand2.v|mux4_1.v|mux2_1.v|clkrst.v|
 Z6 !s90 +define+RANDSEED=3|-work|__work|clkrst.v|mux2_1.v|mux4_1.v|nand2.v|nand3.v|nor2.v|nor3.v|not1.v|quadmux4_1_bench.v|quadmux4_1.v|
 !i113 0
@@ -40,11 +40,11 @@ Z8 !s92 +define+RANDSEED=3 -work __work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm 
 vmux2_1
 R1
 !i10b 1
-!s100 ?8Tcoj`>hXQg6RD[kXKcY1
-ImJ8EKcWdIJd1>7TIY9o0l3
+!s100 mcTHzLNnW]jgm9I^^]b:82
+I6B;hBX>J9z:d1A8hTTmGW2
 R2
 R0
-w1485529630
+w1485874665
 8mux2_1.v
 Fmux2_1.v
 L0 1
@@ -61,11 +61,11 @@ R8
 vmux4_1
 R1
 !i10b 1
-!s100 dj`]UCNnMUj59]jQRg1hn1
-I]Ame?:7k9Ij:DQ2YEMlk?0
+!s100 9E?Qz@3Ym5bM8`AI2V]C21
+IEHb0YiHkfQ;7;EkC9BM7E1
 R2
 R0
-w1485529677
+w1485874635
 8mux4_1.v
 Fmux4_1.v
 L0 1
@@ -187,11 +187,11 @@ R8
 vquadmux4_1
 R1
 !i10b 1
-!s100 LYF@<TdEi0hgWFIWWGaCf3
-IcONMKKQ283]0:aU]E?MlB1
+!s100 G>DJA:Zbe@F4Q_HI^?XT62
+IjLf?9;[:2H@LYD4=5kQe>1
 R2
 R0
-w1485529768
+w1485874760
 8quadmux4_1.v
 Fquadmux4_1.v
 L0 1

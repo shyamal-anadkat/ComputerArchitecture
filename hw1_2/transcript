@@ -1,5 +1,5 @@
 # vsim -c fulladder_bench -lib __work -voptargs="+acc" -wlf dump.wlf -do "log -howmany -rec /* ; run -all" 
-# Start time: 15:44:16 on Jan 30,2017
+# Start time: 09:08:25 on Jan 31,2017
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.4c linux Jul 19 2015
@@ -19,12 +19,10 @@
 # Loading work.fulladder_bench(fast)
 # Loading work.clkrst(fast)
 # Loading work.fulladder16(fast)
-# Loading work.ripple4(fast)
-# Loading work.fulladder_1(fast)
+# Loading work.fulladder4(fast)
+# Loading work.fulladder1(fast)
 # Loading work.xor2(fast)
 # Loading work.nand2(fast)
-# ** Warning: (vsim-3015) fulladder16.v(8): [PCDPC] - Port size (1) does not match connection size (32) for port 'CI'. The port definition is at: ripple4.v(1).
-#    Time: 0 ns  Iteration: 0  Instance: /fulladder_bench/DUT/r1 File: ripple4.v
 # log -howmany -rec /* 
 # 419
 #  run -all
@@ -62,5 +60,5 @@
 # A : 09a0b, B0be71, Sum 587c, Carry 1, Sumcalc 1587c
 # ** Note: $finish    : fulladder_bench.v(21)
 #    Time: 3200 ns  Iteration: 0  Instance: /fulladder_bench
-# End time: 15:44:21 on Jan 30,2017, Elapsed time: 0:00:05
-# Errors: 0, Warnings: 1
+# End time: 09:08:27 on Jan 31,2017, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
