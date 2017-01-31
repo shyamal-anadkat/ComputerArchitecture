@@ -1,5 +1,5 @@
 # vsim -c seqdec_53_bench -lib __work -voptargs="+acc" -wlf dump.wlf -do "log -howmany -rec /* ; run -all" 
-# Start time: 09:10:07 on Jan 31,2017
+# Start time: 15:12:39 on Jan 31,2017
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.4c linux Jul 19 2015
@@ -25,5 +25,5 @@
 #  run -all
 # ** Note: $finish    : seqdec_53_bench.v(36)
 #    Time: 13 us  Iteration: 1  Instance: /seqdec_53_bench
-# End time: 09:10:08 on Jan 31,2017, Elapsed time: 0:00:01
+# End time: 15:12:40 on Jan 31,2017, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

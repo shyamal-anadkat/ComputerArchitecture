@@ -1,5 +1,5 @@
 # vsim -c fulladder_bench -lib __work -voptargs="+acc" -wlf dump.wlf -do "log -howmany -rec /* ; run -all" 
-# Start time: 09:08:25 on Jan 31,2017
+# Start time: 15:11:43 on Jan 31,2017
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.4c linux Jul 19 2015
@@ -60,5 +60,5 @@
 # A : 09a0b, B0be71, Sum 587c, Carry 1, Sumcalc 1587c
 # ** Note: $finish    : fulladder_bench.v(21)
 #    Time: 3200 ns  Iteration: 0  Instance: /fulladder_bench
-# End time: 09:08:27 on Jan 31,2017, Elapsed time: 0:00:02
+# End time: 15:11:45 on Jan 31,2017, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0

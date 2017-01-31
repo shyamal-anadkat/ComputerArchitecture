@@ -9,15 +9,15 @@ z2
 cModel Technology
 Z0 d/u/s/h/shyamal/private/552/hw1_1
 T_opt
-!s110 1485875229
-V@fB7:Ad6FiegoWz5C0V?U0
+!s110 1485897078
+V0JbmTT7G7mQKD62UG1C9z2
 04 16 4 work quadmux4_1_bench fast 0
-=1-f8bc12932458-5890a81d-c73ed-597b
+=1-c81f6645a81f-5890fd76-62cca-19d0
 o-quiet -auto_acc_if_foreign -work __work +acc
 n@_opt
 OE;O;10.4c;61
 vclkrst
-Z1 !s110 1485875227
+Z1 !s110 1485897077
 !i10b 1
 !s100 d1=HFa9@5T7JH2L8mb3gE1
 I76^B^z0K=`bfSS`caA`Ik3
@@ -31,7 +31,7 @@ Z3 OE;L;10.4c;61
 r1
 !s85 0
 31
-Z4 !s108 1485875227.000000
+Z4 !s108 1485897077.000000
 Z5 !s107 quadmux4_1.v|quadmux4_1_bench.v|not1.v|nor3.v|nor2.v|nand3.v|nand2.v|mux4_1.v|mux2_1.v|clkrst.v|
 Z6 !s90 +define+RANDSEED=3|-work|__work|clkrst.v|mux2_1.v|mux4_1.v|nand2.v|nand3.v|nor2.v|nor3.v|not1.v|quadmux4_1_bench.v|quadmux4_1.v|
 !i113 0
