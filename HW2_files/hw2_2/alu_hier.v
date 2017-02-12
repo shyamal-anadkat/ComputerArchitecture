@@ -38,5 +38,7 @@ module alu_hier(A, B, Cin, Op, invA, invB, sign, Out, Ofl, Z);
           .invA                         (invA),
           .invB                         (invB),
           .sign                         (sign)
-         ); 
+         );
+
+    
 endmodule // alu_hier

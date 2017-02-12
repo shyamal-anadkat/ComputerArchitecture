@@ -7,36 +7,36 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/u/s/h/shyamal/private/552/HW2_files/hw2_1
+Z0 d/u/r/a/rajmohan/private/552/ComputerArchitecture/HW2_files/hw2_1
 T_opt
-!s110 1486343288
-V5_fEoOhR>QKVkBj;nBD:T3
+!s110 1486882472
+V80Tzc5<CR>Qegk[k8@b2B3
 04 18 4 work shifter_hier_bench fast 0
-=1-f8bc129404ab-5897cc77-d4ab7-3418
+=1-f8bc127a09a8-58a006a7-e48ea-2ecd
 o-quiet -auto_acc_if_foreign -work __work +acc
 n@_opt
 OE;O;10.4c;61
 vclkrst
-Z1 !s110 1486343286
+Z1 !s110 1486882469
 !i10b 1
 !s100 c^DJe8Tm9AS?OSo>b>@Xo1
 IhEjhn3C>:Y:9S9HJNbN002
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1454710153
+Z3 w1486882426
 8clkrst.v
 Fclkrst.v
 L0 12
-Z3 OE;L;10.4c;61
+Z4 OE;L;10.4c;61
 r1
 !s85 0
 31
-Z4 !s108 1486343286.000000
-Z5 !s107 shifter.v|shifter_hier.v|shifter_hier_bench.v|shifter8.v|shifter4.v|shifter2.v|shifter1.v|not1.v|nand2.v|mux4_1.v|mux2_1.v|dff.v|clkrst.v|
-Z6 !s90 +define+RANDSEED=3|-work|__work|clkrst.v|dff.v|mux2_1.v|mux4_1.v|nand2.v|not1.v|shifter1.v|shifter2.v|shifter4.v|shifter8.v|shifter_hier_bench.v|shifter_hier.v|shifter.v|
+Z5 !s108 1486882469.000000
+Z6 !s107 shifter.v|shifter_hier.v|shifter_hier_bench.v|shifter8.v|shifter4.v|shifter2.v|shifter1.v|not1.v|nand2.v|mux4_1.v|mux2_1.v|dff.v|clkrst.v|
+Z7 !s90 +define+RANDSEED=3|-work|__work|clkrst.v|dff.v|mux2_1.v|mux4_1.v|nand2.v|not1.v|shifter1.v|shifter2.v|shifter4.v|shifter8.v|shifter_hier_bench.v|shifter_hier.v|shifter.v|
 !i113 0
-Z7 o-work __work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z8 !s92 +define+RANDSEED=3 -work __work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 o-work __work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 !s92 +define+RANDSEED=3 -work __work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 vdff
 R1
 !i10b 1
@@ -44,248 +44,248 @@ R1
 I_HM6UhFP^>?OXhKMOR9@J3
 R2
 R0
-w1485046501
+R3
 8dff.v
 Fdff.v
 L0 6
-R3
+R4
 r1
 !s85 0
 31
-R4
 R5
 R6
-!i113 0
 R7
+!i113 0
 R8
+R9
 vmux2_1
-R1
+Z10 !s110 1486882470
 !i10b 1
 !s100 mcTHzLNnW]jgm9I^^]b:82
 I6B;hBX>J9z:d1A8hTTmGW2
 R2
 R0
-w1485874665
+R3
 8mux2_1.v
 Fmux2_1.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R4
 R5
 R6
-!i113 0
 R7
+!i113 0
 R8
+R9
 vmux4_1
-R1
+R10
 !i10b 1
 !s100 9E?Qz@3Ym5bM8`AI2V]C21
 IEHb0YiHkfQ;7;EkC9BM7E1
 R2
 R0
-w1485874635
+R3
 8mux4_1.v
 Fmux4_1.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R4
 R5
 R6
-!i113 0
 R7
+!i113 0
 R8
+R9
 vnand2
-R1
+R10
 !i10b 1
 !s100 ISa?1STS90[eV_=8949@R1
 I=JOS]oeg2cXTUI@l1HX0D3
 R2
 R0
-w1485046469
+R3
 8nand2.v
 Fnand2.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R4
 R5
 R6
-!i113 0
 R7
+!i113 0
 R8
+R9
 vnot1
-R1
+R10
 !i10b 1
 !s100 KWFGS]d0`N730YhRHI;lF1
 Ine_M0KPMZa7FAXcV[XF@M1
 R2
 R0
-w1485046487
+R3
 8not1.v
 Fnot1.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R4
 R5
 R6
-!i113 0
 R7
+!i113 0
 R8
+R9
 vshifter
-R1
+R10
 !i10b 1
 !s100 ?OSGU16<Zi?JQRT9clo8M2
 I6gS[AX5:3bE16VXbEC?an2
 R2
 R0
-w1486342869
+R3
 8shifter.v
 Fshifter.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R4
 R5
 R6
-!i113 0
 R7
+!i113 0
 R8
+R9
 vshifter1
-R1
+R10
 !i10b 1
 !s100 e=;4EHEVMG?1IG_zXM7:E0
 IiVfD]b6QSVZhXO@HKZ9@<0
 R2
 R0
-w1486343137
+R3
 8shifter1.v
 Fshifter1.v
 L0 2
-R3
+R4
 r1
 !s85 0
 31
-R4
 R5
 R6
-!i113 0
 R7
+!i113 0
 R8
+R9
 vshifter2
-R1
+R10
 !i10b 1
 !s100 USTBf2[mJe=4N8Tc?E`101
 IKHKII0aPa^zZedR=UMV7X2
 R2
 R0
-w1486342989
+R3
 8shifter2.v
 Fshifter2.v
 L0 2
-R3
+R4
 r1
 !s85 0
 31
-R4
 R5
 R6
-!i113 0
 R7
+!i113 0
 R8
+R9
 vshifter4
-R1
+R10
 !i10b 1
 !s100 iSG;B=hOJ]?kCaWQe?LE00
 IIgbonG[o@n:Z_nmHEhZV91
 R2
 R0
-w1486343022
+R3
 8shifter4.v
 Fshifter4.v
 L0 2
-R3
+R4
 r1
 !s85 0
 31
-R4
 R5
 R6
-!i113 0
 R7
+!i113 0
 R8
+R9
 vshifter8
-R1
+R10
 !i10b 1
 !s100 agVI`]LZ1L0GgmA@FG:Tg3
 IFHjjRo;ll6f5C<NdBnCC03
 R2
 R0
-w1486343004
+R3
 8shifter8.v
 Fshifter8.v
 L0 2
-R3
+R4
 r1
 !s85 0
 31
-R4
 R5
 R6
-!i113 0
 R7
+!i113 0
 R8
+R9
 vshifter_hier
-R1
+R10
 !i10b 1
 !s100 `Jn88BVHFG0bQDCTKPYQ=3
 I4RI`=2oo5OYdza^g?UY@T3
 R2
 R0
-w1454534861
+R3
 8shifter_hier.v
 Fshifter_hier.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R4
 R5
 R6
-!i113 0
 R7
+!i113 0
 R8
+R9
 vshifter_hier_bench
-R1
+R10
 !i10b 1
 !s100 5jV7beJ8cNH1FC0UF7N`k1
 Ia<VXfW`6k]=cJ:5^g=`3H1
 R2
 R0
-w1486342925
+R3
 8shifter_hier_bench.v
 Fshifter_hier_bench.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R4
 R5
 R6
-!i113 0
 R7
+!i113 0
 R8
+R9
