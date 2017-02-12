@@ -71,14 +71,14 @@ module alu_hier_bench;
 	    // Rotate Left
 	    begin
 	       ExOut = A << B[3:0] | A >> 16-B[3:0];
-	       if (ExOut[15:0] != Out)
+	       if (ExOut[15:0] !== Out)
 		 cerror = 1'b1;
 	    end
 	  3'b001 :
 	    // Shift Left
 	    begin
 	       ExOut = A << B[3:0];
-	       if (ExOut[15:0] != Out)
+	       if (ExOut[15:0] !== Out)
 		 cerror = 1'b1;
 	    end
 	  3'b010 :
@@ -88,7 +88,7 @@ module alu_hier_bench;
 		 ExOut[idx] = A[15];
 	       ExOut[15:0] = A[15:0];
 	       ExOut[15:0] = ExOut >> B[3:0];
-	       if (ExOut[15:0] != Out)
+	       if (ExOut[15:0] !== Out)
 		 cerror = 1'b1;
 	       
 	    end
@@ -96,7 +96,7 @@ module alu_hier_bench;
 	    // Right shift logical
 	    begin
 	       ExOut = A >> B[3:0];
-	       if (ExOut[15:0] != Out)
+	       if (ExOut[15:0] !== Out)
 		 cerror = 1'b1;
 	    end
 
@@ -111,7 +111,7 @@ module alu_hier_bench;
 	       else
 		 ExOfl = ExOut[16];
 		 
-	       if ((ExOut[15:0] != Out) || (ExZ != Z) || (ExOfl != Ofl))
+	       if ((ExOut[15:0] !== Out) || (ExZ !== Z) || (ExOfl !== Ofl))
 		 cerror = 1'b1;
 	    end
 	  
@@ -119,14 +119,14 @@ module alu_hier_bench;
 	    // A OR B
 	    begin
 	       ExOut = A | B;
-	       if (ExOut[15:0] != Out)
+	       if (ExOut[15:0] !== Out)
 		 cerror = 1'b1;
 	    end
 	  3'b110 :
 	    // A XOR B
 	    begin
 	       ExOut = A ^ B;
-	       if (ExOut[15:0] != Out)
+	       if (ExOut[15:0] !== Out)
 		 cerror = 1'b1;
 	    end
 	  
@@ -134,7 +134,7 @@ module alu_hier_bench;
 	    // A AND B
 	    begin
 	       ExOut = A & B;
-	       if (ExOut[15:0] != Out)
+	       if (ExOut[15:0] !== Out)
 		 cerror = 1'b1;
 	    end
 
