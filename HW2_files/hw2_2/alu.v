@@ -11,8 +11,28 @@ module alu (A, B, Cin, Op, invA, invB, sign, Out, Ofl, Z);
         output Ofl;
         output Z;
 
-   /*
-	Your code goes here
-   */
-    
+
+
+		always @(*) begin
+            case(Op)
+                3'b000: begin // rotate left
+                end
+                3'b001: begin // shift left
+                end
+                3'b010: begin // shift right arith
+    			end
+    			3'b011: begin // shift right logical
+    			end
+    			3'b100: begin // A + B
+    			end
+    			3'b101: begin // A OR B
+    			end
+    			3'b110: begin // A XOR B
+    			end
+    			3'b111: begin // A AND B
+    			end
+    			default: begin
+    			end
+    		endcase
+    	end
 endmodule

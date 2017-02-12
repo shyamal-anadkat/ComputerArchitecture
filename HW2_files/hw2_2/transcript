@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-# vsim -c Test_CLA_4bit -lib __work -voptargs="+acc" -wlf dump.wlf -do "log -howmany -rec /* ; run -all" 
-# Start time: 16:43:37 on Feb 12,2017
-=======
 # vsim -c alu_hier_bench -lib __work -voptargs="+acc" -wlf dump.wlf -do "log -howmany -rec /* ; run -all" 
-# Start time: 14:14:26 on Feb 12,2017
->>>>>>> 251d4187c838222232f08ef65eb6df220e06ccb8
+# Start time: 17:35:42 on Feb 12,2017
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.4c linux Jul 19 2015
@@ -21,32 +16,13 @@
 # //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
 # //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
 # //
-# Loading work.Test_CLA_4bit(fast)
-# Loading work.cla16(fast)
-# Loading work.cla4(fast)
-# Loading work.or2(fast)
-# Loading work.and2(fast)
-# Loading work.nand2(fast)
-# Loading work.and3(fast)
-# Loading work.or3(fast)
-# Loading work.and4(fast)
-# Loading work.or4(fast)
-# Loading work.and5(fast)
-# Loading work.or5(fast)
-# Loading work.xor3(fast)
-# Loading work.xor2(fast)
-# Loading work.not1(fast)
+# Loading work.alu_hier_bench(fast)
+# Loading work.alu_hier(fast)
+# Loading work.clkrst(fast)
+# Loading work.alu(fast)
 # log -howmany -rec /* 
-# 3417
+# 45
 #  run -all
-<<<<<<< HEAD
-# time=                   0 A=0000 B=0000 Cin=0 : Sum=0000 Cout=0 PG=0 GG=0
-# time=                 110 A=0100 B=0011 Cin=0 : Sum=0111 Cout=0 PG=0 GG=0
-# time=                 120 A=1101 B=1010 Cin=1 : Sum=2112 Cout=0 PG=0 GG=0
-# time=                 130 A=1110 B=1001 Cin=0 : Sum=2111 Cout=0 PG=0 GG=0
-# time=                 140 A=ffff B=1010 Cin=0 : Sum=100f Cout=1 PG=1 GG=1
-# End time: 16:44:12 on Feb 12,2017, Elapsed time: 0:00:35
-=======
 # ERRORCHECK :: ALU :: Inputs :: Op = 3 , A = 3524, B = 5e81, Cin = 1, invA = 1, invB = 1, sign = 1 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 0003, Ofl = 0, Z = 0
 # ERRORCHECK :: ALU :: Inputs :: Op = 6 , A = 5212, B = e301, Cin = 1, invA = 1, invB = 1, sign = 0 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = b113, Ofl = 0, Z = 0
 # ERRORCHECK :: ALU :: Inputs :: Op = 2 , A = e9f9, B = 24c6, Cin = 1, invA = 1, invB = 1, sign = 0 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 000b, Ofl = 0, Z = 0
@@ -100,6 +76,5 @@
 # TEST FAILED
 # ** Note: $finish    : alu_hier_bench.v(42)
 #    Time: 5 us  Iteration: 0  Instance: /alu_hier_bench
-# End time: 14:14:27 on Feb 12,2017, Elapsed time: 0:00:01
->>>>>>> 251d4187c838222232f08ef65eb6df220e06ccb8
+# End time: 17:35:45 on Feb 12,2017, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
