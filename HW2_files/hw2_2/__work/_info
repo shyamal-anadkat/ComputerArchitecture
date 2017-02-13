@@ -9,15 +9,15 @@ z2
 cModel Technology
 Z0 d/u/r/a/rajmohan/private/552/ComputerArchitecture/HW2_files/hw2_2
 T_opt
-!s110 1486949750
-VV8=L`FETCH>^T^f]QN4Q;0
+!s110 1486950394
+V]zRQl^DH_P@B>`l4;Ml@M3
 04 14 4 work alu_hier_bench fast 0
-=1-f8bc12940482-58a10d76-1f585-234d
+=1-f8bc12940482-58a10ffa-101a6-2e58
 o-quiet -auto_acc_if_foreign -work __work +acc
 n@_opt
 OE;O;10.4c;61
 valu
-Z1 !s110 1486949749
+Z1 !s110 1486950393
 !i10b 1
 !s100 7N9SNZVEkd_kb4ZjYY]W`2
 Ic[05KA[4:TXDOCbel^mdm3
@@ -31,7 +31,7 @@ Z3 OE;L;10.4c;61
 r1
 !s85 0
 31
-Z4 !s108 1486949748.000000
+Z4 !s108 1486950392.000000
 Z5 !s107 zero_out.v|xor3.v|xor2.v|xor16.v|shifter.v|shifter_hier.v|shifter8.v|shifter4.v|shifter2.v|shifter1.v|or5.v|or4.v|or3.v|or2.v|or16.v|not1.v|nand2.v|mux8_1.v|mux4_1.v|mux2_1.v|inv16.v|dff.v|clkrst.v|cla4.v|cla16.v|and5.v|and4.v|and3.v|and2.v|and16.v|alu.v|alu_hier.v|alu_hier_bench.v|
 Z6 !s90 +define+RANDSEED=3|-work|__work|alu_hier_bench.v|alu_hier.v|alu.v|and16.v|and2.v|and3.v|and4.v|and5.v|cla16.v|cla4.v|clkrst.v|dff.v|inv16.v|mux2_1.v|mux4_1.v|mux8_1.v|nand2.v|not1.v|or16.v|or2.v|or3.v|or4.v|or5.v|shifter1.v|shifter2.v|shifter4.v|shifter8.v|shifter_hier.v|shifter.v|xor16.v|xor2.v|xor3.v|zero_out.v|
 !i113 0
@@ -649,11 +649,11 @@ R8
 vxor2
 R1
 !i10b 1
-!s100 T^oJ3`7L^=Wgd=dl8:lL63
-IKC2RJ;?ZeUVYS6OS9kie]2
+!s100 >STHbFIg6`9[<>WASlRbn1
+IBT8lhGfB0@9fNVMBh`;jk3
 R2
 R0
-w1486940504
+w1486950384
 8xor2.v
 Fxor2.v
 L0 1

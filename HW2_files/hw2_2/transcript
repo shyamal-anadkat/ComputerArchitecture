@@ -1,5 +1,5 @@
 # vsim -c alu_hier_bench -lib __work -voptargs="+acc" -wlf dump.wlf -do "log -howmany -rec /* ; run -all" 
-# Start time: 19:35:50 on Feb 12,2017
+# Start time: 19:46:34 on Feb 12,2017
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.4c linux Jul 19 2015
@@ -47,10 +47,10 @@
 # Loading work.xor2(fast)
 # Loading work.zero_out(fast)
 # log -howmany -rec /* 
-# 8646
+# 10165
 #  run -all
 # TEST PASSED
 # ** Note: $finish    : alu_hier_bench.v(42)
 #    Time: 5 us  Iteration: 0  Instance: /alu_hier_bench
-# End time: 19:35:51 on Feb 12,2017, Elapsed time: 0:00:01
+# End time: 19:46:36 on Feb 12,2017, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
