@@ -1,5 +1,5 @@
 # vsim -c alu_hier_bench -lib __work -voptargs="+acc" -wlf dump.wlf -do "log -howmany -rec /* ; run -all" 
-# Start time: 17:35:42 on Feb 12,2017
+# Start time: 18:34:29 on Feb 12,2017
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.4c linux Jul 19 2015
@@ -20,61 +20,41 @@
 # Loading work.alu_hier(fast)
 # Loading work.clkrst(fast)
 # Loading work.alu(fast)
+# Loading work.inv16(fast)
+# Loading work.not1(fast)
+# Loading work.shifter(fast)
+# Loading work.shifter1(fast)
+# Loading work.mux4_1(fast)
+# Loading work.mux2_1(fast)
+# Loading work.nand2(fast)
+# Loading work.shifter2(fast)
+# Loading work.shifter4(fast)
+# Loading work.shifter8(fast)
+# Loading work.or16(fast)
+# Loading work.xor16(fast)
+# Loading work.and16(fast)
+# Loading work.cla16(fast)
+# Loading work.cla4(fast)
+# Loading work.or2(fast)
+# Loading work.and2(fast)
+# Loading work.and3(fast)
+# Loading work.or3(fast)
+# Loading work.and4(fast)
+# Loading work.or4(fast)
+# Loading work.and5(fast)
+# Loading work.or5(fast)
+# Loading work.xor3(fast)
+# Loading work.xor2(fast)
 # log -howmany -rec /* 
-# 45
+# 8533
 #  run -all
-# ERRORCHECK :: ALU :: Inputs :: Op = 3 , A = 3524, B = 5e81, Cin = 1, invA = 1, invB = 1, sign = 1 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 0003, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 6 , A = 5212, B = e301, Cin = 1, invA = 1, invB = 1, sign = 0 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = b113, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 2 , A = e9f9, B = 24c6, Cin = 1, invA = 1, invB = 1, sign = 0 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 000b, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 0 , A = db8f, B = 69f2, Cin = 0, invA = 1, invB = 0, sign = 1 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 91c0, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 2 , A = 582d, B = 2665, Cin = 1, invA = 0, invB = 0, sign = 0 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 02c1, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 5 , A = cc9d, B = 3e96, Cin = 1, invA = 1, invB = 1, sign = 1 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = f36b, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 7 , A = 4a02, B = 3eae, Cin = 1, invA = 1, invB = 0, sign = 0 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 34ac, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 1 , A = 4c3c, B = bdf2, Cin = 0, invA = 0, invB = 0, sign = 1 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 30f0, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 6 , A = 0deb, B = 65b6, Cin = 0, invA = 0, invB = 0, sign = 1 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 685d, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 3 , A = be71, B = 4185, Cin = 1, invA = 0, invB = 0, sign = 1 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 05f3, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 4 , A = 9bf1, B = 4bd9, Cin = 0, invA = 1, invB = 1, sign = 0 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 1834, Ofl = 1, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 3 , A = 60b7, B = 569f, Cin = 0, invA = 1, invB = 1, sign = 0 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 9f48, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 4 , A = c0d7, B = fc51, Cin = 0, invA = 0, invB = 0, sign = 1 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = bd28, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 5 , A = ed3d, B = db12, Cin = 0, invA = 1, invB = 1, sign = 1 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 36ef, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 1 , A = 2f85, B = 8878, Cin = 1, invA = 1, invB = 0, sign = 0 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 7a00, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 2 , A = 3886, B = 0c8e, Cin = 0, invA = 0, invB = 1, sign = 1 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 1c43, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 4 , A = a82f, B = 92b3, Cin = 1, invA = 1, invB = 1, sign = 0 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = c51d, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 2 , A = db5a, B = c129, Cin = 1, invA = 1, invB = 1, sign = 1 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 0092, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 2 , A = 1979, B = ff44, Cin = 0, invA = 1, invB = 0, sign = 0 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = fe68, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 6 , A = bc9a, B = 72fd, Cin = 1, invA = 0, invB = 1, sign = 0 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 3198, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 0 , A = b9b6, B = 8a38, Cin = 1, invA = 0, invB = 1, sign = 0 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = db5c, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 1 , A = ca59, B = 69db, Cin = 1, invA = 1, invB = 0, sign = 0 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 3000, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 4 , A = 2db6, B = 7195, Cin = 0, invA = 1, invB = 1, sign = 0 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 60b3, Ofl = 1, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 7 , A = 8d88, B = d928, Cin = 1, invA = 0, invB = 0, sign = 0 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 8908, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 6 , A = a6fd, B = 0729, Cin = 0, invA = 0, invB = 1, sign = 0 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 5e2b, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 6 , A = c470, B = 0473, Cin = 0, invA = 0, invB = 1, sign = 0 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 3ffc, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 0 , A = 00b9, B = 6137, Cin = 0, invA = 0, invB = 0, sign = 1 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 5c80, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 6 , A = 0fdc, B = 5786, Cin = 0, invA = 1, invB = 1, sign = 1 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 585a, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 1 , A = e4fa, B = ee61, Cin = 1, invA = 0, invB = 0, sign = 1 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = c9f4, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 5 , A = 8835, B = 8a29, Cin = 1, invA = 0, invB = 1, sign = 1 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = fdf7, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 0 , A = e6ec, B = 168a, Cin = 0, invA = 1, invB = 1, sign = 0 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 2263, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 2 , A = 66e6, B = c09f, Cin = 0, invA = 1, invB = 0, sign = 0 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = ffff, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 3 , A = a879, B = e3c8, Cin = 0, invA = 1, invB = 1, sign = 0 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 00af, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 2 , A = 9dba, B = abc4, Cin = 1, invA = 0, invB = 1, sign = 0 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = fff3, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 5 , A = f5fa, B = 94f2, Cin = 0, invA = 0, invB = 0, sign = 0 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = f5fa, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 3 , A = 79a9, B = a8a1, Cin = 0, invA = 1, invB = 1, sign = 1 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 0002, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 3 , A = e536, B = 4875, Cin = 1, invA = 0, invB = 0, sign = 1 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 0729, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 3 , A = 4592, B = df28, Cin = 1, invA = 0, invB = 0, sign = 1 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 0045, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 6 , A = fdec, B = 9d18, Cin = 1, invA = 1, invB = 1, sign = 0 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 60f4, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 2 , A = e953, B = 6256, Cin = 1, invA = 0, invB = 1, sign = 0 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = fff4, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 5 , A = 4d12, B = 44b8, Cin = 1, invA = 1, invB = 1, sign = 1 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = bbef, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 7 , A = 85c8, B = 5527, Cin = 1, invA = 0, invB = 0, sign = 0 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 0500, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 1 , A = 9314, B = b412, Cin = 0, invA = 1, invB = 1, sign = 1 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 6000, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 4 , A = 1bf5, B = 03ad, Cin = 1, invA = 1, invB = 1, sign = 1 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = e05d, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 1 , A = 5649, B = bbdb, Cin = 1, invA = 1, invB = 0, sign = 0 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = b000, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 2 , A = 2045, B = 0583, Cin = 0, invA = 0, invB = 0, sign = 1 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 0408, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 0 , A = 0d86, B = 21f0, Cin = 0, invA = 0, invB = 0, sign = 1 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 0d86, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 0 , A = 31c0, B = 5f74, Cin = 1, invA = 0, invB = 0, sign = 0 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 1c03, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 3 , A = 3515, B = 4ee1, Cin = 1, invA = 1, invB = 0, sign = 1 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 6575, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 7 , A = 9dc1, B = a28d, Cin = 0, invA = 0, invB = 0, sign = 1 :: Outputs :: Out = zzzz, Ofl = z, Z = z :: Expected :: Out = 8081, Ofl = 0, Z = 0
+# ERRORCHECK :: ALU :: Inputs :: Op = 4 , A = 9bf1, B = 4bd9, Cin = 0, invA = 1, invB = 1, sign = 0 :: Outputs :: Out = e7ca, Ofl = z, Z = z :: Expected :: Out = 1834, Ofl = 1, Z = 0
+# ERRORCHECK :: ALU :: Inputs :: Op = 4 , A = c0d7, B = fc51, Cin = 0, invA = 0, invB = 0, sign = 1 :: Outputs :: Out = bd28, Ofl = z, Z = z :: Expected :: Out = bd28, Ofl = 0, Z = 0
+# ERRORCHECK :: ALU :: Inputs :: Op = 4 , A = a82f, B = 92b3, Cin = 1, invA = 1, invB = 1, sign = 0 :: Outputs :: Out = 3ae3, Ofl = z, Z = z :: Expected :: Out = c51d, Ofl = 0, Z = 0
+# ERRORCHECK :: ALU :: Inputs :: Op = 4 , A = 2db6, B = 7195, Cin = 0, invA = 1, invB = 1, sign = 0 :: Outputs :: Out = 9f4b, Ofl = z, Z = z :: Expected :: Out = 60b3, Ofl = 1, Z = 0
+# ERRORCHECK :: ALU :: Inputs :: Op = 4 , A = 1bf5, B = 03ad, Cin = 1, invA = 1, invB = 1, sign = 1 :: Outputs :: Out = 1fa3, Ofl = z, Z = z :: Expected :: Out = e05d, Ofl = 0, Z = 0
 # TEST FAILED
 # ** Note: $finish    : alu_hier_bench.v(42)
 #    Time: 5 us  Iteration: 0  Instance: /alu_hier_bench
-# End time: 17:35:45 on Feb 12,2017, Elapsed time: 0:00:03
+# End time: 18:34:31 on Feb 12,2017, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
