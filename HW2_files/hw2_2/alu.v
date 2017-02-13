@@ -12,10 +12,10 @@ module alu(Out, Ofl, Z, A, B, Cin, Op, invA, invB, sign);
     input sign;
 
     reg [15:0] Out;
+    reg Ofl;
 
     wire[15:0] A_mod, B_mod, out_shifter, out_xor, out_and, out_or, S_cla; 
-    wire PG_cla, GG_cla, Cout_cla; 
-
+    wire PG_cla, GG_cla, Cout_cla, ofl_out;
 
     //invert inputs if enabled
     inv16 inv1(.In(A), .Out(A_mod), .En(invA));
@@ -34,36 +34,45 @@ module alu(Out, Ofl, Z, A, B, Cin, Op, invA, invB, sign);
     and16 and_mod(.In1(A_mod), .In2(B_mod), .Out(out_and));
 
     //add operation using CLA
-    cla16 cla_mod(.A(A), .B(B), .Cin(Cin), .Cout(Cout_cla), .PG(PG_cla), .GG(GG_cla), .S(S_cla));
+    cla16 cla_mod(.A(A_mod), .B(B_mod), .Cin(Cin), .Cout(Cout_cla), .PG(PG_cla), .GG(GG_cla), .S(S_cla));
+    xor2 ofl_val (.a(sign), .b(Cout_cla), .out(ofl_out));
 
 	always @(*) begin
         case(Op)
                 3'b000: begin // rotate left
-                Out = out_shifter;
-                end
+                  Out = out_shifter;
+		  Ofl = 1'b0;
+                  end
                 3'b001: begin // shift left
-                Out = out_shifter;
-                end
+                  Out = out_shifter;
+		  Ofl = 1'b0;
+                  end
                 3'b010: begin // shift right arith
-                Out = out_shifter;
-    			end
-    			3'b011: begin // shift right logical
-                Out = out_shifter;
-    			end
-    			3'b100: begin // A + B
-                Out = S_cla;
-    			end
-    			3'b101: begin // A OR B
-                Out = out_or;
-    			end
-    			3'b110: begin // A XOR B
-                Out = out_xor;
-    			end
-    			3'b111: begin // A AND B
-                Out = out_and;
-    			end
-    			default: begin
-    			end
+                  Out = out_shifter;
+		  Ofl = 1'b0;
+    		  end
+    		3'b011: begin // shift right logical
+                  Out = out_shifter;
+		  Ofl = 1'b0;
+    		  end
+    		3'b100: begin // A + B
+                  Out = S_cla;
+		  Ofl = ofl_out;
+    		  end
+    		3'b101: begin // A OR B
+                  Out = out_or;
+		  Ofl = 1'b0;
+    		  end
+    		3'b110: begin // A XOR B
+                  Out = out_xor;
+		  Ofl = 1'b0;
+    		  end
+    		3'b111: begin // A AND B
+                  Out = out_and;
+		  Ofl = 1'b0;
+    		  end
+    		default: begin
+    		  end
     	endcase
     end
 
@@ -72,4 +81,6 @@ module alu(Out, Ofl, Z, A, B, Cin, Op, invA, invB, sign);
     //TODO: Ofl LOGIC: high if overflow occured
 
     //TODO: check is result is exactly zero
+    zero_out zout (.A(Out), .Out(Z));
+
 endmodule

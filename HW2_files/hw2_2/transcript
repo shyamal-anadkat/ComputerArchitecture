@@ -1,5 +1,5 @@
 # vsim -c alu_hier_bench -lib __work -voptargs="+acc" -wlf dump.wlf -do "log -howmany -rec /* ; run -all" 
-# Start time: 18:34:29 on Feb 12,2017
+# Start time: 19:35:50 on Feb 12,2017
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.4c linux Jul 19 2015
@@ -45,16 +45,12 @@
 # Loading work.or5(fast)
 # Loading work.xor3(fast)
 # Loading work.xor2(fast)
+# Loading work.zero_out(fast)
 # log -howmany -rec /* 
-# 8533
+# 8646
 #  run -all
-# ERRORCHECK :: ALU :: Inputs :: Op = 4 , A = 9bf1, B = 4bd9, Cin = 0, invA = 1, invB = 1, sign = 0 :: Outputs :: Out = e7ca, Ofl = z, Z = z :: Expected :: Out = 1834, Ofl = 1, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 4 , A = c0d7, B = fc51, Cin = 0, invA = 0, invB = 0, sign = 1 :: Outputs :: Out = bd28, Ofl = z, Z = z :: Expected :: Out = bd28, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 4 , A = a82f, B = 92b3, Cin = 1, invA = 1, invB = 1, sign = 0 :: Outputs :: Out = 3ae3, Ofl = z, Z = z :: Expected :: Out = c51d, Ofl = 0, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 4 , A = 2db6, B = 7195, Cin = 0, invA = 1, invB = 1, sign = 0 :: Outputs :: Out = 9f4b, Ofl = z, Z = z :: Expected :: Out = 60b3, Ofl = 1, Z = 0
-# ERRORCHECK :: ALU :: Inputs :: Op = 4 , A = 1bf5, B = 03ad, Cin = 1, invA = 1, invB = 1, sign = 1 :: Outputs :: Out = 1fa3, Ofl = z, Z = z :: Expected :: Out = e05d, Ofl = 0, Z = 0
-# TEST FAILED
+# TEST PASSED
 # ** Note: $finish    : alu_hier_bench.v(42)
 #    Time: 5 us  Iteration: 0  Instance: /alu_hier_bench
-# End time: 18:34:31 on Feb 12,2017, Elapsed time: 0:00:02
+# End time: 19:35:51 on Feb 12,2017, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
