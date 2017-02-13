@@ -76,11 +76,6 @@ module alu(Out, Ofl, Z, A, B, Cin, Op, invA, invB, sign);
     	endcase
     end
 
-    //TODO: fix failed tests 
-    
-    //TODO: Ofl LOGIC: high if overflow occured
-
-    //TODO: check is result is exactly zero
     zero_out zout (.A(Out), .Out(Z));
 
 endmodule

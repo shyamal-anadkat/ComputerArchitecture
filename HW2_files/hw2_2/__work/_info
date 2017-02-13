@@ -7,23 +7,23 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/u/r/a/rajmohan/private/552/ComputerArchitecture/HW2_files/hw2_2
+Z0 d/u/s/h/shyamal/private/552/HW2_files/hw2_2
 T_opt
-!s110 1486950394
-V]zRQl^DH_P@B>`l4;Ml@M3
+!s110 1487021790
+V<b:il3LL5kbTJK`AVkZG:2
 04 14 4 work alu_hier_bench fast 0
-=1-f8bc12940482-58a10ffa-101a6-2e58
+=1-f8bc12940482-58a226dd-3b89f-48de
 o-quiet -auto_acc_if_foreign -work __work +acc
 n@_opt
 OE;O;10.4c;61
 valu
-Z1 !s110 1486950393
+Z1 !s110 1487021784
 !i10b 1
-!s100 7N9SNZVEkd_kb4ZjYY]W`2
-Ic[05KA[4:TXDOCbel^mdm3
+!s100 [bFHj5Cf8P<nKg0Y[^g162
+I0>LFcN1KBdF;zobM`Iind3
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1486949745
+w1486950534
 8alu.v
 Falu.v
 L0 1
@@ -31,7 +31,7 @@ Z3 OE;L;10.4c;61
 r1
 !s85 0
 31
-Z4 !s108 1486950392.000000
+Z4 !s108 1487021784.000000
 Z5 !s107 zero_out.v|xor3.v|xor2.v|xor16.v|shifter.v|shifter_hier.v|shifter8.v|shifter4.v|shifter2.v|shifter1.v|or5.v|or4.v|or3.v|or2.v|or16.v|not1.v|nand2.v|mux8_1.v|mux4_1.v|mux2_1.v|inv16.v|dff.v|clkrst.v|cla4.v|cla16.v|and5.v|and4.v|and3.v|and2.v|and16.v|alu.v|alu_hier.v|alu_hier_bench.v|
 Z6 !s90 +define+RANDSEED=3|-work|__work|alu_hier_bench.v|alu_hier.v|alu.v|and16.v|and2.v|and3.v|and4.v|and5.v|cla16.v|cla4.v|clkrst.v|dff.v|inv16.v|mux2_1.v|mux4_1.v|mux8_1.v|nand2.v|not1.v|or16.v|or2.v|or3.v|or4.v|or5.v|shifter1.v|shifter2.v|shifter4.v|shifter8.v|shifter_hier.v|shifter.v|xor16.v|xor2.v|xor3.v|zero_out.v|
 !i113 0
@@ -44,7 +44,7 @@ R1
 IAN:NIQ5V<RPg:ElBR@[MB1
 R2
 R0
-w1486925781
+w1486928764
 8alu_hier.v
 Falu_hier.v
 L0 1
@@ -65,7 +65,7 @@ R1
 I@7c@@e5WU<DVOK13d012;3
 R2
 R0
-Z9 w1486882426
+w1454710673
 8alu_hier_bench.v
 Falu_hier_bench.v
 L0 1
@@ -86,7 +86,7 @@ R1
 ITSamg8=GAokM8QH9bTX@l2
 R2
 R0
-w1486940563
+Z9 w1486942459
 8and16.v
 Fand16.v
 L0 1
@@ -107,7 +107,7 @@ R1
 Ig;Mld3@`D^>VWXSMDJ`KJ3
 R2
 R0
-w1486936313
+R9
 8and2.v
 Fand2.v
 L0 1
@@ -128,7 +128,7 @@ R1
 I`G2[?k5aJdE`DoMjl:D]W1
 R2
 R0
-w1486932566
+R9
 8and3.v
 Fand3.v
 L0 1
@@ -149,7 +149,7 @@ R1
 IUGJ5AFajXP:OXXY;:?Q=B2
 R2
 R0
-w1486932754
+R9
 8and4.v
 Fand4.v
 L0 1
@@ -170,7 +170,7 @@ R1
 IZPWlV=RM?R00nFQgGRHod3
 R2
 R0
-w1486936094
+R9
 8and5.v
 Fand5.v
 L0 1
@@ -191,7 +191,7 @@ R1
 I0FYOg;zKOoCbHea;3TH4?0
 R2
 R0
-w1486939363
+R9
 8cla16.v
 Fcla16.v
 L0 1
@@ -212,7 +212,7 @@ R1
 IJ=<hHhaBd?`a2JLRo7c5I0
 R2
 R0
-w1486937801
+R9
 8cla4.v
 Fcla4.v
 L0 1
@@ -233,7 +233,7 @@ R1
 IhEjhn3C>:Y:9S9HJNbN002
 R2
 R0
-R9
+w1454710828
 8clkrst.v
 Fclkrst.v
 L0 12
@@ -254,7 +254,7 @@ R1
 I_HM6UhFP^>?OXhKMOR9@J3
 R2
 R0
-R9
+w1485046501
 8dff.v
 Fdff.v
 L0 6
@@ -275,7 +275,7 @@ R1
 I;6aHi`Nb2DG0OWWFQF=:F3
 R2
 R0
-w1486946356
+w1486945165
 8inv16.v
 Finv16.v
 L0 2
@@ -296,7 +296,7 @@ R1
 I6B;hBX>J9z:d1A8hTTmGW2
 R2
 R0
-R9
+w1485874665
 8mux2_1.v
 Fmux2_1.v
 L0 1
@@ -317,7 +317,7 @@ R1
 IEHb0YiHkfQ;7;EkC9BM7E1
 R2
 R0
-R9
+w1485874635
 8mux4_1.v
 Fmux4_1.v
 L0 1
@@ -338,7 +338,7 @@ R1
 I[a1J6FSc0XU9L_WC:LhAe2
 R2
 R0
-w1486928782
+w1486929756
 8mux8_1.v
 Fmux8_1.v
 L0 1
@@ -359,7 +359,7 @@ R1
 I=JOS]oeg2cXTUI@l1HX0D3
 R2
 R0
-R9
+w1486880910
 8nand2.v
 Fnand2.v
 L0 1
@@ -380,7 +380,7 @@ R1
 Ine_M0KPMZa7FAXcV[XF@M1
 R2
 R0
-R9
+w1485046487
 8not1.v
 Fnot1.v
 L0 1
@@ -401,7 +401,7 @@ R1
 Iz2S3N>iR6?Ci8dYoSX:F:2
 R2
 R0
-w1486939932
+w1486930444
 8or16.v
 For16.v
 L0 2
@@ -422,7 +422,7 @@ R1
 I39[>kCGc8Y7?_KfLbKXek0
 R2
 R0
-R9
+w1486930431
 8or2.v
 For2.v
 L0 1
@@ -443,7 +443,7 @@ R1
 I8g0U[_cH:VWZMjoCL5;WF3
 R2
 R0
-w1486933153
+R9
 8or3.v
 For3.v
 L0 1
@@ -464,7 +464,7 @@ R1
 I1D`@@<Eig>ARJ23@Yko971
 R2
 R0
-w1486933225
+R9
 8or4.v
 For4.v
 L0 1
@@ -485,7 +485,7 @@ R1
 IC<eKIa5do7n_Q[5lfoVP;1
 R2
 R0
-w1486936198
+R9
 8or5.v
 For5.v
 L0 1
@@ -506,7 +506,7 @@ R1
 I6gS[AX5:3bE16VXbEC?an2
 R2
 R0
-R9
+w1486343439
 8shifter.v
 Fshifter.v
 L0 1
@@ -527,7 +527,7 @@ R1
 IiVfD]b6QSVZhXO@HKZ9@<0
 R2
 R0
-R9
+w1486882147
 8shifter1.v
 Fshifter1.v
 L0 2
@@ -548,7 +548,7 @@ R1
 IKHKII0aPa^zZedR=UMV7X2
 R2
 R0
-R9
+w1486342989
 8shifter2.v
 Fshifter2.v
 L0 2
@@ -569,7 +569,7 @@ R1
 IIgbonG[o@n:Z_nmHEhZV91
 R2
 R0
-R9
+w1486343433
 8shifter4.v
 Fshifter4.v
 L0 2
@@ -590,7 +590,7 @@ R1
 IFHjjRo;ll6f5C<NdBnCC03
 R2
 R0
-R9
+w1486343004
 8shifter8.v
 Fshifter8.v
 L0 2
@@ -611,7 +611,7 @@ R1
 I4RI`=2oo5OYdza^g?UY@T3
 R2
 R0
-R9
+w1454534861
 8shifter_hier.v
 Fshifter_hier.v
 L0 1
@@ -632,7 +632,7 @@ R1
 IjnK4Hi^@zY3@ge:mfKT;d2
 R2
 R0
-w1486940539
+R9
 8xor16.v
 Fxor16.v
 L0 1
@@ -653,7 +653,7 @@ R1
 IBT8lhGfB0@9fNVMBh`;jk3
 R2
 R0
-w1486950384
+Z10 w1486950496
 8xor2.v
 Fxor2.v
 L0 1
@@ -674,7 +674,7 @@ R1
 IhNENJHfjO4L58k;^PI>mL2
 R2
 R0
-w1486937685
+R9
 8xor3.v
 Fxor3.v
 L0 1
@@ -695,7 +695,7 @@ R1
 IVM?B<O@?Z:RN^@3:=Xh2b3
 R2
 R0
-w1486949659
+R10
 8zero_out.v
 Fzero_out.v
 L0 1
