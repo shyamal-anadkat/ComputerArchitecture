@@ -1,0 +1,37 @@
+Line 22: Bad keyword integer
+Line 27: Bad keyword initial
+Line 28: begin without always/case
+Line 38: Bad keyword if
+Line 41: Bad keyword else
+Line 48: Bad keyword posedge
+Line 48: Always without case(x)
+Line 61: Bad keyword negedge
+Line 73: appears to be shifting by non-constant value: B
+Line 74: Bad keyword if
+Line 74: Bad keyword !==
+Line 80: appears to be shifting by non-constant value: B
+Line 81: Bad keyword if
+Line 81: Bad keyword !==
+Line 87: Bad keyword for
+Line 90: appears to be shifting by non-constant value: B
+Line 91: Bad keyword if
+Line 91: Bad keyword !==
+Line 98: appears to be shifting by non-constant value: B
+Line 99: Bad keyword if
+Line 99: Bad keyword !==
+Line 107: Bad keyword if
+Line 109: Bad keyword if
+Line 112: Bad keyword else
+Line 114: Bad keyword if
+Line 114: Bad keyword !==
+Line 114: Bad keyword !==
+Line 114: Bad keyword !==
+Line 122: Bad keyword if
+Line 122: Bad keyword !==
+Line 129: Bad keyword if
+Line 129: Bad keyword !==
+Line 137: Bad keyword if
+Line 137: Bad keyword !==
+Line 143: Bad keyword if
+Line 144: begin without always/case
+End of file /u/s/h/shyamal/private/552/HW2_files/hw2_2/alu_hier_bench.v. Hash = -118537690

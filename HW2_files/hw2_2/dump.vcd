@@ -1,5 +1,9 @@
 $date
+<<<<<<< HEAD
 	Mon Feb 13 21:29:18 2017
+=======
+	Mon Feb 13 15:36:35 2017
+>>>>>>> c11005f8c01c602160012b4bd29322644ad55d66
 $end
 $version
 	QuestaSim Version 10.4c
