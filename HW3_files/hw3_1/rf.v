@@ -20,5 +20,27 @@ module rf (
 
    // your code
 
+   //decoder 3-8 
+   in : writeregsel
+   out: [7:0] wire dec_out 
+
+   //dffs
+   reg16 [7:0] out : reg16 out [7:0]
+               in: writedata
+               en : wire dec_out 
+               rst, clk same.
+
+   //8 1 mux for read1data
+   //inputs are out from reg16
+   //sel is read1 sel
+   //out is read1 data
+
+
+   //8 1 mux for read2 data 
+   //sel is read2 sel 
+   //out is read2data
+
+
+
 endmodule
 // DUMMY LINE FOR REV CONTROL :1:

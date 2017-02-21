@@ -1,0 +1,1944 @@
+$date
+	Tue Feb 21 00:14:28 2017
+$end
+$version
+	QuestaSim Version 10.4c
+$end
+$timescale
+	1ns
+$end
+
+$scope module rf_bench $end
+$var wire 1 ! read1data [15] $end
+$var wire 1 " read1data [14] $end
+$var wire 1 # read1data [13] $end
+$var wire 1 $ read1data [12] $end
+$var wire 1 % read1data [11] $end
+$var wire 1 & read1data [10] $end
+$var wire 1 ' read1data [9] $end
+$var wire 1 ( read1data [8] $end
+$var wire 1 ) read1data [7] $end
+$var wire 1 * read1data [6] $end
+$var wire 1 + read1data [5] $end
+$var wire 1 , read1data [4] $end
+$var wire 1 - read1data [3] $end
+$var wire 1 . read1data [2] $end
+$var wire 1 / read1data [1] $end
+$var wire 1 0 read1data [0] $end
+$var wire 1 1 read2data [15] $end
+$var wire 1 2 read2data [14] $end
+$var wire 1 3 read2data [13] $end
+$var wire 1 4 read2data [12] $end
+$var wire 1 5 read2data [11] $end
+$var wire 1 6 read2data [10] $end
+$var wire 1 7 read2data [9] $end
+$var wire 1 8 read2data [8] $end
+$var wire 1 9 read2data [7] $end
+$var wire 1 : read2data [6] $end
+$var wire 1 ; read2data [5] $end
+$var wire 1 < read2data [4] $end
+$var wire 1 = read2data [3] $end
+$var wire 1 > read2data [2] $end
+$var wire 1 ? read2data [1] $end
+$var wire 1 @ read2data [0] $end
+$var reg 3 A read1regsel [2:0] $end
+$var reg 3 B read2regsel [2:0] $end
+$var reg 1 C write $end
+$var reg 16 D writedata [15:0] $end
+$var reg 3 E writeregsel [2:0] $end
+$var integer 32 F cycle_count $end
+$var wire 1 G clk $end
+$var wire 1 H rst $end
+$var reg 1 I fail $end
+$var reg 16 J ref_r1data [15:0] $end
+$var reg 16 K ref_r2data [15:0] $end
+
+$scope module DUT $end
+$var wire 1 L read1regsel [2] $end
+$var wire 1 M read1regsel [1] $end
+$var wire 1 N read1regsel [0] $end
+$var wire 1 O read2regsel [2] $end
+$var wire 1 P read2regsel [1] $end
+$var wire 1 Q read2regsel [0] $end
+$var wire 1 R writeregsel [2] $end
+$var wire 1 S writeregsel [1] $end
+$var wire 1 T writeregsel [0] $end
+$var wire 1 U writedata [15] $end
+$var wire 1 V writedata [14] $end
+$var wire 1 W writedata [13] $end
+$var wire 1 X writedata [12] $end
+$var wire 1 Y writedata [11] $end
+$var wire 1 Z writedata [10] $end
+$var wire 1 [ writedata [9] $end
+$var wire 1 \ writedata [8] $end
+$var wire 1 ] writedata [7] $end
+$var wire 1 ^ writedata [6] $end
+$var wire 1 _ writedata [5] $end
+$var wire 1 ` writedata [4] $end
+$var wire 1 a writedata [3] $end
+$var wire 1 b writedata [2] $end
+$var wire 1 c writedata [1] $end
+$var wire 1 d writedata [0] $end
+$var wire 1 e write $end
+$var wire 1 ! read1data [15] $end
+$var wire 1 " read1data [14] $end
+$var wire 1 # read1data [13] $end
+$var wire 1 $ read1data [12] $end
+$var wire 1 % read1data [11] $end
+$var wire 1 & read1data [10] $end
+$var wire 1 ' read1data [9] $end
+$var wire 1 ( read1data [8] $end
+$var wire 1 ) read1data [7] $end
+$var wire 1 * read1data [6] $end
+$var wire 1 + read1data [5] $end
+$var wire 1 , read1data [4] $end
+$var wire 1 - read1data [3] $end
+$var wire 1 . read1data [2] $end
+$var wire 1 / read1data [1] $end
+$var wire 1 0 read1data [0] $end
+$var wire 1 1 read2data [15] $end
+$var wire 1 2 read2data [14] $end
+$var wire 1 3 read2data [13] $end
+$var wire 1 4 read2data [12] $end
+$var wire 1 5 read2data [11] $end
+$var wire 1 6 read2data [10] $end
+$var wire 1 7 read2data [9] $end
+$var wire 1 8 read2data [8] $end
+$var wire 1 9 read2data [7] $end
+$var wire 1 : read2data [6] $end
+$var wire 1 ; read2data [5] $end
+$var wire 1 < read2data [4] $end
+$var wire 1 = read2data [3] $end
+$var wire 1 > read2data [2] $end
+$var wire 1 ? read2data [1] $end
+$var wire 1 @ read2data [0] $end
+$var wire 1 f clk $end
+$var wire 1 g rst $end
+$var wire 1 h err $end
+
+$scope module clk_generator $end
+$var reg 1 i clk $end
+$var reg 1 j rst $end
+$var wire 1 h err $end
+$var integer 32 k cycle_count $end
+$upscope $end
+
+$scope module rf0 $end
+$var wire 1 f clk $end
+$var wire 1 g rst $end
+$var wire 1 L read1regsel [2] $end
+$var wire 1 M read1regsel [1] $end
+$var wire 1 N read1regsel [0] $end
+$var wire 1 O read2regsel [2] $end
+$var wire 1 P read2regsel [1] $end
+$var wire 1 Q read2regsel [0] $end
+$var wire 1 R writeregsel [2] $end
+$var wire 1 S writeregsel [1] $end
+$var wire 1 T writeregsel [0] $end
+$var wire 1 U writedata [15] $end
+$var wire 1 V writedata [14] $end
+$var wire 1 W writedata [13] $end
+$var wire 1 X writedata [12] $end
+$var wire 1 Y writedata [11] $end
+$var wire 1 Z writedata [10] $end
+$var wire 1 [ writedata [9] $end
+$var wire 1 \ writedata [8] $end
+$var wire 1 ] writedata [7] $end
+$var wire 1 ^ writedata [6] $end
+$var wire 1 _ writedata [5] $end
+$var wire 1 ` writedata [4] $end
+$var wire 1 a writedata [3] $end
+$var wire 1 b writedata [2] $end
+$var wire 1 c writedata [1] $end
+$var wire 1 d writedata [0] $end
+$var wire 1 e write $end
+$var wire 1 ! read1data [15] $end
+$var wire 1 " read1data [14] $end
+$var wire 1 # read1data [13] $end
+$var wire 1 $ read1data [12] $end
+$var wire 1 % read1data [11] $end
+$var wire 1 & read1data [10] $end
+$var wire 1 ' read1data [9] $end
+$var wire 1 ( read1data [8] $end
+$var wire 1 ) read1data [7] $end
+$var wire 1 * read1data [6] $end
+$var wire 1 + read1data [5] $end
+$var wire 1 , read1data [4] $end
+$var wire 1 - read1data [3] $end
+$var wire 1 . read1data [2] $end
+$var wire 1 / read1data [1] $end
+$var wire 1 0 read1data [0] $end
+$var wire 1 1 read2data [15] $end
+$var wire 1 2 read2data [14] $end
+$var wire 1 3 read2data [13] $end
+$var wire 1 4 read2data [12] $end
+$var wire 1 5 read2data [11] $end
+$var wire 1 6 read2data [10] $end
+$var wire 1 7 read2data [9] $end
+$var wire 1 8 read2data [8] $end
+$var wire 1 9 read2data [7] $end
+$var wire 1 : read2data [6] $end
+$var wire 1 ; read2data [5] $end
+$var wire 1 < read2data [4] $end
+$var wire 1 = read2data [3] $end
+$var wire 1 > read2data [2] $end
+$var wire 1 ? read2data [1] $end
+$var wire 1 @ read2data [0] $end
+$var wire 1 h err $end
+$upscope $end
+$upscope $end
+$var wire 1 ! read1data [15] $end
+$var wire 1 " read1data [14] $end
+$var wire 1 # read1data [13] $end
+$var wire 1 $ read1data [12] $end
+$var wire 1 % read1data [11] $end
+$var wire 1 & read1data [10] $end
+$var wire 1 ' read1data [9] $end
+$var wire 1 ( read1data [8] $end
+$var wire 1 ) read1data [7] $end
+$var wire 1 * read1data [6] $end
+$var wire 1 + read1data [5] $end
+$var wire 1 , read1data [4] $end
+$var wire 1 - read1data [3] $end
+$var wire 1 . read1data [2] $end
+$var wire 1 / read1data [1] $end
+$var wire 1 0 read1data [0] $end
+$var wire 1 1 read2data [15] $end
+$var wire 1 2 read2data [14] $end
+$var wire 1 3 read2data [13] $end
+$var wire 1 4 read2data [12] $end
+$var wire 1 5 read2data [11] $end
+$var wire 1 6 read2data [10] $end
+$var wire 1 7 read2data [9] $end
+$var wire 1 8 read2data [8] $end
+$var wire 1 9 read2data [7] $end
+$var wire 1 : read2data [6] $end
+$var wire 1 ; read2data [5] $end
+$var wire 1 < read2data [4] $end
+$var wire 1 = read2data [3] $end
+$var wire 1 > read2data [2] $end
+$var wire 1 ? read2data [1] $end
+$var wire 1 @ read2data [0] $end
+$var wire 1 G clk $end
+$var wire 1 H rst $end
+
+$scope module DUT $end
+$var wire 1 L read1regsel [2] $end
+$var wire 1 M read1regsel [1] $end
+$var wire 1 N read1regsel [0] $end
+$var wire 1 O read2regsel [2] $end
+$var wire 1 P read2regsel [1] $end
+$var wire 1 Q read2regsel [0] $end
+$var wire 1 R writeregsel [2] $end
+$var wire 1 S writeregsel [1] $end
+$var wire 1 T writeregsel [0] $end
+$var wire 1 U writedata [15] $end
+$var wire 1 V writedata [14] $end
+$var wire 1 W writedata [13] $end
+$var wire 1 X writedata [12] $end
+$var wire 1 Y writedata [11] $end
+$var wire 1 Z writedata [10] $end
+$var wire 1 [ writedata [9] $end
+$var wire 1 \ writedata [8] $end
+$var wire 1 ] writedata [7] $end
+$var wire 1 ^ writedata [6] $end
+$var wire 1 _ writedata [5] $end
+$var wire 1 ` writedata [4] $end
+$var wire 1 a writedata [3] $end
+$var wire 1 b writedata [2] $end
+$var wire 1 c writedata [1] $end
+$var wire 1 d writedata [0] $end
+$var wire 1 e write $end
+$var wire 1 ! read1data [15] $end
+$var wire 1 " read1data [14] $end
+$var wire 1 # read1data [13] $end
+$var wire 1 $ read1data [12] $end
+$var wire 1 % read1data [11] $end
+$var wire 1 & read1data [10] $end
+$var wire 1 ' read1data [9] $end
+$var wire 1 ( read1data [8] $end
+$var wire 1 ) read1data [7] $end
+$var wire 1 * read1data [6] $end
+$var wire 1 + read1data [5] $end
+$var wire 1 , read1data [4] $end
+$var wire 1 - read1data [3] $end
+$var wire 1 . read1data [2] $end
+$var wire 1 / read1data [1] $end
+$var wire 1 0 read1data [0] $end
+$var wire 1 1 read2data [15] $end
+$var wire 1 2 read2data [14] $end
+$var wire 1 3 read2data [13] $end
+$var wire 1 4 read2data [12] $end
+$var wire 1 5 read2data [11] $end
+$var wire 1 6 read2data [10] $end
+$var wire 1 7 read2data [9] $end
+$var wire 1 8 read2data [8] $end
+$var wire 1 9 read2data [7] $end
+$var wire 1 : read2data [6] $end
+$var wire 1 ; read2data [5] $end
+$var wire 1 < read2data [4] $end
+$var wire 1 = read2data [3] $end
+$var wire 1 > read2data [2] $end
+$var wire 1 ? read2data [1] $end
+$var wire 1 @ read2data [0] $end
+$var wire 1 f clk $end
+$var wire 1 g rst $end
+$var wire 1 h err $end
+
+$scope module clk_generator $end
+$var wire 1 h err $end
+$upscope $end
+
+$scope module rf0 $end
+$var wire 1 f clk $end
+$var wire 1 g rst $end
+$var wire 1 L read1regsel [2] $end
+$var wire 1 M read1regsel [1] $end
+$var wire 1 N read1regsel [0] $end
+$var wire 1 O read2regsel [2] $end
+$var wire 1 P read2regsel [1] $end
+$var wire 1 Q read2regsel [0] $end
+$var wire 1 R writeregsel [2] $end
+$var wire 1 S writeregsel [1] $end
+$var wire 1 T writeregsel [0] $end
+$var wire 1 U writedata [15] $end
+$var wire 1 V writedata [14] $end
+$var wire 1 W writedata [13] $end
+$var wire 1 X writedata [12] $end
+$var wire 1 Y writedata [11] $end
+$var wire 1 Z writedata [10] $end
+$var wire 1 [ writedata [9] $end
+$var wire 1 \ writedata [8] $end
+$var wire 1 ] writedata [7] $end
+$var wire 1 ^ writedata [6] $end
+$var wire 1 _ writedata [5] $end
+$var wire 1 ` writedata [4] $end
+$var wire 1 a writedata [3] $end
+$var wire 1 b writedata [2] $end
+$var wire 1 c writedata [1] $end
+$var wire 1 d writedata [0] $end
+$var wire 1 e write $end
+$var wire 1 ! read1data [15] $end
+$var wire 1 " read1data [14] $end
+$var wire 1 # read1data [13] $end
+$var wire 1 $ read1data [12] $end
+$var wire 1 % read1data [11] $end
+$var wire 1 & read1data [10] $end
+$var wire 1 ' read1data [9] $end
+$var wire 1 ( read1data [8] $end
+$var wire 1 ) read1data [7] $end
+$var wire 1 * read1data [6] $end
+$var wire 1 + read1data [5] $end
+$var wire 1 , read1data [4] $end
+$var wire 1 - read1data [3] $end
+$var wire 1 . read1data [2] $end
+$var wire 1 / read1data [1] $end
+$var wire 1 0 read1data [0] $end
+$var wire 1 1 read2data [15] $end
+$var wire 1 2 read2data [14] $end
+$var wire 1 3 read2data [13] $end
+$var wire 1 4 read2data [12] $end
+$var wire 1 5 read2data [11] $end
+$var wire 1 6 read2data [10] $end
+$var wire 1 7 read2data [9] $end
+$var wire 1 8 read2data [8] $end
+$var wire 1 9 read2data [7] $end
+$var wire 1 : read2data [6] $end
+$var wire 1 ; read2data [5] $end
+$var wire 1 < read2data [4] $end
+$var wire 1 = read2data [3] $end
+$var wire 1 > read2data [2] $end
+$var wire 1 ? read2data [1] $end
+$var wire 1 @ read2data [0] $end
+$var wire 1 h err $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b100 A
+b1 B
+1C
+b1101011000001001 D
+b11 E
+0I
+1i
+1j
+b0 J
+b0 K
+b0 F
+b1 k
+z0
+z/
+z.
+z-
+z,
+z+
+z*
+z)
+z(
+z'
+z&
+z%
+z$
+z#
+z"
+z!
+z@
+z?
+z>
+z=
+z<
+z;
+z:
+z9
+z8
+z7
+z6
+z5
+z4
+z3
+z2
+z1
+1G
+1H
+1f
+1g
+zh
+1e
+1d
+0c
+0b
+1a
+0`
+0_
+0^
+0]
+0\
+1[
+1Z
+0Y
+1X
+0W
+1V
+1U
+1T
+1S
+0R
+1Q
+0P
+0O
+0N
+0M
+1L
+$end
+#10
+b1 F
+#50
+0i
+0f
+0G
+#100
+1i
+1f
+1G
+b101 A
+b101 B
+b101001000010010 D
+b1 E
+b10 k
+0S
+0d
+1c
+0a
+1`
+0Z
+0U
+1O
+1N
+#110
+b10 F
+#150
+0i
+0f
+0G
+#200
+1i
+1f
+1G
+b110 A
+b101011111101101 D
+b100 E
+b11 k
+0T
+1R
+1d
+0c
+1b
+1a
+0`
+1_
+1^
+1]
+1\
+1Z
+0N
+1M
+#201
+0j
+0H
+0g
+#210
+1I
+b11 F
+#250
+0i
+0f
+0G
+#300
+1i
+1f
+1G
+b1101001010101010 D
+b101 E
+b100 k
+1T
+0d
+1c
+0b
+0^
+0\
+0Z
+1U
+#310
+b100 F
+#350
+0i
+0f
+0G
+#400
+1i
+1f
+1G
+b10 A
+b111 B
+b110100111110010 D
+b110 E
+0C
+b101 k
+0T
+1S
+0a
+1`
+1^
+1\
+0[
+1Y
+0X
+1W
+0U
+1P
+0L
+0e
+#410
+b101 F
+#450
+0i
+0f
+0G
+#500
+1i
+1f
+1G
+b101 A
+b100 B
+b10100010111101 D
+b101 E
+1C
+b1101001010101010 J
+b101011111101101 K
+b110 k
+1T
+0S
+1d
+0c
+1b
+1a
+0^
+0\
+0V
+0Q
+0P
+1N
+0M
+1L
+1e
+#510
+b110 F
+#550
+0i
+0f
+0G
+#600
+1i
+1f
+1G
+b11 A
+b10 B
+b10001010000000 D
+b0 E
+0C
+b0 J
+b0 K
+b111 k
+0T
+0R
+0d
+0b
+0a
+0`
+0_
+1[
+0Y
+1P
+0O
+1M
+0L
+0e
+#610
+b111 F
+#650
+0i
+0f
+0G
+#700
+1i
+1f
+1G
+b101 A
+b110 B
+b1011100000010011 D
+b101 E
+1C
+b10100010111101 J
+b1000 k
+1T
+1R
+1d
+1c
+1`
+0]
+0[
+1Y
+1X
+1U
+1O
+0M
+1L
+1e
+#710
+b1000 F
+#750
+0i
+0f
+0G
+#800
+1i
+1f
+1G
+b11 A
+b101 B
+b100101000000010 D
+b110 E
+b0 J
+b1011100000010011 K
+b1001 k
+0T
+1S
+0d
+0`
+1[
+0X
+0W
+1V
+0U
+1Q
+0P
+1M
+0L
+#810
+b1001 F
+#850
+0i
+0f
+0G
+#900
+1i
+1f
+1G
+b111 A
+b11 B
+b110010100001010 D
+b10 E
+0C
+b0 K
+b1010 k
+0R
+1a
+1\
+0[
+1Z
+0Y
+1W
+1P
+0O
+1L
+0e
+#910
+b1010 F
+#950
+0i
+0f
+0G
+#1000
+1i
+1f
+1G
+b10 A
+b10 B
+b1011001101000001 D
+b0 E
+b1011 k
+0S
+1d
+0c
+0a
+1^
+1[
+0Z
+1X
+0V
+1U
+0Q
+0N
+0L
+#1010
+b1011 F
+#1050
+0i
+0f
+0G
+#1100
+1i
+1f
+1G
+b1 A
+b11 B
+b110010110110110 D
+b110 E
+b1100 k
+1S
+1R
+0d
+1c
+1b
+1`
+1_
+0^
+1]
+0[
+1Z
+0X
+1V
+0U
+1Q
+1N
+0M
+#1110
+b1100 F
+#1150
+0i
+0f
+0G
+#1200
+1i
+1f
+1G
+b100 A
+b10 B
+b1001101000001011 D
+b1 E
+1C
+b101011111101101 J
+b1101 k
+1T
+0S
+0R
+1d
+0b
+1a
+0`
+0_
+0]
+0\
+1[
+0Z
+1Y
+1X
+0W
+0V
+1U
+0Q
+0N
+1L
+1e
+#1210
+b1101 F
+#1250
+0i
+0f
+0G
+#1300
+1i
+1f
+1G
+b111 A
+b11 B
+b11001100111010 D
+b110 E
+b0 J
+b1110 k
+0T
+1S
+1R
+0d
+1`
+1_
+1\
+0Y
+1W
+0U
+1Q
+1N
+1M
+#1310
+b1110 F
+#1350
+0i
+0f
+0G
+#1400
+1i
+1f
+1G
+b1 A
+b1 B
+b11101100010 D
+b100 E
+b1001101000001011 J
+b1001101000001011 K
+b1111 k
+0S
+0a
+0`
+1^
+1Z
+0X
+0W
+0P
+0M
+0L
+#1410
+b1111 F
+#1450
+0i
+0f
+0G
+#1500
+1i
+1f
+1G
+b111 A
+b0 B
+b110000010110111 D
+b111 E
+0C
+b0 J
+b0 K
+b10000 k
+1T
+1S
+1d
+1b
+1`
+0^
+1]
+0\
+0[
+0Z
+1W
+1V
+0Q
+1M
+1L
+0e
+#1510
+b10000 F
+#1550
+0i
+0f
+0G
+#1600
+1i
+1f
+1G
+b11 A
+b1 B
+b11001001001001 D
+b0 E
+1C
+b1001101000001011 K
+b10001 k
+0T
+0S
+0R
+0c
+0b
+1a
+0`
+0_
+1^
+0]
+1[
+1X
+0V
+1Q
+0L
+1e
+#1610
+b10001 F
+#1650
+0i
+0f
+0G
+#1700
+1i
+1f
+1G
+b1 A
+b110 B
+b111111100001100 D
+b10 E
+0C
+b1001101000001011 J
+b11001100111010 K
+b10010 k
+1S
+0d
+1b
+0^
+1\
+1Z
+1Y
+1V
+0Q
+1P
+1O
+0M
+0e
+#1710
+b10010 F
+#1750
+0i
+0f
+0G
+#1800
+1i
+1f
+1G
+b111 A
+b101 B
+b1101101100010010 D
+b110 E
+1C
+b0 J
+b1011100000010011 K
+b10011 k
+1R
+1c
+0b
+0a
+1`
+0Z
+0W
+1U
+1Q
+0P
+1M
+1L
+1e
+#1810
+b10011 F
+#1850
+0i
+0f
+0G
+#1900
+1i
+1f
+1G
+b1 A
+b111 B
+b1111011011010011 D
+b101 E
+0C
+b1001101000001011 J
+b0 K
+b10100 k
+1T
+0S
+1d
+1^
+1]
+0\
+1Z
+0Y
+1W
+1P
+0M
+0L
+0e
+#1910
+b10100 F
+#1950
+0i
+0f
+0G
+#2000
+1i
+1f
+1G
+b11 A
+b1 B
+b1010111000111111 D
+b10 E
+b0 J
+b1001101000001011 K
+b10101 k
+0T
+1S
+0R
+1b
+1a
+1_
+0^
+0]
+1Y
+0X
+0V
+0P
+0O
+1M
+#2010
+b10101 F
+#2050
+0i
+0f
+0G
+#2100
+1i
+1f
+1G
+b110 A
+b110 B
+b1111001010011100 D
+b1101101100010010 J
+b1101101100010010 K
+b10110 k
+0d
+0c
+0_
+1]
+0Z
+0Y
+1X
+1V
+0Q
+1P
+1O
+0N
+1L
+#2110
+b10110 F
+#2150
+0i
+0f
+0G
+#2200
+1i
+1f
+1G
+b11 A
+b11 B
+b1010100000101111 D
+b11 E
+1C
+b0 J
+b0 K
+b10111 k
+1T
+1d
+1c
+0`
+1_
+0]
+0[
+1Y
+0X
+0V
+1Q
+0O
+1N
+0L
+1e
+#2210
+b10111 F
+#2250
+0i
+0f
+0G
+#2300
+1i
+1f
+1G
+b100 A
+b111 B
+b11011011001011 D
+b110 E
+0C
+b11101100010 J
+b11000 k
+0T
+1R
+0b
+0_
+1^
+1]
+1[
+1Z
+0Y
+1X
+0U
+1O
+0N
+0M
+1L
+0e
+#2310
+b11000 F
+#2350
+0i
+0f
+0G
+#2400
+1i
+1f
+1G
+b1 A
+b101 B
+b110110011011010 D
+b101 E
+1C
+b1001101000001011 J
+b1011100000010011 K
+b11001 k
+1T
+0S
+0d
+1`
+0[
+1Y
+0X
+1V
+0P
+1N
+0L
+1e
+#2410
+b11001 F
+#2450
+0i
+0f
+0G
+#2500
+1i
+1f
+1G
+b111 A
+b1 B
+b1111111101000100 D
+b0 E
+0C
+b0 J
+b1001101000001011 K
+b11010 k
+0T
+0R
+0c
+1b
+0a
+0`
+0]
+1\
+1[
+1X
+1U
+0O
+1M
+1L
+0e
+#2510
+b11010 F
+#2550
+0i
+0f
+0G
+#2600
+1i
+1f
+1G
+b11 A
+b110 B
+b1010110111011100 D
+b10 E
+1C
+b1010100000101111 J
+b1101101100010010 K
+b11011 k
+1S
+1a
+1`
+1]
+0[
+0X
+0V
+0Q
+1P
+1O
+0L
+1e
+#2610
+b11011 F
+#2650
+0i
+0f
+0G
+#2700
+1i
+1f
+1G
+b1110100101001110 D
+b111 E
+0C
+b11100 k
+1T
+1R
+1c
+0`
+0]
+0Z
+1V
+0e
+#2710
+b11100 F
+#2750
+0i
+0f
+0G
+#2800
+1i
+1f
+1G
+b110 A
+b0 B
+b1000011101111001 D
+b0 E
+b1101101100010010 J
+b11001001001001 K
+b11101 k
+0T
+0S
+0R
+1d
+0c
+0b
+1`
+1_
+1[
+1Z
+0Y
+0W
+0V
+0P
+0O
+0N
+1L
+#2810
+b11101 F
+#2850
+0i
+0f
+0G
+#2900
+1i
+1f
+1G
+b11 A
+b100 B
+b1100101001011001 D
+b11 E
+1C
+b1010100000101111 J
+b11101100010 K
+b11110 k
+1T
+1S
+0_
+0\
+0Z
+1Y
+1V
+1O
+1N
+0L
+1e
+#2910
+b11110 F
+#2950
+0i
+0f
+0G
+#3000
+1i
+1f
+1G
+b1 A
+b101 B
+b1110001001110110 D
+b10 E
+0C
+b1001101000001011 J
+b110110011011010 K
+b11111 k
+0T
+0d
+1c
+1b
+0a
+1_
+0Y
+1W
+1Q
+0M
+0e
+#3010
+b11111 F
+#3050
+0i
+0f
+0G
+#3100
+1i
+1f
+1G
+b101 A
+b110 B
+b1001101100000100 D
+b111 E
+1C
+b110110011011010 J
+b1101101100010010 K
+b100000 k
+1T
+1R
+0c
+0`
+0_
+0^
+1\
+1Y
+1X
+0W
+0V
+0Q
+1P
+1L
+1e
+#3110
+b100000 F
+#3150
+0i
+0f
+0G
+#3200
+1i
+1f
+1G
+b100 A
+b0 B
+b1101100100101000 D
+b101 E
+b11101100010 J
+b11001001001001 K
+b100001 k
+0S
+0b
+1a
+1_
+0[
+1V
+0P
+0O
+0N
+#3210
+b100001 F
+#3250
+0i
+0f
+0G
+#3300
+1i
+1f
+1G
+b110 A
+b100010100011100 D
+b1101101100010010 J
+b100010 k
+1b
+1`
+0_
+1Z
+0Y
+0X
+0U
+1M
+#3310
+b100010 F
+#3350
+0i
+0f
+0G
+#3400
+1i
+1f
+1G
+b100 A
+b110 B
+b100011011010 D
+0C
+b11101100010 J
+b1101101100010010 K
+b100011 k
+1c
+0b
+1^
+1]
+0\
+0Z
+1Y
+0V
+1P
+1O
+0M
+0e
+#3410
+b100011 F
+#3450
+0i
+0f
+0G
+#3500
+1i
+1f
+1G
+b0 A
+b11 B
+b1001100110111010 D
+b110 E
+b11001001001001 J
+b1100101001011001 K
+b100100 k
+0T
+1S
+1_
+0^
+1\
+1X
+1U
+1Q
+0O
+0L
+#3510
+b100100 F
+#3550
+0i
+0f
+0G
+#3600
+1i
+1f
+1G
+b101 A
+b10 B
+b10111001 D
+b111 E
+b100010100011100 J
+b1010110111011100 K
+b100101 k
+1T
+1d
+0c
+0\
+0Y
+0X
+0U
+0Q
+1N
+1L
+#3610
+b100101 F
+#3650
+0i
+0f
+0G
+#3700
+1i
+1f
+1G
+b0 A
+b110 B
+b1101010110110 D
+b101 E
+b11001001001001 J
+b1101101100010010 K
+b100110 k
+0S
+0d
+1c
+1b
+0a
+1[
+1Y
+1X
+1O
+0N
+0L
+#3710
+b100110 F
+#3750
+0i
+0f
+0G
+#3800
+1i
+1f
+1G
+b110 A
+b0 B
+b1001101101111110 D
+b11 E
+1C
+b1101101100010010 J
+b11001001001001 K
+b100111 k
+1S
+0R
+1a
+1^
+0]
+1\
+1U
+0P
+0O
+1M
+1L
+1e
+#3810
+b100111 F
+#3850
+0i
+0f
+0G
+#3900
+1i
+1f
+1G
+b1 A
+b10 B
+b1110111001100001 D
+b111 E
+b1001101000001011 J
+b1010110111011100 K
+b101000 k
+1R
+1d
+0c
+0b
+0a
+0`
+0\
+1Z
+0X
+1W
+1V
+1P
+1N
+0M
+0L
+#3910
+b101000 F
+#3950
+0i
+0f
+0G
+#4000
+1i
+1f
+1G
+b110 A
+b0 B
+b101100111110101 D
+b101 E
+b1101101100010010 J
+b11001001001001 K
+b101001 k
+0S
+1b
+1`
+1]
+1\
+0[
+0Z
+1X
+0W
+0U
+0P
+0N
+1M
+1L
+#4010
+b101001 F
+#4050
+0i
+0f
+0G
+#4100
+1i
+1f
+1G
+b1 A
+b101 B
+b1011010010011000 D
+b11 E
+b1001101000001011 J
+b101100111110101 K
+b101010 k
+1S
+0R
+0d
+0b
+1a
+0_
+0^
+0\
+1Z
+0Y
+1W
+0V
+1U
+1Q
+1O
+1N
+0M
+0L
+#4110
+b101010 F
+#4150
+0i
+0f
+0G
+#4200
+1i
+1f
+1G
+b100 A
+b10 B
+b1101000101001110 D
+b0 E
+b11101100010 J
+b1010110111011100 K
+b101011 k
+0T
+0S
+1c
+1b
+0`
+1^
+0]
+1\
+0Z
+0W
+1V
+0Q
+1P
+0O
+0N
+1L
+#4210
+b101011 F
+#4250
+0i
+0f
+0G
+#4300
+1i
+1f
+1G
+b1 A
+b110 B
+b110011011100110 D
+b111 E
+0C
+b1001101000001011 J
+b1101101100010010 K
+b101100 k
+1T
+1S
+1R
+0a
+1_
+1]
+0\
+1[
+1Z
+0X
+1W
+0U
+1O
+1N
+0L
+0e
+#4310
+b101100 F
+#4350
+0i
+0f
+0G
+#4400
+1i
+1f
+1G
+b10 A
+b101 B
+b1111111110011110 D
+b0 E
+1C
+b1010110111011100 J
+b101100111110101 K
+b101101 k
+0T
+0S
+0R
+1a
+1`
+0_
+0^
+1\
+1Y
+1X
+1U
+1Q
+0P
+0N
+1M
+1e
+#4410
+b101101 F
+#4450
+0i
+0f
+0G
+#4500
+1i
+1f
+1G
+b0 A
+b10 B
+b100000100010011 D
+b11 E
+b1111111110011110 J
+b1010110111011100 K
+b101110 k
+1T
+1S
+1d
+0b
+0a
+0]
+0[
+0Z
+0Y
+0X
+0W
+0U
+0Q
+1P
+0O
+0M
+#4510
+b101110 F
+#4550
+0i
+0f
+0G
+#4600
+1i
+1f
+1G
+b110 A
+b1010101111000100 D
+b1 E
+0C
+b1101101100010010 J
+b101111 k
+0S
+0d
+0c
+1b
+0`
+1^
+1]
+1[
+1Y
+1W
+0V
+1U
+1M
+1L
+0e
+#4610
+b101111 F
+#4650
+0i
+0f
+0G
+#4700
+1i
+1f
+1G
+b100 A
+b111 B
+b1001000010000110 D
+b10 E
+b11101100010 J
+b1110111001100001 K
+b110000 k
+0T
+1S
+1c
+0^
+0\
+0[
+0Y
+1X
+0W
+1Q
+1O
+0M
+#4710
+b110000 F
+#4750
+0i
+0f
+0G
+#4800
+1i
+1f
+1G
+b10 A
+b101 B
+b1100110110000100 D
+b100 E
+b1010110111011100 J
+b101100111110101 K
+b110001 k
+0S
+1R
+0c
+1\
+1Z
+1Y
+0X
+1V
+0P
+1M
+0L
+#4810
+b110001 F
+#4850
+0i
+0f
+0G
+#4900
+1i
+1f
+1G
+b1 A
+b1 B
+b1010100110001110 D
+b11 E
+1C
+b1001101000001011 J
+b1001101000001011 K
+b110010 k
+1T
+1S
+0R
+1c
+1a
+0Z
+1W
+0V
+0O
+1N
+0M
+1e
+#4910
+b110010 F
+#4950
+0i
+0f
+0G
+#5000
+1i
+1f
+1G
+b111 A
+b1110010100110110 D
+b101 E
+b1110111001100001 J
+b110011 k
+0S
+1R
+0a
+1`
+1_
+0]
+1Z
+0Y
+1V
+1M
+1L
+#5010
+b110011 F
