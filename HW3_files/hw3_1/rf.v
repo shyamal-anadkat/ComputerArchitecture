@@ -18,27 +18,39 @@ module rf (
    output [15:0] read2data;
    output        err;
 
-   // your code
+   wire[7:0] dec_out; 
+   wire[15:0] reg_out1, reg_out2 , reg_out3, reg_out4, reg_out5, reg_out6, reg_out7, reg_out8; 
 
    //decoder 3-8 
-   in : writeregsel
-   out: [7:0] wire dec_out 
+   dec3_8 decmod(.in(writeregsel), .out(dec_out));
 
    //dffs
-   reg16 [7:0] out : reg16 out [7:0]
-               in: writedata
-               en : wire dec_out 
-               rst, clk same.
+   //reg16 [7:0] out : reg16 out [7:0]
+   //            in: writedata
+   //            en : wire dec_out 
+   //            rst, clk same.
+   reg16 reg1(.out(reg_out1), .in(writedata), .en(dec_out[0]), .rst(rst), .clk(clk));
+   reg16 reg2(.out(reg_out2), .in(writedata), .en(dec_out[1]), .rst(rst), .clk(clk));
+   reg16 reg3(.out(reg_out3), .in(writedata), .en(dec_out[2]), .rst(rst), .clk(clk));
+   reg16 reg4(.out(reg_out4), .in(writedata), .en(dec_out[3]), .rst(rst), .clk(clk));
+   reg16 reg5(.out(reg_out5), .in(writedata), .en(dec_out[4]), .rst(rst), .clk(clk));
+   reg16 reg6(.out(reg_out6), .in(writedata), .en(dec_out[5]), .rst(rst), .clk(clk));
+   reg16 reg7(.out(reg_out7), .in(writedata), .en(dec_out[6]), .rst(rst), .clk(clk));
+   reg16 reg8(.out(reg_out8), .in(writedata), .en(dec_out[7]), .rst(rst), .clk(clk));
+
+
 
    //8 1 mux for read1data
    //inputs are out from reg16
    //sel is read1 sel
    //out is read1 data
+   mux8_1 m1(.InA(reg_out1), .InB(reg_out2), .InC(reg_out3), .InD(reg_out4), .InE(reg_out5), .InF(reg_out6), .InG(reg_out7), .InH(reg_out8), .S(read1regsel), .Out(read1data));
 
 
    //8 1 mux for read2 data 
    //sel is read2 sel 
    //out is read2data
+   mux8_1 m2(.InA(reg_out1), .InB(reg_out2), .InC(reg_out3), .InD(reg_out4), .InE(reg_out5), .InF(reg_out6), .InG(reg_out7), .InH(reg_out8), .S(read2regsel), .Out(read2data));
 
 
 
