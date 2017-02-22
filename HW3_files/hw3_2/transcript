@@ -1,0 +1,80 @@
+# vsim -c sc_bench -lib __work -voptargs="+acc" -wlf dump.wlf -do "log -howmany -rec /* ; run -all" 
+# Start time: 02:03:00 on Feb 22,2017
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim
+# //  Version 10.4c linux Jul 19 2015
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading work.sc_bench(fast)
+# Loading work.sc_hier(fast)
+# Loading work.clkrst(fast)
+# Loading work.sc(fast)
+# Loading work.or2(fast)
+# Loading work.dff(fast)
+# log -howmany -rec /* 
+# 43
+#  run -all
+# OKAY :: ctr_rst = 0 : out = expected_out = 0
+# OKAY :: ctr_rst = 0 : out = expected_out = 0
+# OKAY :: ctr_rst = 0 : out = expected_out = 0
+# OKAY :: ctr_rst = 0 : out = expected_out = 1
+# OKAY :: ctr_rst = 1 : out = expected_out = 2
+# OKAY :: ctr_rst = 1 : out = expected_out = 0
+# OKAY :: ctr_rst = 0 : out = expected_out = 0
+# OKAY :: ctr_rst = 0 : out = expected_out = 1
+# OKAY :: ctr_rst = 1 : out = expected_out = 2
+# OKAY :: ctr_rst = 1 : out = expected_out = 0
+# OKAY :: ctr_rst = 0 : out = expected_out = 0
+# OKAY :: ctr_rst = 1 : out = expected_out = 1
+# OKAY :: ctr_rst = 1 : out = expected_out = 0
+# OKAY :: ctr_rst = 0 : out = expected_out = 0
+# OKAY :: ctr_rst = 1 : out = expected_out = 1
+# OKAY :: ctr_rst = 0 : out = expected_out = 0
+# OKAY :: ctr_rst = 0 : out = expected_out = 1
+# OKAY :: ctr_rst = 0 : out = expected_out = 2
+# OKAY :: ctr_rst = 1 : out = expected_out = 3
+# OKAY :: ctr_rst = 0 : out = expected_out = 0
+# OKAY :: ctr_rst = 0 : out = expected_out = 1
+# OKAY :: ctr_rst = 1 : out = expected_out = 2
+# OKAY :: ctr_rst = 0 : out = expected_out = 0
+# OKAY :: ctr_rst = 0 : out = expected_out = 1
+# OKAY :: ctr_rst = 0 : out = expected_out = 2
+# OKAY :: ctr_rst = 0 : out = expected_out = 3
+# OKAY :: ctr_rst = 0 : out = expected_out = 4
+# OKAY :: ctr_rst = 0 : out = expected_out = 5
+# OKAY :: ctr_rst = 0 : out = expected_out = 5
+# OKAY :: ctr_rst = 0 : out = expected_out = 5
+# OKAY :: ctr_rst = 0 : out = expected_out = 5
+# OKAY :: ctr_rst = 0 : out = expected_out = 5
+# OKAY :: ctr_rst = 0 : out = expected_out = 5
+# OKAY :: ctr_rst = 0 : out = expected_out = 5
+# OKAY :: ctr_rst = 0 : out = expected_out = 5
+# OKAY :: ctr_rst = 0 : out = expected_out = 5
+# OKAY :: ctr_rst = 0 : out = expected_out = 5
+# OKAY :: ctr_rst = 0 : out = expected_out = 5
+# OKAY :: ctr_rst = 0 : out = expected_out = 5
+# OKAY :: ctr_rst = 0 : out = expected_out = 5
+# OKAY :: ctr_rst = 1 : out = expected_out = 5
+# OKAY :: ctr_rst = 0 : out = expected_out = 0
+# OKAY :: ctr_rst = 0 : out = expected_out = 1
+# OKAY :: ctr_rst = 0 : out = expected_out = 2
+# OKAY :: ctr_rst = 1 : out = expected_out = 3
+# OKAY :: ctr_rst = 0 : out = expected_out = 0
+# OKAY :: ctr_rst = 1 : out = expected_out = 1
+# OKAY :: ctr_rst = 0 : out = expected_out = 0
+# TEST PASSED
+# ** Note: $finish    : sc_bench.v(31)
+#    Time: 4800 ns  Iteration: 0  Instance: /sc_bench
+# End time: 02:03:01 on Feb 22,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
