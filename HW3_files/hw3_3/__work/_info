@@ -9,15 +9,15 @@ z2
 cModel Technology
 Z0 d/u/s/h/shyamal/private/552/HW3_files/hw3_3
 T_opt
-!s110 1487816040
-VQ5X9SWf9g?jJFBQa^V_Th0
+!s110 1487816528
+VPC?>l[W`i8IcBdem^G7z91
 04 20 4 work rf_bypass_hier_bench fast 0
-=1-f8bc12932458-58ae4567-dddc9-564b
+=1-f8bc12932458-58ae474f-f1d67-6d28
 o-quiet -auto_acc_if_foreign -work __work +acc
 n@_opt
 OE;O;10.4c;61
 vand2
-Z1 !s110 1487816038
+Z1 !s110 1487816527
 !i10b 1
 !s100 c<aAdmKVXG;oC>i1e9lfQ0
 Ig;Mld3@`D^>VWXSMDJ`KJ3
@@ -31,7 +31,7 @@ Z4 OE;L;10.4c;61
 r1
 !s85 0
 31
-Z5 !s108 1487816038.000000
+Z5 !s108 1487816526.000000
 Z6 !s107 xor3.v|xor2.v|rf.v|rf_bypass.v|rf_bypass_hier.v|rf_bypass_hier_bench.v|reg16.v|or3.v|or2.v|not1.v|nand2.v|mux8_1.v|mux4_1.v|mux2_1.v|dff.v|dec3_8.v|comparator3.v|clkrst.v|and3.v|and2.v|
 Z7 !s90 +define+RANDSEED=3|-work|__work|and2.v|and3.v|clkrst.v|comparator3.v|dec3_8.v|dff.v|mux2_1.v|mux4_1.v|mux8_1.v|nand2.v|not1.v|or2.v|or3.v|reg16.v|rf_bypass_hier_bench.v|rf_bypass_hier.v|rf_bypass.v|rf.v|xor2.v|xor3.v|
 !i113 0

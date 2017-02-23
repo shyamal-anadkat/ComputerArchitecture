@@ -1,5 +1,5 @@
 # vsim -c rf_bypass_hier_bench -lib __work -voptargs="+acc" -wlf dump.wlf -do "log -howmany -rec /* ; run -all" 
-# Start time: 20:13:59 on Feb 22,2017
+# Start time: 20:22:07 on Feb 22,2017
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.4c linux Jul 19 2015
@@ -1275,5 +1275,5 @@
 #    Time: 100010 ns  Iteration: 0  Instance: /rf_bypass_hier_bench
 # Break in Module rf_bypass_hier_bench at rf_bypass_hier_bench.v line 122
 # Stopped at rf_bypass_hier_bench.v line 122
-# End time: 20:14:10 on Feb 22,2017, Elapsed time: 0:00:11
+# End time: 20:22:16 on Feb 22,2017, Elapsed time: 0:00:09
 # Errors: 0, Warnings: 0
