@@ -1,0 +1,19 @@
+Line 20: Bad keyword integer
+Line 21: Bad keyword integer
+Line 48: Bad keyword initial
+Line 49: begin without always/case
+Line 67: Bad keyword posedge
+Line 85: Bad keyword if
+Line 102: Bad keyword if
+Line 102: Bad keyword !==
+Line 103: Bad keyword !==
+Line 108: Bad keyword if
+Line 108: Bad keyword ===
+Line 112: Bad keyword if
+Line 112: Bad keyword ===
+Line 112: Bad keyword ===
+Line 117: Bad keyword if
+Line 118: Bad keyword if
+Line 121: Bad keyword else
+Line 67: Always without case(x)
+End of file /u/s/h/shyamal/private/552/HW3_files/hw3_3/rf_bypass_hier_bench.v. Hash = -1845250343
