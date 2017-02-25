@@ -1,0 +1,16 @@
+not1.v
+xor2.v
+comparator3.v
+rf_bypass.v
+rf.v
+dec3_8.v
+and3.v
+reg16.v
+nand2.v
+or3.v
+and2.v
+or2.v
+mux8_1.v
+mux4_1.v
+mux2_1.v
+dff.v

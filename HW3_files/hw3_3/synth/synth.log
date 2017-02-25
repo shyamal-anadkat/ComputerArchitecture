@@ -1,0 +1,479 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version L-2016.03-SP4-1 for linux64 - Sep 10, 2016 
+
+                    Copyright (c) 1988 - 2016 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+echo "********** CS552 Reading files begin ********************"
+********** CS552 Reading files begin ********************
+set my_verilog_files [list not1.v xor2.v comparator3.v rf_bypass.v rf.v dec3_8.v and3.v reg16.v nand2.v or3.v and2.v or2.v mux8_1.v mux4_1.v mux2_1.v dff.v  ]
+not1.v xor2.v comparator3.v rf_bypass.v rf.v dec3_8.v and3.v reg16.v nand2.v or3.v and2.v or2.v mux8_1.v mux4_1.v mux2_1.v dff.v
+set my_toplevel rf_bypass
+rf_bypass
+define_design_lib WORK -path ./WORK
+1
+analyze -f verilog $my_verilog_files
+Running PRESTO HDLC
+Compiling source file ./not1.v
+Compiling source file ./xor2.v
+Compiling source file ./comparator3.v
+Compiling source file ./rf_bypass.v
+Compiling source file ./rf.v
+Compiling source file ./dec3_8.v
+Compiling source file ./and3.v
+Compiling source file ./reg16.v
+Compiling source file ./nand2.v
+Compiling source file ./or3.v
+Compiling source file ./and2.v
+Compiling source file ./or2.v
+Compiling source file ./mux8_1.v
+Compiling source file ./mux4_1.v
+Compiling source file ./mux2_1.v
+Compiling source file ./dff.v
+Warning:  ./dff.v:15: delays for continuous assignment are ignored. (VER-173)
+Presto compilation completed successfully.
+Loading db file '/u/k/a/karu/courses/cs552/cad/Synopsys_Libraries/libs/gscl45nm.db'
+1
+elaborate $my_toplevel -architecture verilog
+Loading db file '/s/synopsys-2016_09_23/@sys/L-2016.03-SP4-1/libraries/syn/gtech.db'
+Loading db file '/s/synopsys-2016_09_23/@sys/L-2016.03-SP4-1/libraries/syn/standard.sldb'
+  Loading link library 'gscl45nm'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'rf_bypass'.
+Information: Building the design 'rf'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'comparator3'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'and2'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux2_1'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'dec3_8'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'reg16'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux8_1'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'xor2'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'or3'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'not1'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'nand2'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'and3'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'dff'. (HDL-193)
+
+Inferred memory devices in process
+	in routine dff line 17 in file
+		'./dff.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'or2'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux4_1'. (HDL-193)
+Presto compilation completed successfully.
+1
+echo "********** CS552 Reading files end ********************"
+********** CS552 Reading files end ********************
+current_design $my_toplevel
+Current design is 'rf_bypass'.
+{rf_bypass}
+#/* The name of the clock pin. If no clock-pin     */
+#/* exists, pick anything                          */
+set my_clock_pin clk
+clk
+#/* Target frequency in MHz for optimization       */
+set my_clk_freq_MHz 1000
+1000
+#/* Delay of input signals (Clock-to-Q, Package etc.)  */
+set my_input_delay_ns 0.1
+0.1
+#/* Reserved time for output signals (Holdtime etc.)   */
+set my_output_delay_ns 0.1
+0.1
+#/**************************************************/
+#/* No modifications needed below                  */
+#/**************************************************/
+set verilogout_show_unconnected_pins "true"
+true
+# analyze -f verilog $my_verilog_files
+# elaborate $my_toplevel -architecture verilog
+# current_design $my_toplevel
+report_hierarchy 
+ 
+****************************************
+Report : hierarchy
+Design : rf_bypass
+Version: L-2016.03-SP4-1
+Date   : Sat Feb 25 11:06:38 2017
+****************************************
+
+Information: This design contains unmapped logic. (RPT-7)
+
+rf_bypass
+    and2
+        nand2
+            GTECH_AND2                       gtech
+            GTECH_NOT                        gtech
+    comparator3
+        not1
+            GTECH_NOT                        gtech
+        or3
+            or2
+                GTECH_OR2                    gtech
+        xor2
+            GTECH_XOR2                       gtech
+    mux2_1
+        nand2
+            ...
+        not1
+            ...
+    rf
+        and2
+            ...
+        dec3_8
+            and3
+                and2
+                    ...
+            not1
+                ...
+        mux8_1
+            mux2_1
+                ...
+            mux4_1
+                mux2_1
+                    ...
+        reg16
+            dff
+                GTECH_BUF                    gtech
+                GTECH_NOT                    gtech
+            mux2_1
+                ...
+1
+link
+
+  Linking design 'rf_bypass'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  gscl45nm (library)          /u/k/a/karu/courses/cs552/cad/Synopsys_Libraries/libs/gscl45nm.db
+
+1
+uniquify
+Information: Uniquified 2 instances of design 'comparator3'. (OPT-1056)
+Information: Uniquified 26 instances of design 'and2'. (OPT-1056)
+Information: Uniquified 384 instances of design 'mux2_1'. (OPT-1056)
+Information: Uniquified 8 instances of design 'reg16'. (OPT-1056)
+Information: Uniquified 32 instances of design 'mux8_1'. (OPT-1056)
+Information: Uniquified 6 instances of design 'xor2'. (OPT-1056)
+Information: Uniquified 2 instances of design 'or3'. (OPT-1056)
+Information: Uniquified 389 instances of design 'not1'. (OPT-1056)
+Information: Uniquified 1204 instances of design 'nand2'. (OPT-1056)
+Information: Uniquified 8 instances of design 'and3'. (OPT-1056)
+Information: Uniquified 128 instances of design 'dff'. (OPT-1056)
+Information: Uniquified 4 instances of design 'or2'. (OPT-1056)
+Information: Uniquified 64 instances of design 'mux4_1'. (OPT-1056)
+1
+set my_period [expr 1000 / $my_clk_freq_MHz]
+1
+set find_clock [ find port [list $my_clock_pin] ]
+{clk}
+if {  $find_clock != [list] } {
+   set clk_name $my_clock_pin
+   create_clock -period $my_period $clk_name
+} else {
+   set clk_name vclk
+   create_clock -period $my_period -name $clk_name
+} 
+1
+set_driving_cell  -lib_cell INVX1  [all_inputs]
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+1
+set_input_delay $my_input_delay_ns -clock $clk_name [remove_from_collection [all_inputs] $my_clock_pin]
+1
+set_output_delay $my_output_delay_ns -clock $clk_name [all_outputs]
+1
+compile -map_effort low  -area_effort low
+Warning: The compile -map_effort low is obsolete. Setting this variable now defaults to compile -map_effort medium. Please update your script accordingly. (OPT-1303)
+Warning: Setting attribute 'fix_multiple_port_nets' on design 'rf_bypass'. (UIO-59)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | L-2016.03-DWBB_201603.4 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+
+Information: There are 27 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'nand2_1149'
+  Processing 'not1_367'
+  Processing 'mux2_1_367'
+  Processing 'and2_24'
+  Processing 'or2_0'
+  Processing 'or3_0'
+  Processing 'xor2_0'
+  Processing 'comparator3_0'
+  Processing 'mux2_1_90'
+  Processing 'mux4_1_30'
+  Processing 'mux8_1_15'
+  Processing 'mux4_1_63'
+  Processing 'mux8_1_31'
+  Processing 'dff_31'
+  Processing 'reg16_0'
+  Processing 'reg16_6'
+  Processing 'reg16_7'
+  Processing 'and3_0'
+  Processing 'dec3_8'
+  Processing 'rf'
+  Processing 'rf_bypass'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:02    4698.6      0.92      29.6       3.7                          
+    0:00:02    4698.6      0.92      29.6       3.7                          
+    0:00:02    4903.7      0.92      14.8       3.6                          
+    0:00:02    4997.6      0.92      14.8       3.6                          
+    0:00:02    5202.7      0.00       0.0       3.5                          
+    0:00:02    5319.5      0.00       0.0       3.3                          
+    0:00:02    5436.4      0.00       0.0       3.1                          
+    0:00:02    5553.2      0.00       0.0       2.9                          
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:02    5674.8      0.00       0.0       2.9                          
+    0:00:02    5674.8      0.00       0.0       2.9                          
+    0:00:02    5674.8      0.00       0.0       2.9                          
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:02    5674.8      0.00       0.0       2.9                          
+    0:00:02    5820.3      0.00       0.0       2.6 rfmod/reg1/mux1[5]/na3/out
+    0:00:02    5899.1      0.00       0.0       2.5 rfmod/reg3/mux1[15]/na3/out
+    0:00:02    5977.9      0.00       0.0       2.4 rfmod/reg6/mux1[9]/na3/out
+    0:00:02    6068.0      0.00       0.0       2.2 bypass1mod[3]/na2/out    
+    0:00:02    6267.0      0.00       0.0       2.2 rfmod/m1[1]/mux2/mux1/na2/out
+    0:00:03    6470.7      0.00       0.0       2.1 rfmod/m1[6]/mux1/mux2/na2/out
+    0:00:03    6674.4      0.00       0.0       2.0 rfmod/m1[10]/mux2/mux3/na2/out
+    0:00:03    6878.1      0.00       0.0       1.9 rfmod/m1[15]/mux2/mux1/na2/out
+    0:00:03    7081.7      0.00       0.0       1.8 rfmod/m2[4]/mux1/mux2/na2/out
+    0:00:03    7285.4      0.00       0.0       1.7 rfmod/m2[8]/mux2/mux3/na2/out
+    0:00:03    7489.1      0.00       0.0       1.6 rfmod/m2[13]/mux2/mux1/na2/out
+    0:00:03    7689.9      0.00       0.0       1.5 rfmod/m2[3]/mux3/na2/out 
+    0:00:03    7901.1      0.00       0.0       1.4 bypass2mod[13]/na1/out   
+    0:00:03    8099.2      0.00       0.0       1.3 rfmod/m1[6]/mux1/mux3/na3/out
+    0:00:03    8296.3      0.00       0.0       1.3 rfmod/m1[13]/mux1/mux3/na3/out
+    0:00:03    8493.4      0.00       0.0       1.2 rfmod/m2[4]/mux1/mux3/na3/out
+    0:00:03    8690.5      0.00       0.0       1.1 rfmod/m2[11]/mux1/mux3/na3/out
+    0:00:03    8887.6      0.00       0.0       1.0 rfmod/m1[15]/mux3/na1/out
+    0:00:03    9084.7      0.00       0.0       0.9 rfmod/m1[3]/mux1/mux2/na1/out
+    0:00:03    9281.8      0.00       0.0       0.8 rfmod/m2[1]/mux1/mux2/na1/out
+    0:00:03    9478.9      0.00       0.0       0.8 rfmod/m2[15]/mux1/mux2/na1/out
+    0:00:03    9676.0      0.00       0.0       0.7 rfmod/reg1/mux1[7]/na1/out
+    0:00:03    9873.1      0.00       0.0       0.6 rfmod/reg4/mux1[1]/na1/out
+    0:00:03   10070.2      0.00       0.0       0.5 rfmod/reg6/mux1[11]/na1/out
+    0:00:03   10264.5      0.00       0.0       0.5 rfmod/reg1/dffmod[5]/N3  
+    0:00:04   10441.9      0.00       0.0       0.4 rfmod/reg3/dffmod[15]/N3 
+    0:00:04   10619.3      0.00       0.0       0.3 rfmod/reg6/dffmod[9]/N3  
+    0:00:04   10798.6      0.00       0.0       0.2 rfmod/reg1/mux1[3]/na2/out
+    0:00:04   10995.7      0.00       0.0       0.1 rfmod/reg3/mux1[13]/na2/out
+    0:00:04   11192.8      0.00       0.0       0.1 rfmod/reg6/mux1[7]/na2/out
+    0:00:04   11380.5      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:04   11380.5      0.00       0.0       0.0                          
+    0:00:04   11380.5      0.00       0.0       0.0                          
+    0:00:04    9800.9      0.00       0.0       0.0                          
+    0:00:04    8601.3      0.00       0.0       0.0                          
+    0:00:05    8140.5      0.00       0.0       0.0                          
+    0:00:05    7960.3      0.00       0.0       0.0                          
+    0:00:05    7960.3      0.00       0.0       0.0                          
+    0:00:05    7960.3      0.00       0.0       0.0                          
+    0:00:05    7960.3      0.00       0.0       0.0                          
+    0:00:05    7598.0      0.04       1.4       0.0                          
+    0:00:05    7074.7      0.00       0.0       0.0                          
+    0:00:05    6958.8      0.00       0.0       0.0                          
+    0:00:05    6958.8      0.00       0.0       0.0                          
+    0:00:05    6958.8      0.00       0.0       0.0                          
+    0:00:05    6958.8      0.00       0.0       0.0                          
+    0:00:05    6958.8      0.00       0.0       0.0                          
+    0:00:05    6958.8      0.00       0.0       0.0                          
+    0:00:05    6958.8      0.00       0.0       0.0                          
+Loading db file '/u/k/a/karu/courses/cs552/cad/Synopsys_Libraries/libs/gscl45nm.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+check_design -summary
+ 
+****************************************
+check_design summary:
+Version:     L-2016.03-SP4-1
+Date:        Sat Feb 25 11:06:44 2017
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      2
+    Constant outputs (LINT-52)                                      2
+
+Cells                                                              26
+    Nets connected to multiple pins on same cell (LINT-33)         26
+
+Nets                                                                1
+    Unloaded nets (LINT-2)                                          1
+--------------------------------------------------------------------------------
+
+Information: Use the 'check_design' command for 
+	 more information about warnings. (LINT-98)
+
+1
+report_constraint -all_violators
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : rf_bypass
+Version: L-2016.03-SP4-1
+Date   : Sat Feb 25 11:06:44 2017
+****************************************
+
+This design has no violated constraints.
+
+1
+set filename [format "%s%s"  $my_toplevel ".syn.v"]
+rf_bypass.syn.v
+write -hierarchy -f verilog $my_toplevel -output synth/$filename
+Writing verilog file '/afs/cs.wisc.edu/u/s/h/shyamal/private/552/HW3_files/hw3_3/synth/rf_bypass.syn.v'.
+Warning: Bus naming style currently specified as %s<%d>, verilog syntax requires bus naming style to be "[]".  (VO-13)
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+set filename [format "%s%s"  $my_toplevel ".ddc"]
+rf_bypass.ddc
+write -hierarchy -format ddc -output synth/$filename
+Writing ddc file 'synth/rf_bypass.ddc'.
+1
+report_reference > synth/reference_report.txt
+report_area > synth/area_report.txt
+report_cell > synth/cell_report.txt
+report_timing -max_paths 20 > synth/timing_report.txt
+report_power > synth/power_report.txt
+quit
+
+Thank you...

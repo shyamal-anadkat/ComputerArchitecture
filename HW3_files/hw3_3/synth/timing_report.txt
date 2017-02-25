@@ -1,0 +1,1695 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : rf_bypass
+Version: L-2016.03-SP4-1
+Date   : Sat Feb 25 11:06:45 2017
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: writeregsel<0>
+              (input port clocked by clk)
+  Endpoint: rfmod/reg4/dffmod[0]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  writeregsel<0> (in)                                     0.01       0.11 r
+  U30/Y (BUFX4)                                           0.04       0.15 r
+  rfmod/writeregsel<0> (rf)                               0.00       0.15 r
+  rfmod/decmod/in<0> (dec3_8)                             0.00       0.15 r
+  rfmod/decmod/and_D/a (and3_4)                           0.00       0.15 r
+  rfmod/decmod/and_D/and_1/a (and2_9)                     0.00       0.15 r
+  rfmod/decmod/and_D/and_1/na1/in1 (nand2_739)            0.00       0.15 r
+  rfmod/decmod/and_D/and_1/na1/U1/Y (AND2X1)              0.04       0.19 r
+  rfmod/decmod/and_D/and_1/na1/U2/Y (INVX1)               0.02       0.21 f
+  rfmod/decmod/and_D/and_1/na1/out (nand2_739)            0.00       0.21 f
+  rfmod/decmod/and_D/and_1/na2/in1 (nand2_738)            0.00       0.21 f
+  rfmod/decmod/and_D/and_1/na2/U1/Y (AND2X1)              0.04       0.26 f
+  rfmod/decmod/and_D/and_1/na2/U2/Y (INVX1)               0.00       0.26 r
+  rfmod/decmod/and_D/and_1/na2/out (nand2_738)            0.00       0.26 r
+  rfmod/decmod/and_D/and_1/out (and2_9)                   0.00       0.26 r
+  rfmod/decmod/and_D/and_2/a (and2_8)                     0.00       0.26 r
+  rfmod/decmod/and_D/and_2/na1/in1 (nand2_737)            0.00       0.26 r
+  rfmod/decmod/and_D/and_2/na1/U1/Y (AND2X1)              0.04       0.30 r
+  rfmod/decmod/and_D/and_2/na1/U2/Y (INVX1)               0.02       0.32 f
+  rfmod/decmod/and_D/and_2/na1/out (nand2_737)            0.00       0.32 f
+  rfmod/decmod/and_D/and_2/na2/in1 (nand2_736)            0.00       0.32 f
+  rfmod/decmod/and_D/and_2/na2/U1/Y (AND2X1)              0.04       0.37 f
+  rfmod/decmod/and_D/and_2/na2/U2/Y (INVX1)               0.00       0.37 r
+  rfmod/decmod/and_D/and_2/na2/out (nand2_736)            0.00       0.37 r
+  rfmod/decmod/and_D/and_2/out (and2_8)                   0.00       0.37 r
+  rfmod/decmod/and_D/out (and3_4)                         0.00       0.37 r
+  rfmod/decmod/out<3> (dec3_8)                            0.00       0.37 r
+  rfmod/a1[3]/a (and2_19)                                 0.00       0.37 r
+  rfmod/a1[3]/na1/in1 (nand2_1095)                        0.00       0.37 r
+  rfmod/a1[3]/na1/U1/Y (AND2X2)                           0.03       0.40 r
+  rfmod/a1[3]/na1/U2/Y (INVX1)                            0.02       0.42 f
+  rfmod/a1[3]/na1/out (nand2_1095)                        0.00       0.42 f
+  rfmod/a1[3]/na2/in1 (nand2_1094)                        0.00       0.42 f
+  rfmod/a1[3]/na2/U1/Y (AND2X1)                           0.04       0.46 f
+  rfmod/a1[3]/na2/U2/Y (INVX1)                            0.00       0.46 r
+  rfmod/a1[3]/na2/out (nand2_1094)                        0.00       0.46 r
+  rfmod/a1[3]/out (and2_19)                               0.00       0.46 r
+  rfmod/reg4/en (reg16_4)                                 0.00       0.46 r
+  rfmod/reg4/U2/Y (INVX1)                                 0.01       0.47 f
+  rfmod/reg4/U1/Y (INVX2)                                 0.11       0.59 r
+  rfmod/reg4/mux1[0]/S (mux2_1_304)                       0.00       0.59 r
+  rfmod/reg4/mux1[0]/n1/in1 (not1_304)                    0.00       0.59 r
+  rfmod/reg4/mux1[0]/n1/U1/Y (INVX1)                      0.06       0.65 f
+  rfmod/reg4/mux1[0]/n1/out (not1_304)                    0.00       0.65 f
+  rfmod/reg4/mux1[0]/na1/in2 (nand2_946)                  0.00       0.65 f
+  rfmod/reg4/mux1[0]/na1/U1/Y (AND2X1)                    0.03       0.67 f
+  rfmod/reg4/mux1[0]/na1/U2/Y (INVX1)                     0.00       0.68 r
+  rfmod/reg4/mux1[0]/na1/out (nand2_946)                  0.00       0.68 r
+  rfmod/reg4/mux1[0]/na3/in1 (nand2_944)                  0.00       0.68 r
+  rfmod/reg4/mux1[0]/na3/U1/Y (AND2X1)                    0.04       0.72 r
+  rfmod/reg4/mux1[0]/na3/U2/Y (INVX1)                     0.02       0.74 f
+  rfmod/reg4/mux1[0]/na3/out (nand2_944)                  0.00       0.74 f
+  rfmod/reg4/mux1[0]/Out (mux2_1_304)                     0.00       0.74 f
+  rfmod/reg4/dffmod[0]/d (dff_80)                         0.00       0.74 f
+  rfmod/reg4/dffmod[0]/U5/Y (INVX1)                       0.00       0.74 r
+  rfmod/reg4/dffmod[0]/U3/Y (OR2X1)                       0.05       0.79 r
+  rfmod/reg4/dffmod[0]/U4/Y (INVX1)                       0.02       0.81 f
+  rfmod/reg4/dffmod[0]/state_reg/D (DFFPOSX1)             0.00       0.81 f
+  data arrival time                                                  0.81
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  rfmod/reg4/dffmod[0]/state_reg/CLK (DFFPOSX1)           0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -0.81
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: writeregsel<0>
+              (input port clocked by clk)
+  Endpoint: rfmod/reg4/dffmod[1]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  writeregsel<0> (in)                                     0.01       0.11 r
+  U30/Y (BUFX4)                                           0.04       0.15 r
+  rfmod/writeregsel<0> (rf)                               0.00       0.15 r
+  rfmod/decmod/in<0> (dec3_8)                             0.00       0.15 r
+  rfmod/decmod/and_D/a (and3_4)                           0.00       0.15 r
+  rfmod/decmod/and_D/and_1/a (and2_9)                     0.00       0.15 r
+  rfmod/decmod/and_D/and_1/na1/in1 (nand2_739)            0.00       0.15 r
+  rfmod/decmod/and_D/and_1/na1/U1/Y (AND2X1)              0.04       0.19 r
+  rfmod/decmod/and_D/and_1/na1/U2/Y (INVX1)               0.02       0.21 f
+  rfmod/decmod/and_D/and_1/na1/out (nand2_739)            0.00       0.21 f
+  rfmod/decmod/and_D/and_1/na2/in1 (nand2_738)            0.00       0.21 f
+  rfmod/decmod/and_D/and_1/na2/U1/Y (AND2X1)              0.04       0.26 f
+  rfmod/decmod/and_D/and_1/na2/U2/Y (INVX1)               0.00       0.26 r
+  rfmod/decmod/and_D/and_1/na2/out (nand2_738)            0.00       0.26 r
+  rfmod/decmod/and_D/and_1/out (and2_9)                   0.00       0.26 r
+  rfmod/decmod/and_D/and_2/a (and2_8)                     0.00       0.26 r
+  rfmod/decmod/and_D/and_2/na1/in1 (nand2_737)            0.00       0.26 r
+  rfmod/decmod/and_D/and_2/na1/U1/Y (AND2X1)              0.04       0.30 r
+  rfmod/decmod/and_D/and_2/na1/U2/Y (INVX1)               0.02       0.32 f
+  rfmod/decmod/and_D/and_2/na1/out (nand2_737)            0.00       0.32 f
+  rfmod/decmod/and_D/and_2/na2/in1 (nand2_736)            0.00       0.32 f
+  rfmod/decmod/and_D/and_2/na2/U1/Y (AND2X1)              0.04       0.37 f
+  rfmod/decmod/and_D/and_2/na2/U2/Y (INVX1)               0.00       0.37 r
+  rfmod/decmod/and_D/and_2/na2/out (nand2_736)            0.00       0.37 r
+  rfmod/decmod/and_D/and_2/out (and2_8)                   0.00       0.37 r
+  rfmod/decmod/and_D/out (and3_4)                         0.00       0.37 r
+  rfmod/decmod/out<3> (dec3_8)                            0.00       0.37 r
+  rfmod/a1[3]/a (and2_19)                                 0.00       0.37 r
+  rfmod/a1[3]/na1/in1 (nand2_1095)                        0.00       0.37 r
+  rfmod/a1[3]/na1/U1/Y (AND2X2)                           0.03       0.40 r
+  rfmod/a1[3]/na1/U2/Y (INVX1)                            0.02       0.42 f
+  rfmod/a1[3]/na1/out (nand2_1095)                        0.00       0.42 f
+  rfmod/a1[3]/na2/in1 (nand2_1094)                        0.00       0.42 f
+  rfmod/a1[3]/na2/U1/Y (AND2X1)                           0.04       0.46 f
+  rfmod/a1[3]/na2/U2/Y (INVX1)                            0.00       0.46 r
+  rfmod/a1[3]/na2/out (nand2_1094)                        0.00       0.46 r
+  rfmod/a1[3]/out (and2_19)                               0.00       0.46 r
+  rfmod/reg4/en (reg16_4)                                 0.00       0.46 r
+  rfmod/reg4/U2/Y (INVX1)                                 0.01       0.47 f
+  rfmod/reg4/U1/Y (INVX2)                                 0.11       0.59 r
+  rfmod/reg4/mux1[1]/S (mux2_1_305)                       0.00       0.59 r
+  rfmod/reg4/mux1[1]/n1/in1 (not1_305)                    0.00       0.59 r
+  rfmod/reg4/mux1[1]/n1/U1/Y (INVX1)                      0.06       0.65 f
+  rfmod/reg4/mux1[1]/n1/out (not1_305)                    0.00       0.65 f
+  rfmod/reg4/mux1[1]/na1/in2 (nand2_949)                  0.00       0.65 f
+  rfmod/reg4/mux1[1]/na1/U1/Y (AND2X1)                    0.03       0.67 f
+  rfmod/reg4/mux1[1]/na1/U2/Y (INVX1)                     0.00       0.68 r
+  rfmod/reg4/mux1[1]/na1/out (nand2_949)                  0.00       0.68 r
+  rfmod/reg4/mux1[1]/na3/in1 (nand2_947)                  0.00       0.68 r
+  rfmod/reg4/mux1[1]/na3/U1/Y (AND2X1)                    0.04       0.72 r
+  rfmod/reg4/mux1[1]/na3/U2/Y (INVX1)                     0.02       0.74 f
+  rfmod/reg4/mux1[1]/na3/out (nand2_947)                  0.00       0.74 f
+  rfmod/reg4/mux1[1]/Out (mux2_1_305)                     0.00       0.74 f
+  rfmod/reg4/dffmod[1]/d (dff_81)                         0.00       0.74 f
+  rfmod/reg4/dffmod[1]/U5/Y (INVX1)                       0.00       0.74 r
+  rfmod/reg4/dffmod[1]/U3/Y (OR2X1)                       0.05       0.79 r
+  rfmod/reg4/dffmod[1]/U4/Y (INVX1)                       0.02       0.81 f
+  rfmod/reg4/dffmod[1]/state_reg/D (DFFPOSX1)             0.00       0.81 f
+  data arrival time                                                  0.81
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  rfmod/reg4/dffmod[1]/state_reg/CLK (DFFPOSX1)           0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -0.81
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: writeregsel<0>
+              (input port clocked by clk)
+  Endpoint: rfmod/reg4/dffmod[2]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  writeregsel<0> (in)                                     0.01       0.11 r
+  U30/Y (BUFX4)                                           0.04       0.15 r
+  rfmod/writeregsel<0> (rf)                               0.00       0.15 r
+  rfmod/decmod/in<0> (dec3_8)                             0.00       0.15 r
+  rfmod/decmod/and_D/a (and3_4)                           0.00       0.15 r
+  rfmod/decmod/and_D/and_1/a (and2_9)                     0.00       0.15 r
+  rfmod/decmod/and_D/and_1/na1/in1 (nand2_739)            0.00       0.15 r
+  rfmod/decmod/and_D/and_1/na1/U1/Y (AND2X1)              0.04       0.19 r
+  rfmod/decmod/and_D/and_1/na1/U2/Y (INVX1)               0.02       0.21 f
+  rfmod/decmod/and_D/and_1/na1/out (nand2_739)            0.00       0.21 f
+  rfmod/decmod/and_D/and_1/na2/in1 (nand2_738)            0.00       0.21 f
+  rfmod/decmod/and_D/and_1/na2/U1/Y (AND2X1)              0.04       0.26 f
+  rfmod/decmod/and_D/and_1/na2/U2/Y (INVX1)               0.00       0.26 r
+  rfmod/decmod/and_D/and_1/na2/out (nand2_738)            0.00       0.26 r
+  rfmod/decmod/and_D/and_1/out (and2_9)                   0.00       0.26 r
+  rfmod/decmod/and_D/and_2/a (and2_8)                     0.00       0.26 r
+  rfmod/decmod/and_D/and_2/na1/in1 (nand2_737)            0.00       0.26 r
+  rfmod/decmod/and_D/and_2/na1/U1/Y (AND2X1)              0.04       0.30 r
+  rfmod/decmod/and_D/and_2/na1/U2/Y (INVX1)               0.02       0.32 f
+  rfmod/decmod/and_D/and_2/na1/out (nand2_737)            0.00       0.32 f
+  rfmod/decmod/and_D/and_2/na2/in1 (nand2_736)            0.00       0.32 f
+  rfmod/decmod/and_D/and_2/na2/U1/Y (AND2X1)              0.04       0.37 f
+  rfmod/decmod/and_D/and_2/na2/U2/Y (INVX1)               0.00       0.37 r
+  rfmod/decmod/and_D/and_2/na2/out (nand2_736)            0.00       0.37 r
+  rfmod/decmod/and_D/and_2/out (and2_8)                   0.00       0.37 r
+  rfmod/decmod/and_D/out (and3_4)                         0.00       0.37 r
+  rfmod/decmod/out<3> (dec3_8)                            0.00       0.37 r
+  rfmod/a1[3]/a (and2_19)                                 0.00       0.37 r
+  rfmod/a1[3]/na1/in1 (nand2_1095)                        0.00       0.37 r
+  rfmod/a1[3]/na1/U1/Y (AND2X2)                           0.03       0.40 r
+  rfmod/a1[3]/na1/U2/Y (INVX1)                            0.02       0.42 f
+  rfmod/a1[3]/na1/out (nand2_1095)                        0.00       0.42 f
+  rfmod/a1[3]/na2/in1 (nand2_1094)                        0.00       0.42 f
+  rfmod/a1[3]/na2/U1/Y (AND2X1)                           0.04       0.46 f
+  rfmod/a1[3]/na2/U2/Y (INVX1)                            0.00       0.46 r
+  rfmod/a1[3]/na2/out (nand2_1094)                        0.00       0.46 r
+  rfmod/a1[3]/out (and2_19)                               0.00       0.46 r
+  rfmod/reg4/en (reg16_4)                                 0.00       0.46 r
+  rfmod/reg4/U2/Y (INVX1)                                 0.01       0.47 f
+  rfmod/reg4/U1/Y (INVX2)                                 0.11       0.59 r
+  rfmod/reg4/mux1[2]/S (mux2_1_306)                       0.00       0.59 r
+  rfmod/reg4/mux1[2]/n1/in1 (not1_306)                    0.00       0.59 r
+  rfmod/reg4/mux1[2]/n1/U1/Y (INVX1)                      0.06       0.65 f
+  rfmod/reg4/mux1[2]/n1/out (not1_306)                    0.00       0.65 f
+  rfmod/reg4/mux1[2]/na1/in2 (nand2_952)                  0.00       0.65 f
+  rfmod/reg4/mux1[2]/na1/U1/Y (AND2X1)                    0.03       0.67 f
+  rfmod/reg4/mux1[2]/na1/U2/Y (INVX1)                     0.00       0.68 r
+  rfmod/reg4/mux1[2]/na1/out (nand2_952)                  0.00       0.68 r
+  rfmod/reg4/mux1[2]/na3/in1 (nand2_950)                  0.00       0.68 r
+  rfmod/reg4/mux1[2]/na3/U1/Y (AND2X1)                    0.04       0.72 r
+  rfmod/reg4/mux1[2]/na3/U2/Y (INVX1)                     0.02       0.74 f
+  rfmod/reg4/mux1[2]/na3/out (nand2_950)                  0.00       0.74 f
+  rfmod/reg4/mux1[2]/Out (mux2_1_306)                     0.00       0.74 f
+  rfmod/reg4/dffmod[2]/d (dff_82)                         0.00       0.74 f
+  rfmod/reg4/dffmod[2]/U5/Y (INVX1)                       0.00       0.74 r
+  rfmod/reg4/dffmod[2]/U3/Y (OR2X1)                       0.05       0.79 r
+  rfmod/reg4/dffmod[2]/U4/Y (INVX1)                       0.02       0.81 f
+  rfmod/reg4/dffmod[2]/state_reg/D (DFFPOSX1)             0.00       0.81 f
+  data arrival time                                                  0.81
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  rfmod/reg4/dffmod[2]/state_reg/CLK (DFFPOSX1)           0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -0.81
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: writeregsel<0>
+              (input port clocked by clk)
+  Endpoint: rfmod/reg4/dffmod[3]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  writeregsel<0> (in)                                     0.01       0.11 r
+  U30/Y (BUFX4)                                           0.04       0.15 r
+  rfmod/writeregsel<0> (rf)                               0.00       0.15 r
+  rfmod/decmod/in<0> (dec3_8)                             0.00       0.15 r
+  rfmod/decmod/and_D/a (and3_4)                           0.00       0.15 r
+  rfmod/decmod/and_D/and_1/a (and2_9)                     0.00       0.15 r
+  rfmod/decmod/and_D/and_1/na1/in1 (nand2_739)            0.00       0.15 r
+  rfmod/decmod/and_D/and_1/na1/U1/Y (AND2X1)              0.04       0.19 r
+  rfmod/decmod/and_D/and_1/na1/U2/Y (INVX1)               0.02       0.21 f
+  rfmod/decmod/and_D/and_1/na1/out (nand2_739)            0.00       0.21 f
+  rfmod/decmod/and_D/and_1/na2/in1 (nand2_738)            0.00       0.21 f
+  rfmod/decmod/and_D/and_1/na2/U1/Y (AND2X1)              0.04       0.26 f
+  rfmod/decmod/and_D/and_1/na2/U2/Y (INVX1)               0.00       0.26 r
+  rfmod/decmod/and_D/and_1/na2/out (nand2_738)            0.00       0.26 r
+  rfmod/decmod/and_D/and_1/out (and2_9)                   0.00       0.26 r
+  rfmod/decmod/and_D/and_2/a (and2_8)                     0.00       0.26 r
+  rfmod/decmod/and_D/and_2/na1/in1 (nand2_737)            0.00       0.26 r
+  rfmod/decmod/and_D/and_2/na1/U1/Y (AND2X1)              0.04       0.30 r
+  rfmod/decmod/and_D/and_2/na1/U2/Y (INVX1)               0.02       0.32 f
+  rfmod/decmod/and_D/and_2/na1/out (nand2_737)            0.00       0.32 f
+  rfmod/decmod/and_D/and_2/na2/in1 (nand2_736)            0.00       0.32 f
+  rfmod/decmod/and_D/and_2/na2/U1/Y (AND2X1)              0.04       0.37 f
+  rfmod/decmod/and_D/and_2/na2/U2/Y (INVX1)               0.00       0.37 r
+  rfmod/decmod/and_D/and_2/na2/out (nand2_736)            0.00       0.37 r
+  rfmod/decmod/and_D/and_2/out (and2_8)                   0.00       0.37 r
+  rfmod/decmod/and_D/out (and3_4)                         0.00       0.37 r
+  rfmod/decmod/out<3> (dec3_8)                            0.00       0.37 r
+  rfmod/a1[3]/a (and2_19)                                 0.00       0.37 r
+  rfmod/a1[3]/na1/in1 (nand2_1095)                        0.00       0.37 r
+  rfmod/a1[3]/na1/U1/Y (AND2X2)                           0.03       0.40 r
+  rfmod/a1[3]/na1/U2/Y (INVX1)                            0.02       0.42 f
+  rfmod/a1[3]/na1/out (nand2_1095)                        0.00       0.42 f
+  rfmod/a1[3]/na2/in1 (nand2_1094)                        0.00       0.42 f
+  rfmod/a1[3]/na2/U1/Y (AND2X1)                           0.04       0.46 f
+  rfmod/a1[3]/na2/U2/Y (INVX1)                            0.00       0.46 r
+  rfmod/a1[3]/na2/out (nand2_1094)                        0.00       0.46 r
+  rfmod/a1[3]/out (and2_19)                               0.00       0.46 r
+  rfmod/reg4/en (reg16_4)                                 0.00       0.46 r
+  rfmod/reg4/U2/Y (INVX1)                                 0.01       0.47 f
+  rfmod/reg4/U1/Y (INVX2)                                 0.11       0.59 r
+  rfmod/reg4/mux1[3]/S (mux2_1_307)                       0.00       0.59 r
+  rfmod/reg4/mux1[3]/n1/in1 (not1_307)                    0.00       0.59 r
+  rfmod/reg4/mux1[3]/n1/U1/Y (INVX1)                      0.06       0.65 f
+  rfmod/reg4/mux1[3]/n1/out (not1_307)                    0.00       0.65 f
+  rfmod/reg4/mux1[3]/na1/in2 (nand2_955)                  0.00       0.65 f
+  rfmod/reg4/mux1[3]/na1/U1/Y (AND2X1)                    0.03       0.67 f
+  rfmod/reg4/mux1[3]/na1/U2/Y (INVX1)                     0.00       0.68 r
+  rfmod/reg4/mux1[3]/na1/out (nand2_955)                  0.00       0.68 r
+  rfmod/reg4/mux1[3]/na3/in1 (nand2_953)                  0.00       0.68 r
+  rfmod/reg4/mux1[3]/na3/U1/Y (AND2X1)                    0.04       0.72 r
+  rfmod/reg4/mux1[3]/na3/U2/Y (INVX1)                     0.02       0.74 f
+  rfmod/reg4/mux1[3]/na3/out (nand2_953)                  0.00       0.74 f
+  rfmod/reg4/mux1[3]/Out (mux2_1_307)                     0.00       0.74 f
+  rfmod/reg4/dffmod[3]/d (dff_83)                         0.00       0.74 f
+  rfmod/reg4/dffmod[3]/U5/Y (INVX1)                       0.00       0.74 r
+  rfmod/reg4/dffmod[3]/U3/Y (OR2X1)                       0.05       0.79 r
+  rfmod/reg4/dffmod[3]/U4/Y (INVX1)                       0.02       0.81 f
+  rfmod/reg4/dffmod[3]/state_reg/D (DFFPOSX1)             0.00       0.81 f
+  data arrival time                                                  0.81
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  rfmod/reg4/dffmod[3]/state_reg/CLK (DFFPOSX1)           0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -0.81
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: writeregsel<0>
+              (input port clocked by clk)
+  Endpoint: rfmod/reg4/dffmod[4]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  writeregsel<0> (in)                                     0.01       0.11 r
+  U30/Y (BUFX4)                                           0.04       0.15 r
+  rfmod/writeregsel<0> (rf)                               0.00       0.15 r
+  rfmod/decmod/in<0> (dec3_8)                             0.00       0.15 r
+  rfmod/decmod/and_D/a (and3_4)                           0.00       0.15 r
+  rfmod/decmod/and_D/and_1/a (and2_9)                     0.00       0.15 r
+  rfmod/decmod/and_D/and_1/na1/in1 (nand2_739)            0.00       0.15 r
+  rfmod/decmod/and_D/and_1/na1/U1/Y (AND2X1)              0.04       0.19 r
+  rfmod/decmod/and_D/and_1/na1/U2/Y (INVX1)               0.02       0.21 f
+  rfmod/decmod/and_D/and_1/na1/out (nand2_739)            0.00       0.21 f
+  rfmod/decmod/and_D/and_1/na2/in1 (nand2_738)            0.00       0.21 f
+  rfmod/decmod/and_D/and_1/na2/U1/Y (AND2X1)              0.04       0.26 f
+  rfmod/decmod/and_D/and_1/na2/U2/Y (INVX1)               0.00       0.26 r
+  rfmod/decmod/and_D/and_1/na2/out (nand2_738)            0.00       0.26 r
+  rfmod/decmod/and_D/and_1/out (and2_9)                   0.00       0.26 r
+  rfmod/decmod/and_D/and_2/a (and2_8)                     0.00       0.26 r
+  rfmod/decmod/and_D/and_2/na1/in1 (nand2_737)            0.00       0.26 r
+  rfmod/decmod/and_D/and_2/na1/U1/Y (AND2X1)              0.04       0.30 r
+  rfmod/decmod/and_D/and_2/na1/U2/Y (INVX1)               0.02       0.32 f
+  rfmod/decmod/and_D/and_2/na1/out (nand2_737)            0.00       0.32 f
+  rfmod/decmod/and_D/and_2/na2/in1 (nand2_736)            0.00       0.32 f
+  rfmod/decmod/and_D/and_2/na2/U1/Y (AND2X1)              0.04       0.37 f
+  rfmod/decmod/and_D/and_2/na2/U2/Y (INVX1)               0.00       0.37 r
+  rfmod/decmod/and_D/and_2/na2/out (nand2_736)            0.00       0.37 r
+  rfmod/decmod/and_D/and_2/out (and2_8)                   0.00       0.37 r
+  rfmod/decmod/and_D/out (and3_4)                         0.00       0.37 r
+  rfmod/decmod/out<3> (dec3_8)                            0.00       0.37 r
+  rfmod/a1[3]/a (and2_19)                                 0.00       0.37 r
+  rfmod/a1[3]/na1/in1 (nand2_1095)                        0.00       0.37 r
+  rfmod/a1[3]/na1/U1/Y (AND2X2)                           0.03       0.40 r
+  rfmod/a1[3]/na1/U2/Y (INVX1)                            0.02       0.42 f
+  rfmod/a1[3]/na1/out (nand2_1095)                        0.00       0.42 f
+  rfmod/a1[3]/na2/in1 (nand2_1094)                        0.00       0.42 f
+  rfmod/a1[3]/na2/U1/Y (AND2X1)                           0.04       0.46 f
+  rfmod/a1[3]/na2/U2/Y (INVX1)                            0.00       0.46 r
+  rfmod/a1[3]/na2/out (nand2_1094)                        0.00       0.46 r
+  rfmod/a1[3]/out (and2_19)                               0.00       0.46 r
+  rfmod/reg4/en (reg16_4)                                 0.00       0.46 r
+  rfmod/reg4/U2/Y (INVX1)                                 0.01       0.47 f
+  rfmod/reg4/U1/Y (INVX2)                                 0.11       0.59 r
+  rfmod/reg4/mux1[4]/S (mux2_1_308)                       0.00       0.59 r
+  rfmod/reg4/mux1[4]/n1/in1 (not1_308)                    0.00       0.59 r
+  rfmod/reg4/mux1[4]/n1/U1/Y (INVX1)                      0.06       0.65 f
+  rfmod/reg4/mux1[4]/n1/out (not1_308)                    0.00       0.65 f
+  rfmod/reg4/mux1[4]/na1/in2 (nand2_958)                  0.00       0.65 f
+  rfmod/reg4/mux1[4]/na1/U1/Y (AND2X1)                    0.03       0.67 f
+  rfmod/reg4/mux1[4]/na1/U2/Y (INVX1)                     0.00       0.68 r
+  rfmod/reg4/mux1[4]/na1/out (nand2_958)                  0.00       0.68 r
+  rfmod/reg4/mux1[4]/na3/in1 (nand2_956)                  0.00       0.68 r
+  rfmod/reg4/mux1[4]/na3/U1/Y (AND2X1)                    0.04       0.72 r
+  rfmod/reg4/mux1[4]/na3/U2/Y (INVX1)                     0.02       0.74 f
+  rfmod/reg4/mux1[4]/na3/out (nand2_956)                  0.00       0.74 f
+  rfmod/reg4/mux1[4]/Out (mux2_1_308)                     0.00       0.74 f
+  rfmod/reg4/dffmod[4]/d (dff_84)                         0.00       0.74 f
+  rfmod/reg4/dffmod[4]/U5/Y (INVX1)                       0.00       0.74 r
+  rfmod/reg4/dffmod[4]/U3/Y (OR2X1)                       0.05       0.79 r
+  rfmod/reg4/dffmod[4]/U4/Y (INVX1)                       0.02       0.81 f
+  rfmod/reg4/dffmod[4]/state_reg/D (DFFPOSX1)             0.00       0.81 f
+  data arrival time                                                  0.81
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  rfmod/reg4/dffmod[4]/state_reg/CLK (DFFPOSX1)           0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -0.81
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: writeregsel<0>
+              (input port clocked by clk)
+  Endpoint: rfmod/reg4/dffmod[5]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  writeregsel<0> (in)                                     0.01       0.11 r
+  U30/Y (BUFX4)                                           0.04       0.15 r
+  rfmod/writeregsel<0> (rf)                               0.00       0.15 r
+  rfmod/decmod/in<0> (dec3_8)                             0.00       0.15 r
+  rfmod/decmod/and_D/a (and3_4)                           0.00       0.15 r
+  rfmod/decmod/and_D/and_1/a (and2_9)                     0.00       0.15 r
+  rfmod/decmod/and_D/and_1/na1/in1 (nand2_739)            0.00       0.15 r
+  rfmod/decmod/and_D/and_1/na1/U1/Y (AND2X1)              0.04       0.19 r
+  rfmod/decmod/and_D/and_1/na1/U2/Y (INVX1)               0.02       0.21 f
+  rfmod/decmod/and_D/and_1/na1/out (nand2_739)            0.00       0.21 f
+  rfmod/decmod/and_D/and_1/na2/in1 (nand2_738)            0.00       0.21 f
+  rfmod/decmod/and_D/and_1/na2/U1/Y (AND2X1)              0.04       0.26 f
+  rfmod/decmod/and_D/and_1/na2/U2/Y (INVX1)               0.00       0.26 r
+  rfmod/decmod/and_D/and_1/na2/out (nand2_738)            0.00       0.26 r
+  rfmod/decmod/and_D/and_1/out (and2_9)                   0.00       0.26 r
+  rfmod/decmod/and_D/and_2/a (and2_8)                     0.00       0.26 r
+  rfmod/decmod/and_D/and_2/na1/in1 (nand2_737)            0.00       0.26 r
+  rfmod/decmod/and_D/and_2/na1/U1/Y (AND2X1)              0.04       0.30 r
+  rfmod/decmod/and_D/and_2/na1/U2/Y (INVX1)               0.02       0.32 f
+  rfmod/decmod/and_D/and_2/na1/out (nand2_737)            0.00       0.32 f
+  rfmod/decmod/and_D/and_2/na2/in1 (nand2_736)            0.00       0.32 f
+  rfmod/decmod/and_D/and_2/na2/U1/Y (AND2X1)              0.04       0.37 f
+  rfmod/decmod/and_D/and_2/na2/U2/Y (INVX1)               0.00       0.37 r
+  rfmod/decmod/and_D/and_2/na2/out (nand2_736)            0.00       0.37 r
+  rfmod/decmod/and_D/and_2/out (and2_8)                   0.00       0.37 r
+  rfmod/decmod/and_D/out (and3_4)                         0.00       0.37 r
+  rfmod/decmod/out<3> (dec3_8)                            0.00       0.37 r
+  rfmod/a1[3]/a (and2_19)                                 0.00       0.37 r
+  rfmod/a1[3]/na1/in1 (nand2_1095)                        0.00       0.37 r
+  rfmod/a1[3]/na1/U1/Y (AND2X2)                           0.03       0.40 r
+  rfmod/a1[3]/na1/U2/Y (INVX1)                            0.02       0.42 f
+  rfmod/a1[3]/na1/out (nand2_1095)                        0.00       0.42 f
+  rfmod/a1[3]/na2/in1 (nand2_1094)                        0.00       0.42 f
+  rfmod/a1[3]/na2/U1/Y (AND2X1)                           0.04       0.46 f
+  rfmod/a1[3]/na2/U2/Y (INVX1)                            0.00       0.46 r
+  rfmod/a1[3]/na2/out (nand2_1094)                        0.00       0.46 r
+  rfmod/a1[3]/out (and2_19)                               0.00       0.46 r
+  rfmod/reg4/en (reg16_4)                                 0.00       0.46 r
+  rfmod/reg4/U2/Y (INVX1)                                 0.01       0.47 f
+  rfmod/reg4/U1/Y (INVX2)                                 0.11       0.59 r
+  rfmod/reg4/mux1[5]/S (mux2_1_309)                       0.00       0.59 r
+  rfmod/reg4/mux1[5]/n1/in1 (not1_309)                    0.00       0.59 r
+  rfmod/reg4/mux1[5]/n1/U1/Y (INVX1)                      0.06       0.65 f
+  rfmod/reg4/mux1[5]/n1/out (not1_309)                    0.00       0.65 f
+  rfmod/reg4/mux1[5]/na1/in2 (nand2_961)                  0.00       0.65 f
+  rfmod/reg4/mux1[5]/na1/U1/Y (AND2X1)                    0.03       0.67 f
+  rfmod/reg4/mux1[5]/na1/U2/Y (INVX1)                     0.00       0.68 r
+  rfmod/reg4/mux1[5]/na1/out (nand2_961)                  0.00       0.68 r
+  rfmod/reg4/mux1[5]/na3/in1 (nand2_959)                  0.00       0.68 r
+  rfmod/reg4/mux1[5]/na3/U1/Y (AND2X1)                    0.04       0.72 r
+  rfmod/reg4/mux1[5]/na3/U2/Y (INVX1)                     0.02       0.74 f
+  rfmod/reg4/mux1[5]/na3/out (nand2_959)                  0.00       0.74 f
+  rfmod/reg4/mux1[5]/Out (mux2_1_309)                     0.00       0.74 f
+  rfmod/reg4/dffmod[5]/d (dff_85)                         0.00       0.74 f
+  rfmod/reg4/dffmod[5]/U5/Y (INVX1)                       0.00       0.74 r
+  rfmod/reg4/dffmod[5]/U3/Y (OR2X1)                       0.05       0.79 r
+  rfmod/reg4/dffmod[5]/U4/Y (INVX1)                       0.02       0.81 f
+  rfmod/reg4/dffmod[5]/state_reg/D (DFFPOSX1)             0.00       0.81 f
+  data arrival time                                                  0.81
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  rfmod/reg4/dffmod[5]/state_reg/CLK (DFFPOSX1)           0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -0.81
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: writeregsel<0>
+              (input port clocked by clk)
+  Endpoint: rfmod/reg4/dffmod[6]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  writeregsel<0> (in)                                     0.01       0.11 r
+  U30/Y (BUFX4)                                           0.04       0.15 r
+  rfmod/writeregsel<0> (rf)                               0.00       0.15 r
+  rfmod/decmod/in<0> (dec3_8)                             0.00       0.15 r
+  rfmod/decmod/and_D/a (and3_4)                           0.00       0.15 r
+  rfmod/decmod/and_D/and_1/a (and2_9)                     0.00       0.15 r
+  rfmod/decmod/and_D/and_1/na1/in1 (nand2_739)            0.00       0.15 r
+  rfmod/decmod/and_D/and_1/na1/U1/Y (AND2X1)              0.04       0.19 r
+  rfmod/decmod/and_D/and_1/na1/U2/Y (INVX1)               0.02       0.21 f
+  rfmod/decmod/and_D/and_1/na1/out (nand2_739)            0.00       0.21 f
+  rfmod/decmod/and_D/and_1/na2/in1 (nand2_738)            0.00       0.21 f
+  rfmod/decmod/and_D/and_1/na2/U1/Y (AND2X1)              0.04       0.26 f
+  rfmod/decmod/and_D/and_1/na2/U2/Y (INVX1)               0.00       0.26 r
+  rfmod/decmod/and_D/and_1/na2/out (nand2_738)            0.00       0.26 r
+  rfmod/decmod/and_D/and_1/out (and2_9)                   0.00       0.26 r
+  rfmod/decmod/and_D/and_2/a (and2_8)                     0.00       0.26 r
+  rfmod/decmod/and_D/and_2/na1/in1 (nand2_737)            0.00       0.26 r
+  rfmod/decmod/and_D/and_2/na1/U1/Y (AND2X1)              0.04       0.30 r
+  rfmod/decmod/and_D/and_2/na1/U2/Y (INVX1)               0.02       0.32 f
+  rfmod/decmod/and_D/and_2/na1/out (nand2_737)            0.00       0.32 f
+  rfmod/decmod/and_D/and_2/na2/in1 (nand2_736)            0.00       0.32 f
+  rfmod/decmod/and_D/and_2/na2/U1/Y (AND2X1)              0.04       0.37 f
+  rfmod/decmod/and_D/and_2/na2/U2/Y (INVX1)               0.00       0.37 r
+  rfmod/decmod/and_D/and_2/na2/out (nand2_736)            0.00       0.37 r
+  rfmod/decmod/and_D/and_2/out (and2_8)                   0.00       0.37 r
+  rfmod/decmod/and_D/out (and3_4)                         0.00       0.37 r
+  rfmod/decmod/out<3> (dec3_8)                            0.00       0.37 r
+  rfmod/a1[3]/a (and2_19)                                 0.00       0.37 r
+  rfmod/a1[3]/na1/in1 (nand2_1095)                        0.00       0.37 r
+  rfmod/a1[3]/na1/U1/Y (AND2X2)                           0.03       0.40 r
+  rfmod/a1[3]/na1/U2/Y (INVX1)                            0.02       0.42 f
+  rfmod/a1[3]/na1/out (nand2_1095)                        0.00       0.42 f
+  rfmod/a1[3]/na2/in1 (nand2_1094)                        0.00       0.42 f
+  rfmod/a1[3]/na2/U1/Y (AND2X1)                           0.04       0.46 f
+  rfmod/a1[3]/na2/U2/Y (INVX1)                            0.00       0.46 r
+  rfmod/a1[3]/na2/out (nand2_1094)                        0.00       0.46 r
+  rfmod/a1[3]/out (and2_19)                               0.00       0.46 r
+  rfmod/reg4/en (reg16_4)                                 0.00       0.46 r
+  rfmod/reg4/U2/Y (INVX1)                                 0.01       0.47 f
+  rfmod/reg4/U1/Y (INVX2)                                 0.11       0.59 r
+  rfmod/reg4/mux1[6]/S (mux2_1_310)                       0.00       0.59 r
+  rfmod/reg4/mux1[6]/n1/in1 (not1_310)                    0.00       0.59 r
+  rfmod/reg4/mux1[6]/n1/U1/Y (INVX1)                      0.06       0.65 f
+  rfmod/reg4/mux1[6]/n1/out (not1_310)                    0.00       0.65 f
+  rfmod/reg4/mux1[6]/na1/in2 (nand2_964)                  0.00       0.65 f
+  rfmod/reg4/mux1[6]/na1/U1/Y (AND2X1)                    0.03       0.67 f
+  rfmod/reg4/mux1[6]/na1/U2/Y (INVX1)                     0.00       0.68 r
+  rfmod/reg4/mux1[6]/na1/out (nand2_964)                  0.00       0.68 r
+  rfmod/reg4/mux1[6]/na3/in1 (nand2_962)                  0.00       0.68 r
+  rfmod/reg4/mux1[6]/na3/U1/Y (AND2X1)                    0.04       0.72 r
+  rfmod/reg4/mux1[6]/na3/U2/Y (INVX1)                     0.02       0.74 f
+  rfmod/reg4/mux1[6]/na3/out (nand2_962)                  0.00       0.74 f
+  rfmod/reg4/mux1[6]/Out (mux2_1_310)                     0.00       0.74 f
+  rfmod/reg4/dffmod[6]/d (dff_86)                         0.00       0.74 f
+  rfmod/reg4/dffmod[6]/U5/Y (INVX1)                       0.00       0.74 r
+  rfmod/reg4/dffmod[6]/U3/Y (OR2X1)                       0.05       0.79 r
+  rfmod/reg4/dffmod[6]/U4/Y (INVX1)                       0.02       0.81 f
+  rfmod/reg4/dffmod[6]/state_reg/D (DFFPOSX1)             0.00       0.81 f
+  data arrival time                                                  0.81
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  rfmod/reg4/dffmod[6]/state_reg/CLK (DFFPOSX1)           0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -0.81
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: writeregsel<0>
+              (input port clocked by clk)
+  Endpoint: rfmod/reg4/dffmod[7]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  writeregsel<0> (in)                                     0.01       0.11 r
+  U30/Y (BUFX4)                                           0.04       0.15 r
+  rfmod/writeregsel<0> (rf)                               0.00       0.15 r
+  rfmod/decmod/in<0> (dec3_8)                             0.00       0.15 r
+  rfmod/decmod/and_D/a (and3_4)                           0.00       0.15 r
+  rfmod/decmod/and_D/and_1/a (and2_9)                     0.00       0.15 r
+  rfmod/decmod/and_D/and_1/na1/in1 (nand2_739)            0.00       0.15 r
+  rfmod/decmod/and_D/and_1/na1/U1/Y (AND2X1)              0.04       0.19 r
+  rfmod/decmod/and_D/and_1/na1/U2/Y (INVX1)               0.02       0.21 f
+  rfmod/decmod/and_D/and_1/na1/out (nand2_739)            0.00       0.21 f
+  rfmod/decmod/and_D/and_1/na2/in1 (nand2_738)            0.00       0.21 f
+  rfmod/decmod/and_D/and_1/na2/U1/Y (AND2X1)              0.04       0.26 f
+  rfmod/decmod/and_D/and_1/na2/U2/Y (INVX1)               0.00       0.26 r
+  rfmod/decmod/and_D/and_1/na2/out (nand2_738)            0.00       0.26 r
+  rfmod/decmod/and_D/and_1/out (and2_9)                   0.00       0.26 r
+  rfmod/decmod/and_D/and_2/a (and2_8)                     0.00       0.26 r
+  rfmod/decmod/and_D/and_2/na1/in1 (nand2_737)            0.00       0.26 r
+  rfmod/decmod/and_D/and_2/na1/U1/Y (AND2X1)              0.04       0.30 r
+  rfmod/decmod/and_D/and_2/na1/U2/Y (INVX1)               0.02       0.32 f
+  rfmod/decmod/and_D/and_2/na1/out (nand2_737)            0.00       0.32 f
+  rfmod/decmod/and_D/and_2/na2/in1 (nand2_736)            0.00       0.32 f
+  rfmod/decmod/and_D/and_2/na2/U1/Y (AND2X1)              0.04       0.37 f
+  rfmod/decmod/and_D/and_2/na2/U2/Y (INVX1)               0.00       0.37 r
+  rfmod/decmod/and_D/and_2/na2/out (nand2_736)            0.00       0.37 r
+  rfmod/decmod/and_D/and_2/out (and2_8)                   0.00       0.37 r
+  rfmod/decmod/and_D/out (and3_4)                         0.00       0.37 r
+  rfmod/decmod/out<3> (dec3_8)                            0.00       0.37 r
+  rfmod/a1[3]/a (and2_19)                                 0.00       0.37 r
+  rfmod/a1[3]/na1/in1 (nand2_1095)                        0.00       0.37 r
+  rfmod/a1[3]/na1/U1/Y (AND2X2)                           0.03       0.40 r
+  rfmod/a1[3]/na1/U2/Y (INVX1)                            0.02       0.42 f
+  rfmod/a1[3]/na1/out (nand2_1095)                        0.00       0.42 f
+  rfmod/a1[3]/na2/in1 (nand2_1094)                        0.00       0.42 f
+  rfmod/a1[3]/na2/U1/Y (AND2X1)                           0.04       0.46 f
+  rfmod/a1[3]/na2/U2/Y (INVX1)                            0.00       0.46 r
+  rfmod/a1[3]/na2/out (nand2_1094)                        0.00       0.46 r
+  rfmod/a1[3]/out (and2_19)                               0.00       0.46 r
+  rfmod/reg4/en (reg16_4)                                 0.00       0.46 r
+  rfmod/reg4/U2/Y (INVX1)                                 0.01       0.47 f
+  rfmod/reg4/U1/Y (INVX2)                                 0.11       0.59 r
+  rfmod/reg4/mux1[7]/S (mux2_1_311)                       0.00       0.59 r
+  rfmod/reg4/mux1[7]/n1/in1 (not1_311)                    0.00       0.59 r
+  rfmod/reg4/mux1[7]/n1/U1/Y (INVX1)                      0.06       0.65 f
+  rfmod/reg4/mux1[7]/n1/out (not1_311)                    0.00       0.65 f
+  rfmod/reg4/mux1[7]/na1/in2 (nand2_967)                  0.00       0.65 f
+  rfmod/reg4/mux1[7]/na1/U1/Y (AND2X1)                    0.03       0.67 f
+  rfmod/reg4/mux1[7]/na1/U2/Y (INVX1)                     0.00       0.68 r
+  rfmod/reg4/mux1[7]/na1/out (nand2_967)                  0.00       0.68 r
+  rfmod/reg4/mux1[7]/na3/in1 (nand2_965)                  0.00       0.68 r
+  rfmod/reg4/mux1[7]/na3/U1/Y (AND2X1)                    0.04       0.72 r
+  rfmod/reg4/mux1[7]/na3/U2/Y (INVX1)                     0.02       0.74 f
+  rfmod/reg4/mux1[7]/na3/out (nand2_965)                  0.00       0.74 f
+  rfmod/reg4/mux1[7]/Out (mux2_1_311)                     0.00       0.74 f
+  rfmod/reg4/dffmod[7]/d (dff_87)                         0.00       0.74 f
+  rfmod/reg4/dffmod[7]/U5/Y (INVX1)                       0.00       0.74 r
+  rfmod/reg4/dffmod[7]/U3/Y (OR2X1)                       0.05       0.79 r
+  rfmod/reg4/dffmod[7]/U4/Y (INVX1)                       0.02       0.81 f
+  rfmod/reg4/dffmod[7]/state_reg/D (DFFPOSX1)             0.00       0.81 f
+  data arrival time                                                  0.81
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  rfmod/reg4/dffmod[7]/state_reg/CLK (DFFPOSX1)           0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -0.81
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: writeregsel<0>
+              (input port clocked by clk)
+  Endpoint: rfmod/reg4/dffmod[8]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  writeregsel<0> (in)                                     0.01       0.11 r
+  U30/Y (BUFX4)                                           0.04       0.15 r
+  rfmod/writeregsel<0> (rf)                               0.00       0.15 r
+  rfmod/decmod/in<0> (dec3_8)                             0.00       0.15 r
+  rfmod/decmod/and_D/a (and3_4)                           0.00       0.15 r
+  rfmod/decmod/and_D/and_1/a (and2_9)                     0.00       0.15 r
+  rfmod/decmod/and_D/and_1/na1/in1 (nand2_739)            0.00       0.15 r
+  rfmod/decmod/and_D/and_1/na1/U1/Y (AND2X1)              0.04       0.19 r
+  rfmod/decmod/and_D/and_1/na1/U2/Y (INVX1)               0.02       0.21 f
+  rfmod/decmod/and_D/and_1/na1/out (nand2_739)            0.00       0.21 f
+  rfmod/decmod/and_D/and_1/na2/in1 (nand2_738)            0.00       0.21 f
+  rfmod/decmod/and_D/and_1/na2/U1/Y (AND2X1)              0.04       0.26 f
+  rfmod/decmod/and_D/and_1/na2/U2/Y (INVX1)               0.00       0.26 r
+  rfmod/decmod/and_D/and_1/na2/out (nand2_738)            0.00       0.26 r
+  rfmod/decmod/and_D/and_1/out (and2_9)                   0.00       0.26 r
+  rfmod/decmod/and_D/and_2/a (and2_8)                     0.00       0.26 r
+  rfmod/decmod/and_D/and_2/na1/in1 (nand2_737)            0.00       0.26 r
+  rfmod/decmod/and_D/and_2/na1/U1/Y (AND2X1)              0.04       0.30 r
+  rfmod/decmod/and_D/and_2/na1/U2/Y (INVX1)               0.02       0.32 f
+  rfmod/decmod/and_D/and_2/na1/out (nand2_737)            0.00       0.32 f
+  rfmod/decmod/and_D/and_2/na2/in1 (nand2_736)            0.00       0.32 f
+  rfmod/decmod/and_D/and_2/na2/U1/Y (AND2X1)              0.04       0.37 f
+  rfmod/decmod/and_D/and_2/na2/U2/Y (INVX1)               0.00       0.37 r
+  rfmod/decmod/and_D/and_2/na2/out (nand2_736)            0.00       0.37 r
+  rfmod/decmod/and_D/and_2/out (and2_8)                   0.00       0.37 r
+  rfmod/decmod/and_D/out (and3_4)                         0.00       0.37 r
+  rfmod/decmod/out<3> (dec3_8)                            0.00       0.37 r
+  rfmod/a1[3]/a (and2_19)                                 0.00       0.37 r
+  rfmod/a1[3]/na1/in1 (nand2_1095)                        0.00       0.37 r
+  rfmod/a1[3]/na1/U1/Y (AND2X2)                           0.03       0.40 r
+  rfmod/a1[3]/na1/U2/Y (INVX1)                            0.02       0.42 f
+  rfmod/a1[3]/na1/out (nand2_1095)                        0.00       0.42 f
+  rfmod/a1[3]/na2/in1 (nand2_1094)                        0.00       0.42 f
+  rfmod/a1[3]/na2/U1/Y (AND2X1)                           0.04       0.46 f
+  rfmod/a1[3]/na2/U2/Y (INVX1)                            0.00       0.46 r
+  rfmod/a1[3]/na2/out (nand2_1094)                        0.00       0.46 r
+  rfmod/a1[3]/out (and2_19)                               0.00       0.46 r
+  rfmod/reg4/en (reg16_4)                                 0.00       0.46 r
+  rfmod/reg4/U2/Y (INVX1)                                 0.01       0.47 f
+  rfmod/reg4/U1/Y (INVX2)                                 0.11       0.59 r
+  rfmod/reg4/mux1[8]/S (mux2_1_312)                       0.00       0.59 r
+  rfmod/reg4/mux1[8]/n1/in1 (not1_312)                    0.00       0.59 r
+  rfmod/reg4/mux1[8]/n1/U1/Y (INVX1)                      0.06       0.65 f
+  rfmod/reg4/mux1[8]/n1/out (not1_312)                    0.00       0.65 f
+  rfmod/reg4/mux1[8]/na1/in2 (nand2_970)                  0.00       0.65 f
+  rfmod/reg4/mux1[8]/na1/U1/Y (AND2X1)                    0.03       0.67 f
+  rfmod/reg4/mux1[8]/na1/U2/Y (INVX1)                     0.00       0.68 r
+  rfmod/reg4/mux1[8]/na1/out (nand2_970)                  0.00       0.68 r
+  rfmod/reg4/mux1[8]/na3/in1 (nand2_968)                  0.00       0.68 r
+  rfmod/reg4/mux1[8]/na3/U1/Y (AND2X1)                    0.04       0.72 r
+  rfmod/reg4/mux1[8]/na3/U2/Y (INVX1)                     0.02       0.74 f
+  rfmod/reg4/mux1[8]/na3/out (nand2_968)                  0.00       0.74 f
+  rfmod/reg4/mux1[8]/Out (mux2_1_312)                     0.00       0.74 f
+  rfmod/reg4/dffmod[8]/d (dff_88)                         0.00       0.74 f
+  rfmod/reg4/dffmod[8]/U5/Y (INVX1)                       0.00       0.74 r
+  rfmod/reg4/dffmod[8]/U3/Y (OR2X1)                       0.05       0.79 r
+  rfmod/reg4/dffmod[8]/U4/Y (INVX1)                       0.02       0.81 f
+  rfmod/reg4/dffmod[8]/state_reg/D (DFFPOSX1)             0.00       0.81 f
+  data arrival time                                                  0.81
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  rfmod/reg4/dffmod[8]/state_reg/CLK (DFFPOSX1)           0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -0.81
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: writeregsel<0>
+              (input port clocked by clk)
+  Endpoint: rfmod/reg8/dffmod[0]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  writeregsel<0> (in)                                     0.01       0.11 r
+  U30/Y (BUFX4)                                           0.04       0.15 r
+  rfmod/writeregsel<0> (rf)                               0.00       0.15 r
+  rfmod/decmod/in<0> (dec3_8)                             0.00       0.15 r
+  rfmod/decmod/and_H/a (and3_0)                           0.00       0.15 r
+  rfmod/decmod/and_H/and_1/a (and2_1)                     0.00       0.15 r
+  rfmod/decmod/and_H/and_1/na1/in1 (nand2_723)            0.00       0.15 r
+  rfmod/decmod/and_H/and_1/na1/U1/Y (AND2X1)              0.04       0.19 r
+  rfmod/decmod/and_H/and_1/na1/U2/Y (INVX1)               0.02       0.21 f
+  rfmod/decmod/and_H/and_1/na1/out (nand2_723)            0.00       0.21 f
+  rfmod/decmod/and_H/and_1/na2/in1 (nand2_722)            0.00       0.21 f
+  rfmod/decmod/and_H/and_1/na2/U1/Y (AND2X1)              0.04       0.26 f
+  rfmod/decmod/and_H/and_1/na2/U2/Y (INVX1)               0.00       0.26 r
+  rfmod/decmod/and_H/and_1/na2/out (nand2_722)            0.00       0.26 r
+  rfmod/decmod/and_H/and_1/out (and2_1)                   0.00       0.26 r
+  rfmod/decmod/and_H/and_2/a (and2_0)                     0.00       0.26 r
+  rfmod/decmod/and_H/and_2/na1/in1 (nand2_721)            0.00       0.26 r
+  rfmod/decmod/and_H/and_2/na1/U1/Y (AND2X1)              0.04       0.30 r
+  rfmod/decmod/and_H/and_2/na1/U2/Y (INVX1)               0.02       0.32 f
+  rfmod/decmod/and_H/and_2/na1/out (nand2_721)            0.00       0.32 f
+  rfmod/decmod/and_H/and_2/na2/in1 (nand2_720)            0.00       0.32 f
+  rfmod/decmod/and_H/and_2/na2/U1/Y (AND2X1)              0.04       0.37 f
+  rfmod/decmod/and_H/and_2/na2/U2/Y (INVX1)               0.00       0.37 r
+  rfmod/decmod/and_H/and_2/na2/out (nand2_720)            0.00       0.37 r
+  rfmod/decmod/and_H/and_2/out (and2_0)                   0.00       0.37 r
+  rfmod/decmod/and_H/out (and3_0)                         0.00       0.37 r
+  rfmod/decmod/out<7> (dec3_8)                            0.00       0.37 r
+  rfmod/a1[7]/a (and2_23)                                 0.00       0.37 r
+  rfmod/a1[7]/na1/in1 (nand2_1103)                        0.00       0.37 r
+  rfmod/a1[7]/na1/U1/Y (AND2X2)                           0.03       0.40 r
+  rfmod/a1[7]/na1/U2/Y (INVX1)                            0.02       0.42 f
+  rfmod/a1[7]/na1/out (nand2_1103)                        0.00       0.42 f
+  rfmod/a1[7]/na2/in1 (nand2_1102)                        0.00       0.42 f
+  rfmod/a1[7]/na2/U1/Y (AND2X1)                           0.04       0.46 f
+  rfmod/a1[7]/na2/U2/Y (INVX1)                            0.00       0.46 r
+  rfmod/a1[7]/na2/out (nand2_1102)                        0.00       0.46 r
+  rfmod/a1[7]/out (and2_23)                               0.00       0.46 r
+  rfmod/reg8/en (reg16_0)                                 0.00       0.46 r
+  rfmod/reg8/U2/Y (INVX1)                                 0.01       0.47 f
+  rfmod/reg8/U1/Y (INVX2)                                 0.11       0.59 r
+  rfmod/reg8/mux1[0]/S (mux2_1_240)                       0.00       0.59 r
+  rfmod/reg8/mux1[0]/n1/in1 (not1_240)                    0.00       0.59 r
+  rfmod/reg8/mux1[0]/n1/U1/Y (INVX1)                      0.06       0.65 f
+  rfmod/reg8/mux1[0]/n1/out (not1_240)                    0.00       0.65 f
+  rfmod/reg8/mux1[0]/na1/in2 (nand2_754)                  0.00       0.65 f
+  rfmod/reg8/mux1[0]/na1/U1/Y (AND2X1)                    0.03       0.67 f
+  rfmod/reg8/mux1[0]/na1/U2/Y (INVX1)                     0.00       0.68 r
+  rfmod/reg8/mux1[0]/na1/out (nand2_754)                  0.00       0.68 r
+  rfmod/reg8/mux1[0]/na3/in1 (nand2_752)                  0.00       0.68 r
+  rfmod/reg8/mux1[0]/na3/U1/Y (AND2X1)                    0.04       0.72 r
+  rfmod/reg8/mux1[0]/na3/U2/Y (INVX1)                     0.02       0.74 f
+  rfmod/reg8/mux1[0]/na3/out (nand2_752)                  0.00       0.74 f
+  rfmod/reg8/mux1[0]/Out (mux2_1_240)                     0.00       0.74 f
+  rfmod/reg8/dffmod[0]/d (dff_16)                         0.00       0.74 f
+  rfmod/reg8/dffmod[0]/U5/Y (INVX1)                       0.00       0.74 r
+  rfmod/reg8/dffmod[0]/U3/Y (OR2X1)                       0.05       0.79 r
+  rfmod/reg8/dffmod[0]/U4/Y (INVX1)                       0.02       0.81 f
+  rfmod/reg8/dffmod[0]/state_reg/D (DFFPOSX1)             0.00       0.81 f
+  data arrival time                                                  0.81
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  rfmod/reg8/dffmod[0]/state_reg/CLK (DFFPOSX1)           0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -0.81
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: writeregsel<0>
+              (input port clocked by clk)
+  Endpoint: rfmod/reg8/dffmod[1]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  writeregsel<0> (in)                                     0.01       0.11 r
+  U30/Y (BUFX4)                                           0.04       0.15 r
+  rfmod/writeregsel<0> (rf)                               0.00       0.15 r
+  rfmod/decmod/in<0> (dec3_8)                             0.00       0.15 r
+  rfmod/decmod/and_H/a (and3_0)                           0.00       0.15 r
+  rfmod/decmod/and_H/and_1/a (and2_1)                     0.00       0.15 r
+  rfmod/decmod/and_H/and_1/na1/in1 (nand2_723)            0.00       0.15 r
+  rfmod/decmod/and_H/and_1/na1/U1/Y (AND2X1)              0.04       0.19 r
+  rfmod/decmod/and_H/and_1/na1/U2/Y (INVX1)               0.02       0.21 f
+  rfmod/decmod/and_H/and_1/na1/out (nand2_723)            0.00       0.21 f
+  rfmod/decmod/and_H/and_1/na2/in1 (nand2_722)            0.00       0.21 f
+  rfmod/decmod/and_H/and_1/na2/U1/Y (AND2X1)              0.04       0.26 f
+  rfmod/decmod/and_H/and_1/na2/U2/Y (INVX1)               0.00       0.26 r
+  rfmod/decmod/and_H/and_1/na2/out (nand2_722)            0.00       0.26 r
+  rfmod/decmod/and_H/and_1/out (and2_1)                   0.00       0.26 r
+  rfmod/decmod/and_H/and_2/a (and2_0)                     0.00       0.26 r
+  rfmod/decmod/and_H/and_2/na1/in1 (nand2_721)            0.00       0.26 r
+  rfmod/decmod/and_H/and_2/na1/U1/Y (AND2X1)              0.04       0.30 r
+  rfmod/decmod/and_H/and_2/na1/U2/Y (INVX1)               0.02       0.32 f
+  rfmod/decmod/and_H/and_2/na1/out (nand2_721)            0.00       0.32 f
+  rfmod/decmod/and_H/and_2/na2/in1 (nand2_720)            0.00       0.32 f
+  rfmod/decmod/and_H/and_2/na2/U1/Y (AND2X1)              0.04       0.37 f
+  rfmod/decmod/and_H/and_2/na2/U2/Y (INVX1)               0.00       0.37 r
+  rfmod/decmod/and_H/and_2/na2/out (nand2_720)            0.00       0.37 r
+  rfmod/decmod/and_H/and_2/out (and2_0)                   0.00       0.37 r
+  rfmod/decmod/and_H/out (and3_0)                         0.00       0.37 r
+  rfmod/decmod/out<7> (dec3_8)                            0.00       0.37 r
+  rfmod/a1[7]/a (and2_23)                                 0.00       0.37 r
+  rfmod/a1[7]/na1/in1 (nand2_1103)                        0.00       0.37 r
+  rfmod/a1[7]/na1/U1/Y (AND2X2)                           0.03       0.40 r
+  rfmod/a1[7]/na1/U2/Y (INVX1)                            0.02       0.42 f
+  rfmod/a1[7]/na1/out (nand2_1103)                        0.00       0.42 f
+  rfmod/a1[7]/na2/in1 (nand2_1102)                        0.00       0.42 f
+  rfmod/a1[7]/na2/U1/Y (AND2X1)                           0.04       0.46 f
+  rfmod/a1[7]/na2/U2/Y (INVX1)                            0.00       0.46 r
+  rfmod/a1[7]/na2/out (nand2_1102)                        0.00       0.46 r
+  rfmod/a1[7]/out (and2_23)                               0.00       0.46 r
+  rfmod/reg8/en (reg16_0)                                 0.00       0.46 r
+  rfmod/reg8/U2/Y (INVX1)                                 0.01       0.47 f
+  rfmod/reg8/U1/Y (INVX2)                                 0.11       0.59 r
+  rfmod/reg8/mux1[1]/S (mux2_1_241)                       0.00       0.59 r
+  rfmod/reg8/mux1[1]/n1/in1 (not1_241)                    0.00       0.59 r
+  rfmod/reg8/mux1[1]/n1/U1/Y (INVX1)                      0.06       0.65 f
+  rfmod/reg8/mux1[1]/n1/out (not1_241)                    0.00       0.65 f
+  rfmod/reg8/mux1[1]/na1/in2 (nand2_757)                  0.00       0.65 f
+  rfmod/reg8/mux1[1]/na1/U1/Y (AND2X1)                    0.03       0.67 f
+  rfmod/reg8/mux1[1]/na1/U2/Y (INVX1)                     0.00       0.68 r
+  rfmod/reg8/mux1[1]/na1/out (nand2_757)                  0.00       0.68 r
+  rfmod/reg8/mux1[1]/na3/in1 (nand2_755)                  0.00       0.68 r
+  rfmod/reg8/mux1[1]/na3/U1/Y (AND2X1)                    0.04       0.72 r
+  rfmod/reg8/mux1[1]/na3/U2/Y (INVX1)                     0.02       0.74 f
+  rfmod/reg8/mux1[1]/na3/out (nand2_755)                  0.00       0.74 f
+  rfmod/reg8/mux1[1]/Out (mux2_1_241)                     0.00       0.74 f
+  rfmod/reg8/dffmod[1]/d (dff_17)                         0.00       0.74 f
+  rfmod/reg8/dffmod[1]/U5/Y (INVX1)                       0.00       0.74 r
+  rfmod/reg8/dffmod[1]/U3/Y (OR2X1)                       0.05       0.79 r
+  rfmod/reg8/dffmod[1]/U4/Y (INVX1)                       0.02       0.81 f
+  rfmod/reg8/dffmod[1]/state_reg/D (DFFPOSX1)             0.00       0.81 f
+  data arrival time                                                  0.81
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  rfmod/reg8/dffmod[1]/state_reg/CLK (DFFPOSX1)           0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -0.81
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: writeregsel<0>
+              (input port clocked by clk)
+  Endpoint: rfmod/reg8/dffmod[2]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  writeregsel<0> (in)                                     0.01       0.11 r
+  U30/Y (BUFX4)                                           0.04       0.15 r
+  rfmod/writeregsel<0> (rf)                               0.00       0.15 r
+  rfmod/decmod/in<0> (dec3_8)                             0.00       0.15 r
+  rfmod/decmod/and_H/a (and3_0)                           0.00       0.15 r
+  rfmod/decmod/and_H/and_1/a (and2_1)                     0.00       0.15 r
+  rfmod/decmod/and_H/and_1/na1/in1 (nand2_723)            0.00       0.15 r
+  rfmod/decmod/and_H/and_1/na1/U1/Y (AND2X1)              0.04       0.19 r
+  rfmod/decmod/and_H/and_1/na1/U2/Y (INVX1)               0.02       0.21 f
+  rfmod/decmod/and_H/and_1/na1/out (nand2_723)            0.00       0.21 f
+  rfmod/decmod/and_H/and_1/na2/in1 (nand2_722)            0.00       0.21 f
+  rfmod/decmod/and_H/and_1/na2/U1/Y (AND2X1)              0.04       0.26 f
+  rfmod/decmod/and_H/and_1/na2/U2/Y (INVX1)               0.00       0.26 r
+  rfmod/decmod/and_H/and_1/na2/out (nand2_722)            0.00       0.26 r
+  rfmod/decmod/and_H/and_1/out (and2_1)                   0.00       0.26 r
+  rfmod/decmod/and_H/and_2/a (and2_0)                     0.00       0.26 r
+  rfmod/decmod/and_H/and_2/na1/in1 (nand2_721)            0.00       0.26 r
+  rfmod/decmod/and_H/and_2/na1/U1/Y (AND2X1)              0.04       0.30 r
+  rfmod/decmod/and_H/and_2/na1/U2/Y (INVX1)               0.02       0.32 f
+  rfmod/decmod/and_H/and_2/na1/out (nand2_721)            0.00       0.32 f
+  rfmod/decmod/and_H/and_2/na2/in1 (nand2_720)            0.00       0.32 f
+  rfmod/decmod/and_H/and_2/na2/U1/Y (AND2X1)              0.04       0.37 f
+  rfmod/decmod/and_H/and_2/na2/U2/Y (INVX1)               0.00       0.37 r
+  rfmod/decmod/and_H/and_2/na2/out (nand2_720)            0.00       0.37 r
+  rfmod/decmod/and_H/and_2/out (and2_0)                   0.00       0.37 r
+  rfmod/decmod/and_H/out (and3_0)                         0.00       0.37 r
+  rfmod/decmod/out<7> (dec3_8)                            0.00       0.37 r
+  rfmod/a1[7]/a (and2_23)                                 0.00       0.37 r
+  rfmod/a1[7]/na1/in1 (nand2_1103)                        0.00       0.37 r
+  rfmod/a1[7]/na1/U1/Y (AND2X2)                           0.03       0.40 r
+  rfmod/a1[7]/na1/U2/Y (INVX1)                            0.02       0.42 f
+  rfmod/a1[7]/na1/out (nand2_1103)                        0.00       0.42 f
+  rfmod/a1[7]/na2/in1 (nand2_1102)                        0.00       0.42 f
+  rfmod/a1[7]/na2/U1/Y (AND2X1)                           0.04       0.46 f
+  rfmod/a1[7]/na2/U2/Y (INVX1)                            0.00       0.46 r
+  rfmod/a1[7]/na2/out (nand2_1102)                        0.00       0.46 r
+  rfmod/a1[7]/out (and2_23)                               0.00       0.46 r
+  rfmod/reg8/en (reg16_0)                                 0.00       0.46 r
+  rfmod/reg8/U2/Y (INVX1)                                 0.01       0.47 f
+  rfmod/reg8/U1/Y (INVX2)                                 0.11       0.59 r
+  rfmod/reg8/mux1[2]/S (mux2_1_242)                       0.00       0.59 r
+  rfmod/reg8/mux1[2]/n1/in1 (not1_242)                    0.00       0.59 r
+  rfmod/reg8/mux1[2]/n1/U1/Y (INVX1)                      0.06       0.65 f
+  rfmod/reg8/mux1[2]/n1/out (not1_242)                    0.00       0.65 f
+  rfmod/reg8/mux1[2]/na1/in2 (nand2_760)                  0.00       0.65 f
+  rfmod/reg8/mux1[2]/na1/U1/Y (AND2X1)                    0.03       0.67 f
+  rfmod/reg8/mux1[2]/na1/U2/Y (INVX1)                     0.00       0.68 r
+  rfmod/reg8/mux1[2]/na1/out (nand2_760)                  0.00       0.68 r
+  rfmod/reg8/mux1[2]/na3/in1 (nand2_758)                  0.00       0.68 r
+  rfmod/reg8/mux1[2]/na3/U1/Y (AND2X1)                    0.04       0.72 r
+  rfmod/reg8/mux1[2]/na3/U2/Y (INVX1)                     0.02       0.74 f
+  rfmod/reg8/mux1[2]/na3/out (nand2_758)                  0.00       0.74 f
+  rfmod/reg8/mux1[2]/Out (mux2_1_242)                     0.00       0.74 f
+  rfmod/reg8/dffmod[2]/d (dff_18)                         0.00       0.74 f
+  rfmod/reg8/dffmod[2]/U5/Y (INVX1)                       0.00       0.74 r
+  rfmod/reg8/dffmod[2]/U3/Y (OR2X1)                       0.05       0.79 r
+  rfmod/reg8/dffmod[2]/U4/Y (INVX1)                       0.02       0.81 f
+  rfmod/reg8/dffmod[2]/state_reg/D (DFFPOSX1)             0.00       0.81 f
+  data arrival time                                                  0.81
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  rfmod/reg8/dffmod[2]/state_reg/CLK (DFFPOSX1)           0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -0.81
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: writeregsel<0>
+              (input port clocked by clk)
+  Endpoint: rfmod/reg8/dffmod[3]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  writeregsel<0> (in)                                     0.01       0.11 r
+  U30/Y (BUFX4)                                           0.04       0.15 r
+  rfmod/writeregsel<0> (rf)                               0.00       0.15 r
+  rfmod/decmod/in<0> (dec3_8)                             0.00       0.15 r
+  rfmod/decmod/and_H/a (and3_0)                           0.00       0.15 r
+  rfmod/decmod/and_H/and_1/a (and2_1)                     0.00       0.15 r
+  rfmod/decmod/and_H/and_1/na1/in1 (nand2_723)            0.00       0.15 r
+  rfmod/decmod/and_H/and_1/na1/U1/Y (AND2X1)              0.04       0.19 r
+  rfmod/decmod/and_H/and_1/na1/U2/Y (INVX1)               0.02       0.21 f
+  rfmod/decmod/and_H/and_1/na1/out (nand2_723)            0.00       0.21 f
+  rfmod/decmod/and_H/and_1/na2/in1 (nand2_722)            0.00       0.21 f
+  rfmod/decmod/and_H/and_1/na2/U1/Y (AND2X1)              0.04       0.26 f
+  rfmod/decmod/and_H/and_1/na2/U2/Y (INVX1)               0.00       0.26 r
+  rfmod/decmod/and_H/and_1/na2/out (nand2_722)            0.00       0.26 r
+  rfmod/decmod/and_H/and_1/out (and2_1)                   0.00       0.26 r
+  rfmod/decmod/and_H/and_2/a (and2_0)                     0.00       0.26 r
+  rfmod/decmod/and_H/and_2/na1/in1 (nand2_721)            0.00       0.26 r
+  rfmod/decmod/and_H/and_2/na1/U1/Y (AND2X1)              0.04       0.30 r
+  rfmod/decmod/and_H/and_2/na1/U2/Y (INVX1)               0.02       0.32 f
+  rfmod/decmod/and_H/and_2/na1/out (nand2_721)            0.00       0.32 f
+  rfmod/decmod/and_H/and_2/na2/in1 (nand2_720)            0.00       0.32 f
+  rfmod/decmod/and_H/and_2/na2/U1/Y (AND2X1)              0.04       0.37 f
+  rfmod/decmod/and_H/and_2/na2/U2/Y (INVX1)               0.00       0.37 r
+  rfmod/decmod/and_H/and_2/na2/out (nand2_720)            0.00       0.37 r
+  rfmod/decmod/and_H/and_2/out (and2_0)                   0.00       0.37 r
+  rfmod/decmod/and_H/out (and3_0)                         0.00       0.37 r
+  rfmod/decmod/out<7> (dec3_8)                            0.00       0.37 r
+  rfmod/a1[7]/a (and2_23)                                 0.00       0.37 r
+  rfmod/a1[7]/na1/in1 (nand2_1103)                        0.00       0.37 r
+  rfmod/a1[7]/na1/U1/Y (AND2X2)                           0.03       0.40 r
+  rfmod/a1[7]/na1/U2/Y (INVX1)                            0.02       0.42 f
+  rfmod/a1[7]/na1/out (nand2_1103)                        0.00       0.42 f
+  rfmod/a1[7]/na2/in1 (nand2_1102)                        0.00       0.42 f
+  rfmod/a1[7]/na2/U1/Y (AND2X1)                           0.04       0.46 f
+  rfmod/a1[7]/na2/U2/Y (INVX1)                            0.00       0.46 r
+  rfmod/a1[7]/na2/out (nand2_1102)                        0.00       0.46 r
+  rfmod/a1[7]/out (and2_23)                               0.00       0.46 r
+  rfmod/reg8/en (reg16_0)                                 0.00       0.46 r
+  rfmod/reg8/U2/Y (INVX1)                                 0.01       0.47 f
+  rfmod/reg8/U1/Y (INVX2)                                 0.11       0.59 r
+  rfmod/reg8/mux1[3]/S (mux2_1_243)                       0.00       0.59 r
+  rfmod/reg8/mux1[3]/n1/in1 (not1_243)                    0.00       0.59 r
+  rfmod/reg8/mux1[3]/n1/U1/Y (INVX1)                      0.06       0.65 f
+  rfmod/reg8/mux1[3]/n1/out (not1_243)                    0.00       0.65 f
+  rfmod/reg8/mux1[3]/na1/in2 (nand2_763)                  0.00       0.65 f
+  rfmod/reg8/mux1[3]/na1/U1/Y (AND2X1)                    0.03       0.67 f
+  rfmod/reg8/mux1[3]/na1/U2/Y (INVX1)                     0.00       0.68 r
+  rfmod/reg8/mux1[3]/na1/out (nand2_763)                  0.00       0.68 r
+  rfmod/reg8/mux1[3]/na3/in1 (nand2_761)                  0.00       0.68 r
+  rfmod/reg8/mux1[3]/na3/U1/Y (AND2X1)                    0.04       0.72 r
+  rfmod/reg8/mux1[3]/na3/U2/Y (INVX1)                     0.02       0.74 f
+  rfmod/reg8/mux1[3]/na3/out (nand2_761)                  0.00       0.74 f
+  rfmod/reg8/mux1[3]/Out (mux2_1_243)                     0.00       0.74 f
+  rfmod/reg8/dffmod[3]/d (dff_19)                         0.00       0.74 f
+  rfmod/reg8/dffmod[3]/U5/Y (INVX1)                       0.00       0.74 r
+  rfmod/reg8/dffmod[3]/U3/Y (OR2X1)                       0.05       0.79 r
+  rfmod/reg8/dffmod[3]/U4/Y (INVX1)                       0.02       0.81 f
+  rfmod/reg8/dffmod[3]/state_reg/D (DFFPOSX1)             0.00       0.81 f
+  data arrival time                                                  0.81
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  rfmod/reg8/dffmod[3]/state_reg/CLK (DFFPOSX1)           0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -0.81
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: writeregsel<0>
+              (input port clocked by clk)
+  Endpoint: rfmod/reg8/dffmod[4]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  writeregsel<0> (in)                                     0.01       0.11 r
+  U30/Y (BUFX4)                                           0.04       0.15 r
+  rfmod/writeregsel<0> (rf)                               0.00       0.15 r
+  rfmod/decmod/in<0> (dec3_8)                             0.00       0.15 r
+  rfmod/decmod/and_H/a (and3_0)                           0.00       0.15 r
+  rfmod/decmod/and_H/and_1/a (and2_1)                     0.00       0.15 r
+  rfmod/decmod/and_H/and_1/na1/in1 (nand2_723)            0.00       0.15 r
+  rfmod/decmod/and_H/and_1/na1/U1/Y (AND2X1)              0.04       0.19 r
+  rfmod/decmod/and_H/and_1/na1/U2/Y (INVX1)               0.02       0.21 f
+  rfmod/decmod/and_H/and_1/na1/out (nand2_723)            0.00       0.21 f
+  rfmod/decmod/and_H/and_1/na2/in1 (nand2_722)            0.00       0.21 f
+  rfmod/decmod/and_H/and_1/na2/U1/Y (AND2X1)              0.04       0.26 f
+  rfmod/decmod/and_H/and_1/na2/U2/Y (INVX1)               0.00       0.26 r
+  rfmod/decmod/and_H/and_1/na2/out (nand2_722)            0.00       0.26 r
+  rfmod/decmod/and_H/and_1/out (and2_1)                   0.00       0.26 r
+  rfmod/decmod/and_H/and_2/a (and2_0)                     0.00       0.26 r
+  rfmod/decmod/and_H/and_2/na1/in1 (nand2_721)            0.00       0.26 r
+  rfmod/decmod/and_H/and_2/na1/U1/Y (AND2X1)              0.04       0.30 r
+  rfmod/decmod/and_H/and_2/na1/U2/Y (INVX1)               0.02       0.32 f
+  rfmod/decmod/and_H/and_2/na1/out (nand2_721)            0.00       0.32 f
+  rfmod/decmod/and_H/and_2/na2/in1 (nand2_720)            0.00       0.32 f
+  rfmod/decmod/and_H/and_2/na2/U1/Y (AND2X1)              0.04       0.37 f
+  rfmod/decmod/and_H/and_2/na2/U2/Y (INVX1)               0.00       0.37 r
+  rfmod/decmod/and_H/and_2/na2/out (nand2_720)            0.00       0.37 r
+  rfmod/decmod/and_H/and_2/out (and2_0)                   0.00       0.37 r
+  rfmod/decmod/and_H/out (and3_0)                         0.00       0.37 r
+  rfmod/decmod/out<7> (dec3_8)                            0.00       0.37 r
+  rfmod/a1[7]/a (and2_23)                                 0.00       0.37 r
+  rfmod/a1[7]/na1/in1 (nand2_1103)                        0.00       0.37 r
+  rfmod/a1[7]/na1/U1/Y (AND2X2)                           0.03       0.40 r
+  rfmod/a1[7]/na1/U2/Y (INVX1)                            0.02       0.42 f
+  rfmod/a1[7]/na1/out (nand2_1103)                        0.00       0.42 f
+  rfmod/a1[7]/na2/in1 (nand2_1102)                        0.00       0.42 f
+  rfmod/a1[7]/na2/U1/Y (AND2X1)                           0.04       0.46 f
+  rfmod/a1[7]/na2/U2/Y (INVX1)                            0.00       0.46 r
+  rfmod/a1[7]/na2/out (nand2_1102)                        0.00       0.46 r
+  rfmod/a1[7]/out (and2_23)                               0.00       0.46 r
+  rfmod/reg8/en (reg16_0)                                 0.00       0.46 r
+  rfmod/reg8/U2/Y (INVX1)                                 0.01       0.47 f
+  rfmod/reg8/U1/Y (INVX2)                                 0.11       0.59 r
+  rfmod/reg8/mux1[4]/S (mux2_1_244)                       0.00       0.59 r
+  rfmod/reg8/mux1[4]/n1/in1 (not1_244)                    0.00       0.59 r
+  rfmod/reg8/mux1[4]/n1/U1/Y (INVX1)                      0.06       0.65 f
+  rfmod/reg8/mux1[4]/n1/out (not1_244)                    0.00       0.65 f
+  rfmod/reg8/mux1[4]/na1/in2 (nand2_766)                  0.00       0.65 f
+  rfmod/reg8/mux1[4]/na1/U1/Y (AND2X1)                    0.03       0.67 f
+  rfmod/reg8/mux1[4]/na1/U2/Y (INVX1)                     0.00       0.68 r
+  rfmod/reg8/mux1[4]/na1/out (nand2_766)                  0.00       0.68 r
+  rfmod/reg8/mux1[4]/na3/in1 (nand2_764)                  0.00       0.68 r
+  rfmod/reg8/mux1[4]/na3/U1/Y (AND2X1)                    0.04       0.72 r
+  rfmod/reg8/mux1[4]/na3/U2/Y (INVX1)                     0.02       0.74 f
+  rfmod/reg8/mux1[4]/na3/out (nand2_764)                  0.00       0.74 f
+  rfmod/reg8/mux1[4]/Out (mux2_1_244)                     0.00       0.74 f
+  rfmod/reg8/dffmod[4]/d (dff_20)                         0.00       0.74 f
+  rfmod/reg8/dffmod[4]/U5/Y (INVX1)                       0.00       0.74 r
+  rfmod/reg8/dffmod[4]/U3/Y (OR2X1)                       0.05       0.79 r
+  rfmod/reg8/dffmod[4]/U4/Y (INVX1)                       0.02       0.81 f
+  rfmod/reg8/dffmod[4]/state_reg/D (DFFPOSX1)             0.00       0.81 f
+  data arrival time                                                  0.81
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  rfmod/reg8/dffmod[4]/state_reg/CLK (DFFPOSX1)           0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -0.81
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: writeregsel<0>
+              (input port clocked by clk)
+  Endpoint: rfmod/reg8/dffmod[5]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  writeregsel<0> (in)                                     0.01       0.11 r
+  U30/Y (BUFX4)                                           0.04       0.15 r
+  rfmod/writeregsel<0> (rf)                               0.00       0.15 r
+  rfmod/decmod/in<0> (dec3_8)                             0.00       0.15 r
+  rfmod/decmod/and_H/a (and3_0)                           0.00       0.15 r
+  rfmod/decmod/and_H/and_1/a (and2_1)                     0.00       0.15 r
+  rfmod/decmod/and_H/and_1/na1/in1 (nand2_723)            0.00       0.15 r
+  rfmod/decmod/and_H/and_1/na1/U1/Y (AND2X1)              0.04       0.19 r
+  rfmod/decmod/and_H/and_1/na1/U2/Y (INVX1)               0.02       0.21 f
+  rfmod/decmod/and_H/and_1/na1/out (nand2_723)            0.00       0.21 f
+  rfmod/decmod/and_H/and_1/na2/in1 (nand2_722)            0.00       0.21 f
+  rfmod/decmod/and_H/and_1/na2/U1/Y (AND2X1)              0.04       0.26 f
+  rfmod/decmod/and_H/and_1/na2/U2/Y (INVX1)               0.00       0.26 r
+  rfmod/decmod/and_H/and_1/na2/out (nand2_722)            0.00       0.26 r
+  rfmod/decmod/and_H/and_1/out (and2_1)                   0.00       0.26 r
+  rfmod/decmod/and_H/and_2/a (and2_0)                     0.00       0.26 r
+  rfmod/decmod/and_H/and_2/na1/in1 (nand2_721)            0.00       0.26 r
+  rfmod/decmod/and_H/and_2/na1/U1/Y (AND2X1)              0.04       0.30 r
+  rfmod/decmod/and_H/and_2/na1/U2/Y (INVX1)               0.02       0.32 f
+  rfmod/decmod/and_H/and_2/na1/out (nand2_721)            0.00       0.32 f
+  rfmod/decmod/and_H/and_2/na2/in1 (nand2_720)            0.00       0.32 f
+  rfmod/decmod/and_H/and_2/na2/U1/Y (AND2X1)              0.04       0.37 f
+  rfmod/decmod/and_H/and_2/na2/U2/Y (INVX1)               0.00       0.37 r
+  rfmod/decmod/and_H/and_2/na2/out (nand2_720)            0.00       0.37 r
+  rfmod/decmod/and_H/and_2/out (and2_0)                   0.00       0.37 r
+  rfmod/decmod/and_H/out (and3_0)                         0.00       0.37 r
+  rfmod/decmod/out<7> (dec3_8)                            0.00       0.37 r
+  rfmod/a1[7]/a (and2_23)                                 0.00       0.37 r
+  rfmod/a1[7]/na1/in1 (nand2_1103)                        0.00       0.37 r
+  rfmod/a1[7]/na1/U1/Y (AND2X2)                           0.03       0.40 r
+  rfmod/a1[7]/na1/U2/Y (INVX1)                            0.02       0.42 f
+  rfmod/a1[7]/na1/out (nand2_1103)                        0.00       0.42 f
+  rfmod/a1[7]/na2/in1 (nand2_1102)                        0.00       0.42 f
+  rfmod/a1[7]/na2/U1/Y (AND2X1)                           0.04       0.46 f
+  rfmod/a1[7]/na2/U2/Y (INVX1)                            0.00       0.46 r
+  rfmod/a1[7]/na2/out (nand2_1102)                        0.00       0.46 r
+  rfmod/a1[7]/out (and2_23)                               0.00       0.46 r
+  rfmod/reg8/en (reg16_0)                                 0.00       0.46 r
+  rfmod/reg8/U2/Y (INVX1)                                 0.01       0.47 f
+  rfmod/reg8/U1/Y (INVX2)                                 0.11       0.59 r
+  rfmod/reg8/mux1[5]/S (mux2_1_245)                       0.00       0.59 r
+  rfmod/reg8/mux1[5]/n1/in1 (not1_245)                    0.00       0.59 r
+  rfmod/reg8/mux1[5]/n1/U1/Y (INVX1)                      0.06       0.65 f
+  rfmod/reg8/mux1[5]/n1/out (not1_245)                    0.00       0.65 f
+  rfmod/reg8/mux1[5]/na1/in2 (nand2_769)                  0.00       0.65 f
+  rfmod/reg8/mux1[5]/na1/U1/Y (AND2X1)                    0.03       0.67 f
+  rfmod/reg8/mux1[5]/na1/U2/Y (INVX1)                     0.00       0.68 r
+  rfmod/reg8/mux1[5]/na1/out (nand2_769)                  0.00       0.68 r
+  rfmod/reg8/mux1[5]/na3/in1 (nand2_767)                  0.00       0.68 r
+  rfmod/reg8/mux1[5]/na3/U1/Y (AND2X1)                    0.04       0.72 r
+  rfmod/reg8/mux1[5]/na3/U2/Y (INVX1)                     0.02       0.74 f
+  rfmod/reg8/mux1[5]/na3/out (nand2_767)                  0.00       0.74 f
+  rfmod/reg8/mux1[5]/Out (mux2_1_245)                     0.00       0.74 f
+  rfmod/reg8/dffmod[5]/d (dff_21)                         0.00       0.74 f
+  rfmod/reg8/dffmod[5]/U5/Y (INVX1)                       0.00       0.74 r
+  rfmod/reg8/dffmod[5]/U3/Y (OR2X1)                       0.05       0.79 r
+  rfmod/reg8/dffmod[5]/U4/Y (INVX1)                       0.02       0.81 f
+  rfmod/reg8/dffmod[5]/state_reg/D (DFFPOSX1)             0.00       0.81 f
+  data arrival time                                                  0.81
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  rfmod/reg8/dffmod[5]/state_reg/CLK (DFFPOSX1)           0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -0.81
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: writeregsel<0>
+              (input port clocked by clk)
+  Endpoint: rfmod/reg8/dffmod[6]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  writeregsel<0> (in)                                     0.01       0.11 r
+  U30/Y (BUFX4)                                           0.04       0.15 r
+  rfmod/writeregsel<0> (rf)                               0.00       0.15 r
+  rfmod/decmod/in<0> (dec3_8)                             0.00       0.15 r
+  rfmod/decmod/and_H/a (and3_0)                           0.00       0.15 r
+  rfmod/decmod/and_H/and_1/a (and2_1)                     0.00       0.15 r
+  rfmod/decmod/and_H/and_1/na1/in1 (nand2_723)            0.00       0.15 r
+  rfmod/decmod/and_H/and_1/na1/U1/Y (AND2X1)              0.04       0.19 r
+  rfmod/decmod/and_H/and_1/na1/U2/Y (INVX1)               0.02       0.21 f
+  rfmod/decmod/and_H/and_1/na1/out (nand2_723)            0.00       0.21 f
+  rfmod/decmod/and_H/and_1/na2/in1 (nand2_722)            0.00       0.21 f
+  rfmod/decmod/and_H/and_1/na2/U1/Y (AND2X1)              0.04       0.26 f
+  rfmod/decmod/and_H/and_1/na2/U2/Y (INVX1)               0.00       0.26 r
+  rfmod/decmod/and_H/and_1/na2/out (nand2_722)            0.00       0.26 r
+  rfmod/decmod/and_H/and_1/out (and2_1)                   0.00       0.26 r
+  rfmod/decmod/and_H/and_2/a (and2_0)                     0.00       0.26 r
+  rfmod/decmod/and_H/and_2/na1/in1 (nand2_721)            0.00       0.26 r
+  rfmod/decmod/and_H/and_2/na1/U1/Y (AND2X1)              0.04       0.30 r
+  rfmod/decmod/and_H/and_2/na1/U2/Y (INVX1)               0.02       0.32 f
+  rfmod/decmod/and_H/and_2/na1/out (nand2_721)            0.00       0.32 f
+  rfmod/decmod/and_H/and_2/na2/in1 (nand2_720)            0.00       0.32 f
+  rfmod/decmod/and_H/and_2/na2/U1/Y (AND2X1)              0.04       0.37 f
+  rfmod/decmod/and_H/and_2/na2/U2/Y (INVX1)               0.00       0.37 r
+  rfmod/decmod/and_H/and_2/na2/out (nand2_720)            0.00       0.37 r
+  rfmod/decmod/and_H/and_2/out (and2_0)                   0.00       0.37 r
+  rfmod/decmod/and_H/out (and3_0)                         0.00       0.37 r
+  rfmod/decmod/out<7> (dec3_8)                            0.00       0.37 r
+  rfmod/a1[7]/a (and2_23)                                 0.00       0.37 r
+  rfmod/a1[7]/na1/in1 (nand2_1103)                        0.00       0.37 r
+  rfmod/a1[7]/na1/U1/Y (AND2X2)                           0.03       0.40 r
+  rfmod/a1[7]/na1/U2/Y (INVX1)                            0.02       0.42 f
+  rfmod/a1[7]/na1/out (nand2_1103)                        0.00       0.42 f
+  rfmod/a1[7]/na2/in1 (nand2_1102)                        0.00       0.42 f
+  rfmod/a1[7]/na2/U1/Y (AND2X1)                           0.04       0.46 f
+  rfmod/a1[7]/na2/U2/Y (INVX1)                            0.00       0.46 r
+  rfmod/a1[7]/na2/out (nand2_1102)                        0.00       0.46 r
+  rfmod/a1[7]/out (and2_23)                               0.00       0.46 r
+  rfmod/reg8/en (reg16_0)                                 0.00       0.46 r
+  rfmod/reg8/U2/Y (INVX1)                                 0.01       0.47 f
+  rfmod/reg8/U1/Y (INVX2)                                 0.11       0.59 r
+  rfmod/reg8/mux1[6]/S (mux2_1_246)                       0.00       0.59 r
+  rfmod/reg8/mux1[6]/n1/in1 (not1_246)                    0.00       0.59 r
+  rfmod/reg8/mux1[6]/n1/U1/Y (INVX1)                      0.06       0.65 f
+  rfmod/reg8/mux1[6]/n1/out (not1_246)                    0.00       0.65 f
+  rfmod/reg8/mux1[6]/na1/in2 (nand2_772)                  0.00       0.65 f
+  rfmod/reg8/mux1[6]/na1/U1/Y (AND2X1)                    0.03       0.67 f
+  rfmod/reg8/mux1[6]/na1/U2/Y (INVX1)                     0.00       0.68 r
+  rfmod/reg8/mux1[6]/na1/out (nand2_772)                  0.00       0.68 r
+  rfmod/reg8/mux1[6]/na3/in1 (nand2_770)                  0.00       0.68 r
+  rfmod/reg8/mux1[6]/na3/U1/Y (AND2X1)                    0.04       0.72 r
+  rfmod/reg8/mux1[6]/na3/U2/Y (INVX1)                     0.02       0.74 f
+  rfmod/reg8/mux1[6]/na3/out (nand2_770)                  0.00       0.74 f
+  rfmod/reg8/mux1[6]/Out (mux2_1_246)                     0.00       0.74 f
+  rfmod/reg8/dffmod[6]/d (dff_22)                         0.00       0.74 f
+  rfmod/reg8/dffmod[6]/U5/Y (INVX1)                       0.00       0.74 r
+  rfmod/reg8/dffmod[6]/U3/Y (OR2X1)                       0.05       0.79 r
+  rfmod/reg8/dffmod[6]/U4/Y (INVX1)                       0.02       0.81 f
+  rfmod/reg8/dffmod[6]/state_reg/D (DFFPOSX1)             0.00       0.81 f
+  data arrival time                                                  0.81
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  rfmod/reg8/dffmod[6]/state_reg/CLK (DFFPOSX1)           0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -0.81
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: writeregsel<0>
+              (input port clocked by clk)
+  Endpoint: rfmod/reg8/dffmod[7]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  writeregsel<0> (in)                                     0.01       0.11 r
+  U30/Y (BUFX4)                                           0.04       0.15 r
+  rfmod/writeregsel<0> (rf)                               0.00       0.15 r
+  rfmod/decmod/in<0> (dec3_8)                             0.00       0.15 r
+  rfmod/decmod/and_H/a (and3_0)                           0.00       0.15 r
+  rfmod/decmod/and_H/and_1/a (and2_1)                     0.00       0.15 r
+  rfmod/decmod/and_H/and_1/na1/in1 (nand2_723)            0.00       0.15 r
+  rfmod/decmod/and_H/and_1/na1/U1/Y (AND2X1)              0.04       0.19 r
+  rfmod/decmod/and_H/and_1/na1/U2/Y (INVX1)               0.02       0.21 f
+  rfmod/decmod/and_H/and_1/na1/out (nand2_723)            0.00       0.21 f
+  rfmod/decmod/and_H/and_1/na2/in1 (nand2_722)            0.00       0.21 f
+  rfmod/decmod/and_H/and_1/na2/U1/Y (AND2X1)              0.04       0.26 f
+  rfmod/decmod/and_H/and_1/na2/U2/Y (INVX1)               0.00       0.26 r
+  rfmod/decmod/and_H/and_1/na2/out (nand2_722)            0.00       0.26 r
+  rfmod/decmod/and_H/and_1/out (and2_1)                   0.00       0.26 r
+  rfmod/decmod/and_H/and_2/a (and2_0)                     0.00       0.26 r
+  rfmod/decmod/and_H/and_2/na1/in1 (nand2_721)            0.00       0.26 r
+  rfmod/decmod/and_H/and_2/na1/U1/Y (AND2X1)              0.04       0.30 r
+  rfmod/decmod/and_H/and_2/na1/U2/Y (INVX1)               0.02       0.32 f
+  rfmod/decmod/and_H/and_2/na1/out (nand2_721)            0.00       0.32 f
+  rfmod/decmod/and_H/and_2/na2/in1 (nand2_720)            0.00       0.32 f
+  rfmod/decmod/and_H/and_2/na2/U1/Y (AND2X1)              0.04       0.37 f
+  rfmod/decmod/and_H/and_2/na2/U2/Y (INVX1)               0.00       0.37 r
+  rfmod/decmod/and_H/and_2/na2/out (nand2_720)            0.00       0.37 r
+  rfmod/decmod/and_H/and_2/out (and2_0)                   0.00       0.37 r
+  rfmod/decmod/and_H/out (and3_0)                         0.00       0.37 r
+  rfmod/decmod/out<7> (dec3_8)                            0.00       0.37 r
+  rfmod/a1[7]/a (and2_23)                                 0.00       0.37 r
+  rfmod/a1[7]/na1/in1 (nand2_1103)                        0.00       0.37 r
+  rfmod/a1[7]/na1/U1/Y (AND2X2)                           0.03       0.40 r
+  rfmod/a1[7]/na1/U2/Y (INVX1)                            0.02       0.42 f
+  rfmod/a1[7]/na1/out (nand2_1103)                        0.00       0.42 f
+  rfmod/a1[7]/na2/in1 (nand2_1102)                        0.00       0.42 f
+  rfmod/a1[7]/na2/U1/Y (AND2X1)                           0.04       0.46 f
+  rfmod/a1[7]/na2/U2/Y (INVX1)                            0.00       0.46 r
+  rfmod/a1[7]/na2/out (nand2_1102)                        0.00       0.46 r
+  rfmod/a1[7]/out (and2_23)                               0.00       0.46 r
+  rfmod/reg8/en (reg16_0)                                 0.00       0.46 r
+  rfmod/reg8/U2/Y (INVX1)                                 0.01       0.47 f
+  rfmod/reg8/U1/Y (INVX2)                                 0.11       0.59 r
+  rfmod/reg8/mux1[7]/S (mux2_1_247)                       0.00       0.59 r
+  rfmod/reg8/mux1[7]/n1/in1 (not1_247)                    0.00       0.59 r
+  rfmod/reg8/mux1[7]/n1/U1/Y (INVX1)                      0.06       0.65 f
+  rfmod/reg8/mux1[7]/n1/out (not1_247)                    0.00       0.65 f
+  rfmod/reg8/mux1[7]/na1/in2 (nand2_775)                  0.00       0.65 f
+  rfmod/reg8/mux1[7]/na1/U1/Y (AND2X1)                    0.03       0.67 f
+  rfmod/reg8/mux1[7]/na1/U2/Y (INVX1)                     0.00       0.68 r
+  rfmod/reg8/mux1[7]/na1/out (nand2_775)                  0.00       0.68 r
+  rfmod/reg8/mux1[7]/na3/in1 (nand2_773)                  0.00       0.68 r
+  rfmod/reg8/mux1[7]/na3/U1/Y (AND2X1)                    0.04       0.72 r
+  rfmod/reg8/mux1[7]/na3/U2/Y (INVX1)                     0.02       0.74 f
+  rfmod/reg8/mux1[7]/na3/out (nand2_773)                  0.00       0.74 f
+  rfmod/reg8/mux1[7]/Out (mux2_1_247)                     0.00       0.74 f
+  rfmod/reg8/dffmod[7]/d (dff_23)                         0.00       0.74 f
+  rfmod/reg8/dffmod[7]/U5/Y (INVX1)                       0.00       0.74 r
+  rfmod/reg8/dffmod[7]/U3/Y (OR2X1)                       0.05       0.79 r
+  rfmod/reg8/dffmod[7]/U4/Y (INVX1)                       0.02       0.81 f
+  rfmod/reg8/dffmod[7]/state_reg/D (DFFPOSX1)             0.00       0.81 f
+  data arrival time                                                  0.81
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  rfmod/reg8/dffmod[7]/state_reg/CLK (DFFPOSX1)           0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -0.81
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: writeregsel<0>
+              (input port clocked by clk)
+  Endpoint: rfmod/reg8/dffmod[8]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  writeregsel<0> (in)                                     0.01       0.11 r
+  U30/Y (BUFX4)                                           0.04       0.15 r
+  rfmod/writeregsel<0> (rf)                               0.00       0.15 r
+  rfmod/decmod/in<0> (dec3_8)                             0.00       0.15 r
+  rfmod/decmod/and_H/a (and3_0)                           0.00       0.15 r
+  rfmod/decmod/and_H/and_1/a (and2_1)                     0.00       0.15 r
+  rfmod/decmod/and_H/and_1/na1/in1 (nand2_723)            0.00       0.15 r
+  rfmod/decmod/and_H/and_1/na1/U1/Y (AND2X1)              0.04       0.19 r
+  rfmod/decmod/and_H/and_1/na1/U2/Y (INVX1)               0.02       0.21 f
+  rfmod/decmod/and_H/and_1/na1/out (nand2_723)            0.00       0.21 f
+  rfmod/decmod/and_H/and_1/na2/in1 (nand2_722)            0.00       0.21 f
+  rfmod/decmod/and_H/and_1/na2/U1/Y (AND2X1)              0.04       0.26 f
+  rfmod/decmod/and_H/and_1/na2/U2/Y (INVX1)               0.00       0.26 r
+  rfmod/decmod/and_H/and_1/na2/out (nand2_722)            0.00       0.26 r
+  rfmod/decmod/and_H/and_1/out (and2_1)                   0.00       0.26 r
+  rfmod/decmod/and_H/and_2/a (and2_0)                     0.00       0.26 r
+  rfmod/decmod/and_H/and_2/na1/in1 (nand2_721)            0.00       0.26 r
+  rfmod/decmod/and_H/and_2/na1/U1/Y (AND2X1)              0.04       0.30 r
+  rfmod/decmod/and_H/and_2/na1/U2/Y (INVX1)               0.02       0.32 f
+  rfmod/decmod/and_H/and_2/na1/out (nand2_721)            0.00       0.32 f
+  rfmod/decmod/and_H/and_2/na2/in1 (nand2_720)            0.00       0.32 f
+  rfmod/decmod/and_H/and_2/na2/U1/Y (AND2X1)              0.04       0.37 f
+  rfmod/decmod/and_H/and_2/na2/U2/Y (INVX1)               0.00       0.37 r
+  rfmod/decmod/and_H/and_2/na2/out (nand2_720)            0.00       0.37 r
+  rfmod/decmod/and_H/and_2/out (and2_0)                   0.00       0.37 r
+  rfmod/decmod/and_H/out (and3_0)                         0.00       0.37 r
+  rfmod/decmod/out<7> (dec3_8)                            0.00       0.37 r
+  rfmod/a1[7]/a (and2_23)                                 0.00       0.37 r
+  rfmod/a1[7]/na1/in1 (nand2_1103)                        0.00       0.37 r
+  rfmod/a1[7]/na1/U1/Y (AND2X2)                           0.03       0.40 r
+  rfmod/a1[7]/na1/U2/Y (INVX1)                            0.02       0.42 f
+  rfmod/a1[7]/na1/out (nand2_1103)                        0.00       0.42 f
+  rfmod/a1[7]/na2/in1 (nand2_1102)                        0.00       0.42 f
+  rfmod/a1[7]/na2/U1/Y (AND2X1)                           0.04       0.46 f
+  rfmod/a1[7]/na2/U2/Y (INVX1)                            0.00       0.46 r
+  rfmod/a1[7]/na2/out (nand2_1102)                        0.00       0.46 r
+  rfmod/a1[7]/out (and2_23)                               0.00       0.46 r
+  rfmod/reg8/en (reg16_0)                                 0.00       0.46 r
+  rfmod/reg8/U2/Y (INVX1)                                 0.01       0.47 f
+  rfmod/reg8/U1/Y (INVX2)                                 0.11       0.59 r
+  rfmod/reg8/mux1[8]/S (mux2_1_248)                       0.00       0.59 r
+  rfmod/reg8/mux1[8]/n1/in1 (not1_248)                    0.00       0.59 r
+  rfmod/reg8/mux1[8]/n1/U1/Y (INVX1)                      0.06       0.65 f
+  rfmod/reg8/mux1[8]/n1/out (not1_248)                    0.00       0.65 f
+  rfmod/reg8/mux1[8]/na1/in2 (nand2_778)                  0.00       0.65 f
+  rfmod/reg8/mux1[8]/na1/U1/Y (AND2X1)                    0.03       0.67 f
+  rfmod/reg8/mux1[8]/na1/U2/Y (INVX1)                     0.00       0.68 r
+  rfmod/reg8/mux1[8]/na1/out (nand2_778)                  0.00       0.68 r
+  rfmod/reg8/mux1[8]/na3/in1 (nand2_776)                  0.00       0.68 r
+  rfmod/reg8/mux1[8]/na3/U1/Y (AND2X1)                    0.04       0.72 r
+  rfmod/reg8/mux1[8]/na3/U2/Y (INVX1)                     0.02       0.74 f
+  rfmod/reg8/mux1[8]/na3/out (nand2_776)                  0.00       0.74 f
+  rfmod/reg8/mux1[8]/Out (mux2_1_248)                     0.00       0.74 f
+  rfmod/reg8/dffmod[8]/d (dff_24)                         0.00       0.74 f
+  rfmod/reg8/dffmod[8]/U5/Y (INVX1)                       0.00       0.74 r
+  rfmod/reg8/dffmod[8]/U3/Y (OR2X1)                       0.05       0.79 r
+  rfmod/reg8/dffmod[8]/U4/Y (INVX1)                       0.02       0.81 f
+  rfmod/reg8/dffmod[8]/state_reg/D (DFFPOSX1)             0.00       0.81 f
+  data arrival time                                                  0.81
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  rfmod/reg8/dffmod[8]/state_reg/CLK (DFFPOSX1)           0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -0.81
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: writeregsel<0>
+              (input port clocked by clk)
+  Endpoint: rfmod/reg4/dffmod[9]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  writeregsel<0> (in)                                     0.01       0.11 r
+  U30/Y (BUFX4)                                           0.04       0.15 r
+  rfmod/writeregsel<0> (rf)                               0.00       0.15 r
+  rfmod/decmod/in<0> (dec3_8)                             0.00       0.15 r
+  rfmod/decmod/and_D/a (and3_4)                           0.00       0.15 r
+  rfmod/decmod/and_D/and_1/a (and2_9)                     0.00       0.15 r
+  rfmod/decmod/and_D/and_1/na1/in1 (nand2_739)            0.00       0.15 r
+  rfmod/decmod/and_D/and_1/na1/U1/Y (AND2X1)              0.04       0.19 r
+  rfmod/decmod/and_D/and_1/na1/U2/Y (INVX1)               0.02       0.21 f
+  rfmod/decmod/and_D/and_1/na1/out (nand2_739)            0.00       0.21 f
+  rfmod/decmod/and_D/and_1/na2/in1 (nand2_738)            0.00       0.21 f
+  rfmod/decmod/and_D/and_1/na2/U1/Y (AND2X1)              0.04       0.26 f
+  rfmod/decmod/and_D/and_1/na2/U2/Y (INVX1)               0.00       0.26 r
+  rfmod/decmod/and_D/and_1/na2/out (nand2_738)            0.00       0.26 r
+  rfmod/decmod/and_D/and_1/out (and2_9)                   0.00       0.26 r
+  rfmod/decmod/and_D/and_2/a (and2_8)                     0.00       0.26 r
+  rfmod/decmod/and_D/and_2/na1/in1 (nand2_737)            0.00       0.26 r
+  rfmod/decmod/and_D/and_2/na1/U1/Y (AND2X1)              0.04       0.30 r
+  rfmod/decmod/and_D/and_2/na1/U2/Y (INVX1)               0.02       0.32 f
+  rfmod/decmod/and_D/and_2/na1/out (nand2_737)            0.00       0.32 f
+  rfmod/decmod/and_D/and_2/na2/in1 (nand2_736)            0.00       0.32 f
+  rfmod/decmod/and_D/and_2/na2/U1/Y (AND2X1)              0.04       0.37 f
+  rfmod/decmod/and_D/and_2/na2/U2/Y (INVX1)               0.00       0.37 r
+  rfmod/decmod/and_D/and_2/na2/out (nand2_736)            0.00       0.37 r
+  rfmod/decmod/and_D/and_2/out (and2_8)                   0.00       0.37 r
+  rfmod/decmod/and_D/out (and3_4)                         0.00       0.37 r
+  rfmod/decmod/out<3> (dec3_8)                            0.00       0.37 r
+  rfmod/a1[3]/a (and2_19)                                 0.00       0.37 r
+  rfmod/a1[3]/na1/in1 (nand2_1095)                        0.00       0.37 r
+  rfmod/a1[3]/na1/U1/Y (AND2X2)                           0.03       0.40 r
+  rfmod/a1[3]/na1/U2/Y (INVX1)                            0.02       0.42 f
+  rfmod/a1[3]/na1/out (nand2_1095)                        0.00       0.42 f
+  rfmod/a1[3]/na2/in1 (nand2_1094)                        0.00       0.42 f
+  rfmod/a1[3]/na2/U1/Y (AND2X1)                           0.04       0.46 f
+  rfmod/a1[3]/na2/U2/Y (INVX1)                            0.00       0.46 r
+  rfmod/a1[3]/na2/out (nand2_1094)                        0.00       0.46 r
+  rfmod/a1[3]/out (and2_19)                               0.00       0.46 r
+  rfmod/reg4/en (reg16_4)                                 0.00       0.46 r
+  rfmod/reg4/U2/Y (INVX1)                                 0.01       0.47 f
+  rfmod/reg4/U1/Y (INVX2)                                 0.11       0.59 r
+  rfmod/reg4/mux1[9]/S (mux2_1_313)                       0.00       0.59 r
+  rfmod/reg4/mux1[9]/n1/in1 (not1_313)                    0.00       0.59 r
+  rfmod/reg4/mux1[9]/n1/U1/Y (INVX2)                      0.02       0.60 f
+  rfmod/reg4/mux1[9]/n1/out (not1_313)                    0.00       0.60 f
+  rfmod/reg4/mux1[9]/na1/in2 (nand2_973)                  0.00       0.60 f
+  rfmod/reg4/mux1[9]/na1/U1/Y (AND2X1)                    0.04       0.64 f
+  rfmod/reg4/mux1[9]/na1/U2/Y (INVX1)                     0.00       0.65 r
+  rfmod/reg4/mux1[9]/na1/out (nand2_973)                  0.00       0.65 r
+  rfmod/reg4/mux1[9]/na3/in1 (nand2_971)                  0.00       0.65 r
+  rfmod/reg4/mux1[9]/na3/U1/Y (AND2X1)                    0.04       0.69 r
+  rfmod/reg4/mux1[9]/na3/U2/Y (INVX1)                     0.02       0.71 f
+  rfmod/reg4/mux1[9]/na3/out (nand2_971)                  0.00       0.71 f
+  rfmod/reg4/mux1[9]/Out (mux2_1_313)                     0.00       0.71 f
+  rfmod/reg4/dffmod[9]/d (dff_89)                         0.00       0.71 f
+  rfmod/reg4/dffmod[9]/U5/Y (INVX1)                       0.00       0.71 r
+  rfmod/reg4/dffmod[9]/U3/Y (OR2X1)                       0.05       0.75 r
+  rfmod/reg4/dffmod[9]/U4/Y (INVX1)                       0.02       0.78 f
+  rfmod/reg4/dffmod[9]/state_reg/D (DFFPOSX1)             0.00       0.78 f
+  data arrival time                                                  0.78
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  rfmod/reg4/dffmod[9]/state_reg/CLK (DFFPOSX1)           0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -0.78
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.17
+
+
+  Startpoint: writeregsel<0>
+              (input port clocked by clk)
+  Endpoint: rfmod/reg4/dffmod[10]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  writeregsel<0> (in)                                     0.01       0.11 r
+  U30/Y (BUFX4)                                           0.04       0.15 r
+  rfmod/writeregsel<0> (rf)                               0.00       0.15 r
+  rfmod/decmod/in<0> (dec3_8)                             0.00       0.15 r
+  rfmod/decmod/and_D/a (and3_4)                           0.00       0.15 r
+  rfmod/decmod/and_D/and_1/a (and2_9)                     0.00       0.15 r
+  rfmod/decmod/and_D/and_1/na1/in1 (nand2_739)            0.00       0.15 r
+  rfmod/decmod/and_D/and_1/na1/U1/Y (AND2X1)              0.04       0.19 r
+  rfmod/decmod/and_D/and_1/na1/U2/Y (INVX1)               0.02       0.21 f
+  rfmod/decmod/and_D/and_1/na1/out (nand2_739)            0.00       0.21 f
+  rfmod/decmod/and_D/and_1/na2/in1 (nand2_738)            0.00       0.21 f
+  rfmod/decmod/and_D/and_1/na2/U1/Y (AND2X1)              0.04       0.26 f
+  rfmod/decmod/and_D/and_1/na2/U2/Y (INVX1)               0.00       0.26 r
+  rfmod/decmod/and_D/and_1/na2/out (nand2_738)            0.00       0.26 r
+  rfmod/decmod/and_D/and_1/out (and2_9)                   0.00       0.26 r
+  rfmod/decmod/and_D/and_2/a (and2_8)                     0.00       0.26 r
+  rfmod/decmod/and_D/and_2/na1/in1 (nand2_737)            0.00       0.26 r
+  rfmod/decmod/and_D/and_2/na1/U1/Y (AND2X1)              0.04       0.30 r
+  rfmod/decmod/and_D/and_2/na1/U2/Y (INVX1)               0.02       0.32 f
+  rfmod/decmod/and_D/and_2/na1/out (nand2_737)            0.00       0.32 f
+  rfmod/decmod/and_D/and_2/na2/in1 (nand2_736)            0.00       0.32 f
+  rfmod/decmod/and_D/and_2/na2/U1/Y (AND2X1)              0.04       0.37 f
+  rfmod/decmod/and_D/and_2/na2/U2/Y (INVX1)               0.00       0.37 r
+  rfmod/decmod/and_D/and_2/na2/out (nand2_736)            0.00       0.37 r
+  rfmod/decmod/and_D/and_2/out (and2_8)                   0.00       0.37 r
+  rfmod/decmod/and_D/out (and3_4)                         0.00       0.37 r
+  rfmod/decmod/out<3> (dec3_8)                            0.00       0.37 r
+  rfmod/a1[3]/a (and2_19)                                 0.00       0.37 r
+  rfmod/a1[3]/na1/in1 (nand2_1095)                        0.00       0.37 r
+  rfmod/a1[3]/na1/U1/Y (AND2X2)                           0.03       0.40 r
+  rfmod/a1[3]/na1/U2/Y (INVX1)                            0.02       0.42 f
+  rfmod/a1[3]/na1/out (nand2_1095)                        0.00       0.42 f
+  rfmod/a1[3]/na2/in1 (nand2_1094)                        0.00       0.42 f
+  rfmod/a1[3]/na2/U1/Y (AND2X1)                           0.04       0.46 f
+  rfmod/a1[3]/na2/U2/Y (INVX1)                            0.00       0.46 r
+  rfmod/a1[3]/na2/out (nand2_1094)                        0.00       0.46 r
+  rfmod/a1[3]/out (and2_19)                               0.00       0.46 r
+  rfmod/reg4/en (reg16_4)                                 0.00       0.46 r
+  rfmod/reg4/U2/Y (INVX1)                                 0.01       0.47 f
+  rfmod/reg4/U1/Y (INVX2)                                 0.11       0.59 r
+  rfmod/reg4/mux1[10]/S (mux2_1_314)                      0.00       0.59 r
+  rfmod/reg4/mux1[10]/n1/in1 (not1_314)                   0.00       0.59 r
+  rfmod/reg4/mux1[10]/n1/U1/Y (INVX2)                     0.02       0.60 f
+  rfmod/reg4/mux1[10]/n1/out (not1_314)                   0.00       0.60 f
+  rfmod/reg4/mux1[10]/na1/in2 (nand2_976)                 0.00       0.60 f
+  rfmod/reg4/mux1[10]/na1/U1/Y (AND2X1)                   0.04       0.64 f
+  rfmod/reg4/mux1[10]/na1/U2/Y (INVX1)                    0.00       0.65 r
+  rfmod/reg4/mux1[10]/na1/out (nand2_976)                 0.00       0.65 r
+  rfmod/reg4/mux1[10]/na3/in1 (nand2_974)                 0.00       0.65 r
+  rfmod/reg4/mux1[10]/na3/U1/Y (AND2X1)                   0.04       0.69 r
+  rfmod/reg4/mux1[10]/na3/U2/Y (INVX1)                    0.02       0.71 f
+  rfmod/reg4/mux1[10]/na3/out (nand2_974)                 0.00       0.71 f
+  rfmod/reg4/mux1[10]/Out (mux2_1_314)                    0.00       0.71 f
+  rfmod/reg4/dffmod[10]/d (dff_90)                        0.00       0.71 f
+  rfmod/reg4/dffmod[10]/U5/Y (INVX1)                      0.00       0.71 r
+  rfmod/reg4/dffmod[10]/U3/Y (OR2X1)                      0.05       0.75 r
+  rfmod/reg4/dffmod[10]/U4/Y (INVX1)                      0.02       0.78 f
+  rfmod/reg4/dffmod[10]/state_reg/D (DFFPOSX1)            0.00       0.78 f
+  data arrival time                                                  0.78
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  rfmod/reg4/dffmod[10]/state_reg/CLK (DFFPOSX1)          0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -0.78
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.17
+
+
+1
