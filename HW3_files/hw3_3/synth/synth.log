@@ -130,7 +130,7 @@ report_hierarchy
 Report : hierarchy
 Design : rf_bypass
 Version: L-2016.03-SP4-1
-Date   : Sat Feb 25 11:06:38 2017
+Date   : Sat Feb 25 11:27:42 2017
 ****************************************
 
 Information: This design contains unmapped logic. (RPT-7)
@@ -340,8 +340,8 @@ Information: Updating design information... (UID-85)
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
     0:00:02    5674.8      0.00       0.0       2.9                          
-    0:00:02    5674.8      0.00       0.0       2.9                          
-    0:00:02    5674.8      0.00       0.0       2.9                          
+    0:00:03    5674.8      0.00       0.0       2.9                          
+    0:00:03    5674.8      0.00       0.0       2.9                          
 
 
   Beginning Design Rule Fixing  (max_capacitance)
@@ -351,12 +351,12 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                            
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:02    5674.8      0.00       0.0       2.9                          
-    0:00:02    5820.3      0.00       0.0       2.6 rfmod/reg1/mux1[5]/na3/out
-    0:00:02    5899.1      0.00       0.0       2.5 rfmod/reg3/mux1[15]/na3/out
-    0:00:02    5977.9      0.00       0.0       2.4 rfmod/reg6/mux1[9]/na3/out
-    0:00:02    6068.0      0.00       0.0       2.2 bypass1mod[3]/na2/out    
-    0:00:02    6267.0      0.00       0.0       2.2 rfmod/m1[1]/mux2/mux1/na2/out
+    0:00:03    5674.8      0.00       0.0       2.9                          
+    0:00:03    5820.3      0.00       0.0       2.6 rfmod/reg1/mux1[5]/na3/out
+    0:00:03    5899.1      0.00       0.0       2.5 rfmod/reg3/mux1[15]/na3/out
+    0:00:03    5977.9      0.00       0.0       2.4 rfmod/reg6/mux1[9]/na3/out
+    0:00:03    6068.0      0.00       0.0       2.2 bypass1mod[3]/na2/out    
+    0:00:03    6267.0      0.00       0.0       2.2 rfmod/m1[1]/mux2/mux1/na2/out
     0:00:03    6470.7      0.00       0.0       2.1 rfmod/m1[6]/mux1/mux2/na2/out
     0:00:03    6674.4      0.00       0.0       2.0 rfmod/m1[10]/mux2/mux3/na2/out
     0:00:03    6878.1      0.00       0.0       1.9 rfmod/m1[15]/mux2/mux1/na2/out
@@ -370,13 +370,13 @@ Information: Updating design information... (UID-85)
     0:00:03    8493.4      0.00       0.0       1.2 rfmod/m2[4]/mux1/mux3/na3/out
     0:00:03    8690.5      0.00       0.0       1.1 rfmod/m2[11]/mux1/mux3/na3/out
     0:00:03    8887.6      0.00       0.0       1.0 rfmod/m1[15]/mux3/na1/out
-    0:00:03    9084.7      0.00       0.0       0.9 rfmod/m1[3]/mux1/mux2/na1/out
-    0:00:03    9281.8      0.00       0.0       0.8 rfmod/m2[1]/mux1/mux2/na1/out
-    0:00:03    9478.9      0.00       0.0       0.8 rfmod/m2[15]/mux1/mux2/na1/out
-    0:00:03    9676.0      0.00       0.0       0.7 rfmod/reg1/mux1[7]/na1/out
-    0:00:03    9873.1      0.00       0.0       0.6 rfmod/reg4/mux1[1]/na1/out
-    0:00:03   10070.2      0.00       0.0       0.5 rfmod/reg6/mux1[11]/na1/out
-    0:00:03   10264.5      0.00       0.0       0.5 rfmod/reg1/dffmod[5]/N3  
+    0:00:04    9084.7      0.00       0.0       0.9 rfmod/m1[3]/mux1/mux2/na1/out
+    0:00:04    9281.8      0.00       0.0       0.8 rfmod/m2[1]/mux1/mux2/na1/out
+    0:00:04    9478.9      0.00       0.0       0.8 rfmod/m2[15]/mux1/mux2/na1/out
+    0:00:04    9676.0      0.00       0.0       0.7 rfmod/reg1/mux1[7]/na1/out
+    0:00:04    9873.1      0.00       0.0       0.6 rfmod/reg4/mux1[1]/na1/out
+    0:00:04   10070.2      0.00       0.0       0.5 rfmod/reg6/mux1[11]/na1/out
+    0:00:04   10264.5      0.00       0.0       0.5 rfmod/reg1/dffmod[5]/N3  
     0:00:04   10441.9      0.00       0.0       0.4 rfmod/reg3/dffmod[15]/N3 
     0:00:04   10619.3      0.00       0.0       0.3 rfmod/reg6/dffmod[9]/N3  
     0:00:04   10798.6      0.00       0.0       0.2 rfmod/reg1/mux1[3]/na2/out
@@ -393,9 +393,9 @@ Information: Updating design information... (UID-85)
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
     0:00:04   11380.5      0.00       0.0       0.0                          
-    0:00:04   11380.5      0.00       0.0       0.0                          
-    0:00:04    9800.9      0.00       0.0       0.0                          
-    0:00:04    8601.3      0.00       0.0       0.0                          
+    0:00:05   11380.5      0.00       0.0       0.0                          
+    0:00:05    9800.9      0.00       0.0       0.0                          
+    0:00:05    8601.3      0.00       0.0       0.0                          
     0:00:05    8140.5      0.00       0.0       0.0                          
     0:00:05    7960.3      0.00       0.0       0.0                          
     0:00:05    7960.3      0.00       0.0       0.0                          
@@ -408,8 +408,8 @@ Information: Updating design information... (UID-85)
     0:00:05    6958.8      0.00       0.0       0.0                          
     0:00:05    6958.8      0.00       0.0       0.0                          
     0:00:05    6958.8      0.00       0.0       0.0                          
-    0:00:05    6958.8      0.00       0.0       0.0                          
-    0:00:05    6958.8      0.00       0.0       0.0                          
+    0:00:06    6958.8      0.00       0.0       0.0                          
+    0:00:06    6958.8      0.00       0.0       0.0                          
 Loading db file '/u/k/a/karu/courses/cs552/cad/Synopsys_Libraries/libs/gscl45nm.db'
 
 
@@ -424,7 +424,7 @@ check_design -summary
 ****************************************
 check_design summary:
 Version:     L-2016.03-SP4-1
-Date:        Sat Feb 25 11:06:44 2017
+Date:        Sat Feb 25 11:27:49 2017
 ****************************************
 
                    Name                                            Total
@@ -451,7 +451,7 @@ Report : constraint
         -all_violators
 Design : rf_bypass
 Version: L-2016.03-SP4-1
-Date   : Sat Feb 25 11:06:44 2017
+Date   : Sat Feb 25 11:27:49 2017
 ****************************************
 
 This design has no violated constraints.
