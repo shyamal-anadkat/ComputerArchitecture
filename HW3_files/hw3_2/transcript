@@ -1,5 +1,5 @@
 # vsim -c sc_bench -lib __work -voptargs="+acc" -wlf dump.wlf -do "log -howmany -rec /* ; run -all" 
-# Start time: 20:15:45 on Feb 22,2017
+# Start time: 23:58:28 on Feb 27,2017
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.4c linux Jul 19 2015
@@ -76,5 +76,5 @@
 # TEST PASSED
 # ** Note: $finish    : sc_bench.v(31)
 #    Time: 4800 ns  Iteration: 0  Instance: /sc_bench
-# End time: 20:15:47 on Feb 22,2017, Elapsed time: 0:00:02
+# End time: 23:58:30 on Feb 27,2017, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
