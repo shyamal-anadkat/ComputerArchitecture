@@ -74,7 +74,7 @@ module fifo(/*AUTOARG*/
       fifo_next[3] = data_in; 
       end
     default:begin
-      assign err = 1; 
+      err = 1; 
       end
     endcase 
    end

@@ -1,0 +1,7 @@
+counter.v
+dff.v
+fa1.v
+fa2.v
+fifo.v
+nand2.v
+xor2.v
