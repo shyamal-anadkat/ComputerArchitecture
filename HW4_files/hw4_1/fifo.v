@@ -26,7 +26,7 @@ module fifo(/*AUTOARG*/
    wire popEn, pushEn;
    wire [1:0] pop_state, pop_state_next;  
    wire [1:0] push_state, push_state_next;  
-   wire [2:0] counter; 
+   wire [2:0] counter, push_minus_pop; 
    wire [2:0] next_state;
    wire [1:0] pop_state_plus1, push_state_plus1;
 
@@ -45,7 +45,8 @@ module fifo(/*AUTOARG*/
    dff dmod2(.q (counter[1]), .d((next_state[1])), .clk (clk), .rst (rst));
    dff dmod3(.q (counter[2]), .d((next_state[2])), .clk (clk), .rst (rst));
 
-   assign next_state = (rst) ? 0 : (counter == 0 & (pushEn - popEn) == -1) ? 4: (counter + (pushEn-popEn));
+   assign push_minus_pop = ((pushEn & popEn) || (~pushEn & ~popEn)) ? 0 : (~pushEn & popEn) ? 3'hfff : 1;
+   assign next_state = (rst) ? 0 : (counter == 0 & (push_minus_pop) == 3'hfff) ? 4: (counter + (push_minus_pop));
    
    always @* begin
     casex ({pushEn, push_state})
@@ -85,7 +86,6 @@ module fifo(/*AUTOARG*/
     endcase 
    end
    
-   
    always @* begin
    	case(pop_state)
    		2'b00: outputdata = fifo[0];
@@ -111,4 +111,3 @@ module fifo(/*AUTOARG*/
    assign push_state_next = (pushEn)? (push_state_plus1) : push_state;
       
 endmodule
-   
