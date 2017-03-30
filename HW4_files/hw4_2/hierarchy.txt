@@ -3,7 +3,7 @@
 Report : hierarchy
 Design : fifo
 Version: L-2016.03-SP4-1
-Date   : Sun Mar 19 21:44:36 2017
+Date   : Thu Mar 30 01:35:28 2017
 ****************************************
 
 fifo
@@ -15,35 +15,7 @@ fifo
     NAND3X1                     gscl45nm
     NOR3X1                      gscl45nm
     OAI21X1                     gscl45nm
-    counter
-        AND2X1                  gscl45nm
-        AND2X2                  gscl45nm
-        AOI22X1                 gscl45nm
-        BUFX2                   gscl45nm
-        FAX1                    gscl45nm
-        INVX1                   gscl45nm
-        INVX2                   gscl45nm
-        NAND3X1                 gscl45nm
-        NOR3X1                  gscl45nm
-        OAI21X1                 gscl45nm
-        OR2X1                   gscl45nm
-        XNOR2X1                 gscl45nm
-        dff_4
-            DFFPOSX1            gscl45nm
-            INVX1               gscl45nm
-            OR2X1               gscl45nm
-        dff_5
-            DFFPOSX1            gscl45nm
-            INVX1               gscl45nm
-            OR2X1               gscl45nm
-        dff_6
-            DFFPOSX1            gscl45nm
-            INVX1               gscl45nm
-            OR2X1               gscl45nm
-        dff_7
-            DFFPOSX1            gscl45nm
-            INVX1               gscl45nm
-            OR2X1               gscl45nm
+    OR2X1                       gscl45nm
     dff_0
         DFFPOSX1                gscl45nm
         INVX1                   gscl45nm
@@ -57,6 +29,22 @@ fifo
         INVX1                   gscl45nm
         OR2X1                   gscl45nm
     dff_3
+        DFFPOSX1                gscl45nm
+        INVX1                   gscl45nm
+        OR2X1                   gscl45nm
+    dff_4
+        DFFPOSX1                gscl45nm
+        INVX1                   gscl45nm
+        OR2X1                   gscl45nm
+    dff_5
+        DFFPOSX1                gscl45nm
+        INVX1                   gscl45nm
+        OR2X1                   gscl45nm
+    dff_6
+        DFFPOSX1                gscl45nm
+        INVX1                   gscl45nm
+        OR2X1                   gscl45nm
+    dff_7
         DFFPOSX1                gscl45nm
         INVX1                   gscl45nm
         OR2X1                   gscl45nm
@@ -1080,14 +1068,24 @@ fifo
         DFFPOSX1                gscl45nm
         INVX1                   gscl45nm
         OR2X1                   gscl45nm
-    dff_263
-        DFFPOSX1                gscl45nm
-        INVX1                   gscl45nm
-        OR2X1                   gscl45nm
+    fa1_6
+        nand2_18
+            NAND2X1             gscl45nm
+        nand2_19
+            AND2X1              gscl45nm
+            INVX1               gscl45nm
+        nand2_20
+            AND2X1              gscl45nm
+            INVX1               gscl45nm
+        xor2_12
+            XOR2X1              gscl45nm
+        xor2_13
+            XOR2X1              gscl45nm
     fa2_0
         fa1_0
             nand2_0
-                NAND2X1         gscl45nm
+                AND2X1          gscl45nm
+                INVX1           gscl45nm
             nand2_1
                 AND2X1          gscl45nm
                 INVX1           gscl45nm
@@ -1139,5 +1137,33 @@ fifo
             xor2_6
                 XOR2X1          gscl45nm
             xor2_7
+                XOR2X1          gscl45nm
+    fa2_2
+        fa1_4
+            nand2_12
+                NAND2X1         gscl45nm
+            nand2_13
+                AND2X1          gscl45nm
+                INVX1           gscl45nm
+            nand2_14
+                AND2X1          gscl45nm
+                INVX1           gscl45nm
+            xor2_8
+                XOR2X1          gscl45nm
+            xor2_9
+                XOR2X1          gscl45nm
+        fa1_5
+            nand2_15
+                AND2X1          gscl45nm
+                INVX1           gscl45nm
+            nand2_16
+                AND2X1          gscl45nm
+                INVX1           gscl45nm
+            nand2_17
+                AND2X1          gscl45nm
+                INVX1           gscl45nm
+            xor2_10
+                XOR2X1          gscl45nm
+            xor2_11
                 XOR2X1          gscl45nm
 1

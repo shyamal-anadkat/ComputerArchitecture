@@ -1,5 +1,5 @@
 # vsim -c fifo_bench -lib __work -voptargs="+acc" -wlf dump.wlf -do "log -howmany -rec /* ; run -all" 
-# Start time: 01:17:13 on Mar 30,2017
+# Start time: 01:32:16 on Mar 30,2017
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.4c linux Jul 19 2015
@@ -26,7 +26,7 @@
 # Loading work.nand2(fast)
 # Loading work.dff(fast)
 # log -howmany -rec /* 
-# 1469
+# 1552
 #  run -all
 # 
 # Cycle:    0 data_in: 0000000000000000, data_in_valid: 0, pop_fifo: 0
@@ -474,5 +474,5 @@
 # TEST PASSED
 # ** Note: $finish    : fifo_bench.v(1384)
 #    Time: 14700 ns  Iteration: 1  Instance: /fifo_bench
-# End time: 01:17:14 on Mar 30,2017, Elapsed time: 0:00:01
+# End time: 01:32:17 on Mar 30,2017, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

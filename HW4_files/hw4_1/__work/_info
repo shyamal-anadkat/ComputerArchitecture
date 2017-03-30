@@ -9,15 +9,15 @@ z2
 cModel Technology
 Z0 d/u/s/h/shyamal/private/552/HW4_files/hw4_1
 T_opt
-!s110 1490854633
-V9fj8;0^FF9C[f;;nBb<:m2
+!s110 1490855536
+VJBhz1i0UJYfe]:kdDCz7k2
 04 10 4 work fifo_bench fast 0
-=1-f8bc129404ab-58dca2e9-5a8a5-3e70
+=1-f8bc129404ab-58dca670-23b6e-4123
 o-quiet -auto_acc_if_foreign -work __work +acc
 n@_opt
 OE;O;10.4c;61
 vclkrst
-Z1 !s110 1490854632
+Z1 !s110 1490855535
 !i10b 1
 !s100 d1=HFa9@5T7JH2L8mb3gE1
 I76^B^z0K=`bfSS`caA`Ik3
@@ -31,7 +31,7 @@ Z3 OE;L;10.4c;61
 r1
 !s85 0
 31
-Z4 !s108 1490854632.000000
+Z4 !s108 1490855535.000000
 Z5 !s107 xor2.v|nand2.v|fifo.v|fifo_hier.v|fa2.v|fa1.v|dff.v|clkrst.v|fifo_bench.v|
 Z6 !s90 +define+RANDSEED=3|-work|__work|fifo_bench.v|clkrst.v|dff.v|fa1.v|fa2.v|fifo_bench.v|fifo_hier.v|fifo.v|nand2.v|xor2.v|
 !i113 0
@@ -65,7 +65,7 @@ R1
 I=R^F0m[o23OO8MCHWD@2^2
 R2
 R0
-w1490853295
+w1490855424
 8fa1.v
 Ffa1.v
 L0 1
@@ -82,11 +82,11 @@ R8
 vfa2
 R1
 !i10b 1
-!s100 We;>[OWV55>11b88hFlTl3
-I;hd:R4=]QfCI28j64B^K83
+!s100 4l6o?DI>BMKg;kBSP@K1T1
+IWXP5k6RB=az83Vl90[7mk2
 R2
 R0
-w1489821028
+w1490855421
 8fa2.v
 Ffa2.v
 L0 1
@@ -103,11 +103,11 @@ R8
 vfifo
 R1
 !i10b 1
-!s100 ^QFQ=LLGj72^E=H`cXkWi0
-IGPonIDg98`D;H5N`Q[d[d1
+!s100 h@e2hInBlV5hcE7ZKS^>O1
+I??Vz39G1J8:mMQN;Pkn_I0
 R2
 R0
-w1490854626
+w1490855471
 8fifo.v
 Ffifo.v
 L0 4

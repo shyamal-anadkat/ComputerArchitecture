@@ -1,7 +1,7 @@
 #@ # 
 #@ # Running dc_shell Version L-2016.03-SP4-1 for linux64 -- Sep 10, 2016
-#@ # Date:   Sun Mar 19 21:44:27 2017
-#@ # Run by: shyamal@rockhopper-04
+#@ # Date:   Thu Mar 30 01:35:20 2017
+#@ # Run by: shyamal@royal-03
 #@ 
 
 source /s/synopsys-2016_09_23/@sys/L-2016.03-SP4-1/admin/setup/.synopsys_dc.setup
@@ -5571,7 +5571,7 @@ source -echo -verbose /afs/cs.wisc.edu/u/s/h/shyamal/private/552/HW4_files/hw4_1
 #@ # -- Starting source /afs/cs.wisc.edu/u/s/h/shyamal/private/552/HW4_files/hw4_1/synth/synth.tcl
 
 #@ echo "********** CS552 Reading files begin ********************"
-#@ set my_verilog_files [list counter.v dff.v fa1.v fa2.v fifo.v nand2.v xor2.v  ]
+#@ set my_verilog_files [list dff.v fa1.v fa2.v fifo.v nand2.v xor2.v  ]
 #@ set my_toplevel fifo
 #@ define_design_lib WORK -path ./WORK
 #@ analyze -f verilog $my_verilog_files

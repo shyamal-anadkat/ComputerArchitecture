@@ -23,9 +23,9 @@ module fifo(/*AUTOARG*/
    reg err;
 
    reg [63:0] outputdata;
-   wire popEn, pushEn;
+   wire popEn, pushEn, carry_fa3, tempSum2, co1, co2, co3;
    wire [1:0] pop_state, pop_state_next;  
-   wire [1:0] push_state, push_state_next;  
+   wire [1:0] push_state, push_state_next, tempSum01;  
    wire [2:0] counter, push_minus_pop; 
    wire [2:0] next_state;
    wire [1:0] pop_state_plus1, push_state_plus1;
@@ -37,16 +37,19 @@ module fifo(/*AUTOARG*/
    dff r4[63:0](.q(fifo[3]), .d(fifo_next[3]), .clk(clk), .rst(rst)); 
    
    //increment states
-   fa2 addr(.A(pop_state[1:0]), .B(2'b1), .SUM(pop_state_plus1));
-   fa2 addw(.A(push_state[1:0]), .B(2'b1), .SUM(push_state_plus1));
+   fa2 addr(.A(pop_state[1:0]), .B(2'b1), .SUM(pop_state_plus1), .Cout(co1));
+   fa2 addw(.A(push_state[1:0]), .B(2'b1), .SUM(push_state_plus1), .Cout(co2));
    
    //***COUNTER***
    dff dmod1(.q (counter[0]), .d((next_state[0])), .clk (clk), .rst (rst));
    dff dmod2(.q (counter[1]), .d((next_state[1])), .clk (clk), .rst (rst));
    dff dmod3(.q (counter[2]), .d((next_state[2])), .clk (clk), .rst (rst));
 
+   fa2 fa2mod(.A({counter[1], counter[0]}), .B({push_minus_pop[1], push_minus_pop[0]}), .SUM(tempSum01), .Cout(carry_fa3));
+   fa1 fa1mod(.A(counter[2]), .B(push_minus_pop[2]), .Cin(carry_fa3), .S(tempSum2), .Cout(co3));
+
    assign push_minus_pop = ((pushEn & popEn) || (~pushEn & ~popEn)) ? 0 : (~pushEn & popEn) ? 3'hfff : 1;
-   assign next_state = (rst) ? 0 : (counter == 0 & (push_minus_pop) == 3'hfff) ? 4: (counter + (push_minus_pop));
+   assign next_state = (rst) ? 0 : (counter == 0 & (push_minus_pop) == 3'hfff) ? 4: ({tempSum2, tempSum01});
    
    always @* begin
     casex ({pushEn, push_state})

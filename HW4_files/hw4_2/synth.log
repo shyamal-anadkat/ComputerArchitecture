@@ -21,21 +21,22 @@
 Initializing...
 echo "********** CS552 Reading files begin ********************"
 ********** CS552 Reading files begin ********************
-set my_verilog_files [list counter.v dff.v fa1.v fa2.v fifo.v nand2.v xor2.v  ]
-counter.v dff.v fa1.v fa2.v fifo.v nand2.v xor2.v
+set my_verilog_files [list dff.v fa1.v fa2.v fifo.v nand2.v xor2.v  ]
+dff.v fa1.v fa2.v fifo.v nand2.v xor2.v
 set my_toplevel fifo
 fifo
 define_design_lib WORK -path ./WORK
 1
 analyze -f verilog $my_verilog_files
 Running PRESTO HDLC
-Compiling source file ./counter.v
 Compiling source file ./dff.v
 Warning:  ./dff.v:15: delays for continuous assignment are ignored. (VER-173)
 Compiling source file ./fa1.v
 Compiling source file ./fa2.v
 Compiling source file ./fifo.v
-Warning:  ./fifo.v:93: the undeclared symbol 'data_out_valid' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  ./fifo.v:51: The value fff is too large for the numeric data type being used (VER-1)
+Warning:  ./fifo.v:52: The value fff is too large for the numeric data type being used (VER-1)
+Warning:  ./fifo.v:102: the undeclared symbol 'data_out_valid' assumed to have the default net type, which is 'wire'. (VER-936)
 Compiling source file ./nand2.v
 Compiling source file ./xor2.v
 Presto compilation completed successfully.
@@ -47,22 +48,22 @@ Loading db file '/s/synopsys-2016_09_23/@sys/L-2016.03-SP4-1/libraries/syn/stand
   Loading link library 'gscl45nm'
   Loading link library 'gtech'
 Running PRESTO HDLC
-Warning:  ./fifo.v:45: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ./fifo.v:55: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
 
-Statistics for case statements in always block at line 44 in file
+Statistics for case statements in always block at line 54 in file
 	'./fifo.v'
 ===============================================
 |           Line           |  full/ parallel  |
 ===============================================
-|            45            |    auto/auto     |
+|            55            |    auto/auto     |
 ===============================================
 
-Statistics for case statements in always block at line 83 in file
+Statistics for case statements in always block at line 92 in file
 	'./fifo.v'
 ===============================================
 |           Line           |  full/ parallel  |
 ===============================================
-|            84            |    auto/auto     |
+|            93            |    auto/auto     |
 ===============================================
 Presto compilation completed successfully.
 Elaborated 1 design.
@@ -79,16 +80,6 @@ Inferred memory devices in process
 ===============================================================================
 Presto compilation completed successfully.
 Information: Building the design 'fa2'. (HDL-193)
-Presto compilation completed successfully.
-Information: Building the design 'counter'. (HDL-193)
-
-Statistics for case statements in always block at line 17 in file
-	'./counter.v'
-===============================================
-|           Line           |  full/ parallel  |
-===============================================
-|            17            |     auto/no      |
-===============================================
 Presto compilation completed successfully.
 Information: Building the design 'fa1'. (HDL-193)
 Presto compilation completed successfully.
@@ -129,33 +120,28 @@ report_hierarchy
 Report : hierarchy
 Design : fifo
 Version: L-2016.03-SP4-1
-Date   : Sun Mar 19 21:44:28 2017
+Date   : Thu Mar 30 01:35:20 2017
 ****************************************
 
 Information: This design contains unmapped logic. (RPT-7)
 
 fifo
-    GTECH_AND2                           gtech
-    GTECH_BUF                            gtech
-    GTECH_NOT                            gtech
-    GTECH_OR2                            gtech
-    counter
-        GTECH_AND2                       gtech
-        GTECH_BUF                        gtech
-        GTECH_NOT                        gtech
-        GTECH_OR2                        gtech
-        dff
-            GTECH_BUF                    gtech
-            GTECH_NOT                    gtech
+    GTECH_AND2                       gtech
+    GTECH_BUF                        gtech
+    GTECH_NOT                        gtech
+    GTECH_OR2                        gtech
     dff
-        ...
+        GTECH_BUF                    gtech
+        GTECH_NOT                    gtech
+    fa1
+        nand2
+            GTECH_AND2               gtech
+            GTECH_NOT                gtech
+        xor2
+            GTECH_XOR2               gtech
     fa2
         fa1
-            nand2
-                GTECH_AND2               gtech
-                GTECH_NOT                gtech
-            xor2
-                GTECH_XOR2               gtech
+            ...
 1
 link
 
@@ -166,11 +152,11 @@ link
 
 1
 uniquify
-Information: Uniquified 264 instances of design 'dff'. (OPT-1056)
-Information: Uniquified 2 instances of design 'fa2'. (OPT-1056)
-Information: Uniquified 4 instances of design 'fa1'. (OPT-1056)
-Information: Uniquified 8 instances of design 'xor2'. (OPT-1056)
-Information: Uniquified 12 instances of design 'nand2'. (OPT-1056)
+Information: Uniquified 263 instances of design 'dff'. (OPT-1056)
+Information: Uniquified 3 instances of design 'fa2'. (OPT-1056)
+Information: Uniquified 7 instances of design 'fa1'. (OPT-1056)
+Information: Uniquified 14 instances of design 'xor2'. (OPT-1056)
+Information: Uniquified 21 instances of design 'nand2'. (OPT-1056)
 1
 set my_period [expr 1000 / $my_clk_freq_MHz]
 1
@@ -338,17 +324,16 @@ Information: Evaluating DesignWare library utilization. (UISN-27)
 ============================================================================
 
 
-Information: There are 9 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+Information: There are 11 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
 
 
 
   Beginning Pass 1 Mapping
   ------------------------
   Processing 'dff_1'
-  Processing 'counter'
-  Processing 'nand2_0'
-  Processing 'xor2_0'
-  Processing 'fa1_0'
+  Processing 'nand2_18'
+  Processing 'xor2_12'
+  Processing 'fa1_6'
   Processing 'fa2_0'
   Processing 'fifo'
 
@@ -365,30 +350,30 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                            
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:03    5330.8      0.69     177.3       2.6                          
-    0:00:03    5330.8      0.69     177.3       2.6                          
-    0:00:03    5652.7      0.00       0.0       1.4                          
-    0:00:03    5652.7      0.00       0.0       1.4                          
-    0:00:03    5652.7      0.00       0.0       1.4                          
-    0:00:03    5652.7      0.00       0.0       1.4                          
-    0:00:03    5652.7      0.00       0.0       1.4                          
-    0:00:03    5284.3      0.00       0.0       1.4                          
-    0:00:03    5284.3      0.00       0.0       1.4                          
-    0:00:03    5284.3      0.00       0.0       1.4                          
-    0:00:03    5284.3      0.00       0.0       1.4                          
-    0:00:03    5284.3      0.00       0.0       1.4                          
-    0:00:04    5354.7      0.00       0.0       1.3                          
-    0:00:04    5413.8      0.00       0.0       1.2                          
-    0:00:04    5478.6      0.00       0.0       1.1                          
-    0:00:04    5528.4      0.00       0.0       1.1                          
-    0:00:04    5581.4      0.00       0.0       1.0                          
-    0:00:04    5630.7      0.00       0.0       0.9                          
-    0:00:04    5676.7      0.00       0.0       0.9                          
-    0:00:04    5725.9      0.00       0.0       0.8                          
-    0:00:04    5778.5      0.00       0.0       0.8                          
-    0:00:04    5831.1      0.00       0.0       0.7                          
-    0:00:05    5883.6      0.00       0.0       0.6                          
-    0:00:05    5883.6      0.00       0.0       0.6                          
+    0:00:01    5361.8      0.69     184.6       3.3                          
+    0:00:01    5361.8      0.69     184.6       3.3                          
+    0:00:01    5710.0      0.00       0.0       1.4                          
+    0:00:01    5710.0      0.00       0.0       1.4                          
+    0:00:01    5710.0      0.00       0.0       1.4                          
+    0:00:01    5710.0      0.00       0.0       1.4                          
+    0:00:01    5710.0      0.00       0.0       1.4                          
+    0:00:01    5290.4      0.00       0.0       1.4                          
+    0:00:01    5290.4      0.00       0.0       1.4                          
+    0:00:01    5290.4      0.00       0.0       1.4                          
+    0:00:01    5290.4      0.00       0.0       1.4                          
+    0:00:01    5290.4      0.00       0.0       1.4                          
+    0:00:01    5363.2      0.00       0.0       1.3                          
+    0:00:02    5420.9      0.00       0.0       1.2                          
+    0:00:02    5486.6      0.00       0.0       1.1                          
+    0:00:02    5537.3      0.00       0.0       1.0                          
+    0:00:02    5590.3      0.00       0.0       1.0                          
+    0:00:02    5639.6      0.00       0.0       0.9                          
+    0:00:02    5688.9      0.00       0.0       0.9                          
+    0:00:02    5738.1      0.00       0.0       0.8                          
+    0:00:02    5790.7      0.00       0.0       0.8                          
+    0:00:02    5843.3      0.00       0.0       0.7                          
+    0:00:02    5895.8      0.00       0.0       0.6                          
+    0:00:02    5895.8      0.00       0.0       0.6                          
 
 
 
@@ -399,9 +384,9 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                            
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:05    5883.6      0.00       0.0       0.6                          
-    0:00:05    5883.6      0.00       0.0       0.6                          
-    0:00:05    5883.6      0.00       0.0       0.6                          
+    0:00:02    5895.8      0.00       0.0       0.6                          
+    0:00:02    5895.8      0.00       0.0       0.6                          
+    0:00:02    5895.8      0.00       0.0       0.6                          
 
 
   Beginning Design Rule Fixing  (max_capacitance)
@@ -411,19 +396,17 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                            
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:05    5883.6      0.00       0.0       0.6                          
-    0:00:05    6063.8      0.00       0.0       0.6 r2[52]/N3                
-    0:00:05    6241.2      0.00       0.0       0.5 r4[50]/N3                
-    0:00:05    6352.0      0.00       0.0       0.5 n38                      
-    0:00:05    6491.4      0.00       0.0       0.4 n92                      
-    0:00:05    6630.7      0.00       0.0       0.4 n15                      
-    0:00:05    6770.1      0.00       0.0       0.4 n73                      
-    0:00:05    6909.5      0.00       0.0       0.4 n127                     
-    0:00:05    7087.4      0.00       0.0       0.3 alt1143/net10865         
-    0:00:05    7284.5      0.00       0.0       0.3 alt1143/net10995         
-    0:00:06    7380.7      0.01       0.0       0.2 ctr/dmod1/d              
-    0:00:06    7397.1      0.10       0.1       0.2 ctr/dmod4/state_reg/D    
-    0:00:07    7402.7      0.00       0.0       0.2                          
+    0:00:02    5895.8      0.00       0.0       0.6                          
+    0:00:02    6075.6      0.00       0.0       0.5 r2[52]/N3                
+    0:00:02    6253.0      0.00       0.0       0.5 r4[50]/N3                
+    0:00:02    6398.9      0.00       0.0       0.4 n60                      
+    0:00:02    6538.3      0.00       0.0       0.4 n114                     
+    0:00:02    6677.7      0.00       0.0       0.4 n41                      
+    0:00:03    6817.1      0.00       0.0       0.4 n95                      
+    0:00:03    6956.4      0.00       0.0       0.4 n149                     
+    0:00:03    7153.5      0.00       0.0       0.3 alt1053/net10732         
+    0:00:03    7350.6      0.00       0.0       0.2 alt1053/net10863         
+    0:00:04    7378.8      0.00       0.0       0.2                          
 
 
   Beginning Area-Recovery Phase  (cleanup)
@@ -433,23 +416,23 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                            
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:07    7402.7      0.00       0.0       0.2                          
-    0:00:07    7402.7      0.00       0.0       0.2                          
-    0:00:07    6763.1      0.00       0.0       0.2                          
-    0:00:07    6467.0      0.00       0.0       0.2                          
-    0:00:07    6455.7      0.00       0.0       0.2                          
-    0:00:07    6444.4      0.00       0.0       0.2                          
-    0:00:07    6437.4      0.00       0.0       0.2                          
-    0:00:07    6437.4      0.00       0.0       0.2                          
-    0:00:07    6437.4      0.00       0.0       0.2                          
-    0:00:07    6433.6      0.00       0.0       0.2                          
-    0:00:07    6432.2      0.00       0.0       0.2                          
-    0:00:07    6432.2      0.00       0.0       0.2                          
-    0:00:07    6432.2      0.00       0.0       0.2                          
-    0:00:07    6432.2      0.00       0.0       0.2                          
-    0:00:07    6432.2      0.00       0.0       0.2                          
-    0:00:07    6432.2      0.00       0.0       0.2                          
-    0:00:07    6432.7      0.00       0.0       0.2                          
+    0:00:04    7378.8      0.00       0.0       0.2                          
+    0:00:04    7378.8      0.00       0.0       0.2                          
+    0:00:04    6759.3      0.00       0.0       0.2                          
+    0:00:05    6469.3      0.00       0.0       0.2                          
+    0:00:05    6448.2      0.00       0.0       0.2                          
+    0:00:05    6435.5      0.00       0.0       0.2                          
+    0:00:05    6425.7      0.00       0.0       0.2                          
+    0:00:05    6425.7      0.00       0.0       0.2                          
+    0:00:05    6425.7      0.00       0.0       0.2                          
+    0:00:05    6424.2      0.00       0.0       0.2                          
+    0:00:05    6423.8      0.00       0.0       0.2                          
+    0:00:05    6423.8      0.00       0.0       0.2                          
+    0:00:05    6423.8      0.00       0.0       0.2                          
+    0:00:05    6423.8      0.00       0.0       0.2                          
+    0:00:05    6423.8      0.00       0.0       0.2                          
+    0:00:05    6423.8      0.00       0.0       0.2                          
+    0:00:05    6423.8      0.00       0.0       0.2                          
 Loading db file '/u/k/a/karu/courses/cs552/cad/Synopsys_Libraries/libs/gscl45nm.db'
 
 
@@ -464,7 +447,7 @@ check_design -summary
 ****************************************
 check_design summary:
 Version:     L-2016.03-SP4-1
-Date:        Sun Mar 19 21:44:36 2017
+Date:        Thu Mar 30 01:35:26 2017
 ****************************************
 
                    Name                                            Total
@@ -472,8 +455,8 @@ Date:        Sun Mar 19 21:44:36 2017
 Inputs/Outputs                                                      1
     Unconnected ports (LINT-28)                                     1
 
-Cells                                                               6
-    Connected to power or ground (LINT-32)                          6
+Cells                                                               7
+    Connected to power or ground (LINT-32)                          7
 --------------------------------------------------------------------------------
 
 Information: Use the 'check_design' command for 
@@ -485,6 +468,7 @@ fifo.syn.v
 write -hierarchy -f verilog $my_toplevel -output synth/$filename
 Writing verilog file '/afs/cs.wisc.edu/u/s/h/shyamal/private/552/HW4_files/hw4_1/synth/fifo.syn.v'.
 Warning: Bus naming style currently specified as %s<%d>, verilog syntax requires bus naming style to be "[]".  (VO-13)
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
 1
 set filename [format "%s%s"  $my_toplevel ".ddc"]
 fifo.ddc

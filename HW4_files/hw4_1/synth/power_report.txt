@@ -8,7 +8,7 @@ Report : power
         -analysis_effort low
 Design : fifo
 Version: L-2016.03-SP4-1
-Date   : Sun Mar 19 21:44:37 2017
+Date   : Thu Mar 30 01:35:28 2017
 ****************************************
 
 
@@ -30,12 +30,12 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  =   4.1485 mW   (92%)
-  Net Switching Power  = 363.9291 uW    (8%)
+  Cell Internal Power  =   4.1050 mW   (92%)
+  Net Switching Power  = 363.9051 uW    (8%)
                          ---------
-Total Dynamic Power    =   4.5124 mW  (100%)
+Total Dynamic Power    =   4.4689 mW  (100%)
 
-Cell Leakage Power     =  29.9615 uW
+Cell Leakage Power     =  29.9546 uW
 
 
                  Internal         Switching           Leakage            Total
@@ -45,9 +45,9 @@ io_pad             0.0000            0.0000            0.0000            0.0000 
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register           3.8537        3.4849e-02        1.4514e+04            3.9030  (  85.92%)
+register           3.8370        3.4103e-02        1.4459e+04            3.8856  (  86.37%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational      0.2948            0.3291        1.5447e+04            0.6394  (  14.08%)
+combinational      0.2680            0.3298        1.5496e+04            0.6133  (  13.63%)
 --------------------------------------------------------------------------------------------------
-Total              4.1485 mW         0.3639 mW     2.9961e+04 nW         4.5424 mW
+Total              4.1050 mW         0.3639 mW     2.9955e+04 nW         4.4988 mW
 1
