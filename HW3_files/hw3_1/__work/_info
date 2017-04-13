@@ -9,15 +9,15 @@ z2
 cModel Technology
 Z0 d/u/r/a/rajmohan/private/552/ComputerArchitecture/HW3_files/hw3_1
 T_opt
-!s110 1488261457
-VIdkY<V3:7e5nH^RDVPm5a2
+!s110 1491811013
+VVXP7i[GdchbVhhN[8`?QE1
 04 8 4 work rf_bench fast 0
-=1-f8bc128a6f4f-58b51150-518be-5659
+=1-f8bc12932458-58eb3ac5-ae0b2-6fca
 o-quiet -auto_acc_if_foreign -work __work +acc
 n@_opt
 OE;O;10.4c;61
 vand2
-Z1 !s110 1488261452
+Z1 !s110 1491811010
 !i10b 1
 !s100 c<aAdmKVXG;oC>i1e9lfQ0
 Ig;Mld3@`D^>VWXSMDJ`KJ3
@@ -31,7 +31,7 @@ Z4 OE;L;10.4c;61
 r1
 !s85 0
 31
-Z5 !s108 1488261451.000000
+Z5 !s108 1491811010.000000
 Z6 !s107 rf.v|rf_hier.v|rf_bypass.v|rf_bench.v|reg16.v|or2.v|not1.v|nand2.v|mux8_1.v|mux4_1.v|mux2_1.v|dff.v|dec3_8.v|clkrst.v|and3.v|and2.v|
 Z7 !s90 +define+RANDSEED=3|-work|__work|and2.v|and3.v|clkrst.v|dec3_8.v|dff.v|mux2_1.v|mux4_1.v|mux8_1.v|nand2.v|not1.v|or2.v|reg16.v|rf_bench.v|rf_bypass.v|rf_hier.v|rf.v|
 !i113 0
@@ -313,11 +313,11 @@ R9
 vrf_bypass
 R1
 !i10b 1
-!s100 FSkcManUX:^oDnPL3?:PP1
-Id_R=5`c=ZV6z@4h=ehALL3
+!s100 31bmjIb1PHzYPgNXQJA?d0
+IiDcl:igb>Q=HS2K47KW>?0
 R2
 R0
-w1488148360
+w1491811007
 8rf_bypass.v
 Frf_bypass.v
 L0 4
