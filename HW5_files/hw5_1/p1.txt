@@ -1,1 +1,8 @@
 // Write your answer to Problem 2 (b) here
+Here's the p1.asm code to demonstrate a data hazard and forwarding:
+	lbi r3, 10
+	add r1, r3, r2    <---------r3 forwarded
+	andn r2, r1, r3   <---------forwarded sum from add above
+	halt
+We have a andn right after the add instruction which uses the sum in r1. We also have add after lbi which uses r3. Without forwarding, stalling would waste clock cycles in the pipeline. With forwarding, as soon as the ALU has the result for the add, we can forward the sum to the andn instruction as an input. This is the notion of forwarding/bypassing. 
+In the above code, r3 and r1 values will be forwarded from MEMWB register for add and andn instructions.
